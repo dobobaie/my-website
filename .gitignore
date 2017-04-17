@@ -63,3 +63,6 @@ semantic.json
 www_gzip
 composer.lock
 vendor/
+scripts/
+.env_config
+public/app/data.json
