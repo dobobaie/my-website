@@ -61,3 +61,5 @@ semantic/
 semantic.json
 *.log
 www_gzip
+composer.lock
+vendor/
