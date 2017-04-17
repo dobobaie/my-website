@@ -4,7 +4,7 @@ var os 			= require('os');
 var gulp 		= require('gulp');
 var rename		= require('gulp-rename');
 var php 		= require('gulp-connect-php');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 var phantom 	= require('phantom');   
 var shell 		= require('shelljs');
 
@@ -58,12 +58,22 @@ gulp.task('app', function() {
 	;
 });
 
-gulp.task('watch', ['html', 'templates', 'app', 'css', 'js'], function() {
+gulp.task('php', function() {
+	return gulp
+		.src('private/*.php')
+		.pipe(browserSync.reload({
+			stream: true
+		}))
+	;
+});
+
+gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() {
 	gulp.watch(['./public/js/*.js'], ['js']);
 	gulp.watch(['./public/css/*.css'], ['css']);
 	gulp.watch(['./public/*.html'], ['html']);
 	gulp.watch(['./public/templates/*.html'], ['templates']);
 	gulp.watch(['./public/app/*.json'], ['app']);
+	gulp.watch(['./private/*.php'], ['php']);
 	return gulp;
 });
 
@@ -112,25 +122,28 @@ gulp.task('init', ['lib'], function() {
 	return gulp;
 });
 
-gulp.task('serve', function() {
-	browserSync.init({
+gulp.task('serve', ['watch'], function() {
+	browserSync.create().init({
 		server: {
 			baseDir: 'public/',
 		},
 		browser: browser,
 	});
-	gulp.start('watch');
 });
 
-gulp.task('backend', function() {
+gulp.task('backend', ['watch'], function() {
 	var pathPhpExe = process.env.PHP_EXE || shell.exec('where php.exe').stdout.replace(/(?:\r\n|\r|\n)/g, '');
 	var pathPhpIni = process.env.PHP_INI || shell.exec('where php.ini').stdout.replace(/(?:\r\n|\r|\n)/g, '');
-	console.log(pathPhpExe, pathPhpIni);
 	php.server({
 		hostname: '0.0.0.0',
 		bin: pathPhpExe,
 		ini: pathPhpIni,
 		base: 'private/',
+	}, function() {
+		browserSync({
+			proxy: '127.0.0.1:8000',
+			browser: browser,
+		});
 	});
 });
 

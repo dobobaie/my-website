@@ -4,9 +4,10 @@
 		<div class="ui centered card fixed">
 			<div class="image">
 				<img src="./images/elliot.jpg">
+				<!-- <img ng-src="{{infos_cv.pictureUrl}}"> -->
 			</div>
 			<div class="content">
-				<a class="header">Kristy Clément</a>
+				<a class="header">{{infos_cv.firstName}} {{infos_cv.lastName}}</a>
 				<div class="meta">
 					<span class="date">Born in 2013</span>
 				</div>
@@ -21,7 +22,7 @@
 
 	<div class="sixteen wide tablet thirteen wide computer column">
 
-		<h2 class="ui center aligned header cadre">Lorem ipsum dolor sit amet</h2>
+		<h2 class="ui center aligned header cadre">{{infos_cv.headline}}</h2>
 
 		<div class="ui grid">
 			<div class="device only row">
