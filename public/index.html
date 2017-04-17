@@ -1,10 +1,19 @@
 <html>
 	<head>
 		<title></title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
 		<style>
+			nav
+			{
+				margin-bottom: 25px;
+			}
+
 			.cadre
 			{
-				margin: 25px auto !important;
+				margin: 15px auto !important;
 			}
 			
 			@media screen and (min-height: 600px) {
@@ -13,342 +22,31 @@
 					position: fixed !important;
 				}
 			}
+			
+			@media (min-width: 991px) {
+				.device.only {
+					display: none !important;
+				}
+			}
 		</style>
+		
 		<link rel="stylesheet" href="./lib/semantic/semantic.min.css">
+		
 		<script type="text/javascript" src="./lib/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="./lib/semantic/semantic.min.js"></script>
-		<script>
-			var resizeElementFixed = function() {
-				$('.fixed').each(function(index, value) {
-					var width = $(value).parent().css('width');
-					var padding = $(value).parent().css('padding');
-					width = parseFloat(width.substring(0, width.length - 2));
-					padding = parseFloat(padding.substring(0, padding.length - 2));
-					$(value).css({'max-width': (width - (padding * 2))});
-				});
-			}
+		<script type="text/javascript" src="./lib/angular/angular.min.js"></script>
+		<script type="text/javascript" src="./lib/angular-ui-router/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="./lib/oclazyload/ocLazyLoad.min.js"></script>
 
-			$(document).ready(function() {
-				resizeElementFixed();
-			});
-
-			$(window).resize(function() {
-				resizeElementFixed();
-			});
-		</script>
+		<script type="text/javascript" src="./js/config.js"></script>
+		<script type="text/javascript" src="./js/routing.js"></script>
+		<script type="text/javascript" src="./js/effect_fixe.js"></script>
+		
 	</head>
 	<body>
-
-		<div class="ui container cadre">
-
-			<div class="ui pointing menu">
-				<a class="active item">Curriculum Vitae</a>
-				<a class="item">Messages</a>
-				<a class="item">Friends</a>
-			</div>
-			
-			<div class="ui grid">
-				<div class="four wide column">
-					
-					<div class="ui centered card fixed">
-						<div class="image">
-							<img src="./images/elliot.jpg">
-						</div>
-						<div class="content">
-							<a class="header">Kristy Clément</a>
-							<div class="meta">
-								<span class="date">Born in 2013</span>
-							</div>
-							<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-						</div>
-						<div class="extra content">
-							<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-						</div>
-					</div>
-					
-				</div>
-
-				<div class="twelve wide column">
-
-					<h2 class="ui center aligned header cadre">Lorem ipsum dolor sit amet</h2>
-
-					<div class="ui grid">
-						<div class="ten wide column">
-							
-							<h3 class="ui header">
-								<i class="travel icon"></i>
-								<div class="content">
-									Lorem ipsum dolor sit amet
-									<div class="sub header">Lorem ipsum dolor sit amet</div>
-								</div>
-							</h3>
-
-							<div class="ui container">
-								
-								<div class="ui segments">
-									<div class="ui segment">
-										
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="ui red segment">
-									
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="ui blue segment">
-									
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="ui green segment">
-									
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="ui yellow segment">
-										
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<h3 class="ui header">
-								<i class="book icon"></i>
-								<div class="content">
-									Lorem ipsum dolor sit amet
-									<div class="sub header">Lorem ipsum dolor sit amet</div>
-								</div>
-							</h3>
-
-							<div class="ui container">
-								<div class="ui segments">
-
-									<div class="ui segment">
-										
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="ui red segment">
-									
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="ui blue segment">
-									
-										<div class="ui divided items">
-											<div class="item">
-												<div class="image"><img src="./images/image.png"></div>
-												<div class="content">
-													<a class="header">Lorem ipsum dolor sit amet</a>
-													<div class="meta">
-														<span class="cinema">Lorem ipsum dolor sit amet2</span>
-													</div>
-													<div class="description">
-														<p></p>
-													</div>
-													<div class="extra">
-														<div class="ui label">IMAX</div>
-														<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								
-								</div>
-							</div>
-						
-						</div>
-						<div class="six wide column">
-				
-							<div class="ui container cadre">
-
-								<h3 class="ui header">
-									<i class="tasks icon"></i>
-									<div class="content">
-										Lorem ipsum dolor sit amet
-										<div class="sub header">Lorem ipsum dolor sit amet</div>
-									</div>
-								</h3>
-						
-								<div class="ui centered cards">
-									<div class="card">
-										<div class="content">
-											<div class="header">Elliot Fu</div>
-											<div class="meta">Friend</div>
-											<div class="description">Elliot Fu is a film-maker from New York.</div>
-										</div>
-									</div>
-								</div>
-
-								<h3 class="ui header">
-									<i class="comments outline icon"></i>
-									<div class="content">
-										Lorem ipsum dolor sit amet
-										<div class="sub header">Lorem ipsum dolor sit amet</div>
-									</div>
-								</h3>
-						
-								<div class="ui centered cards">
-									<div class="card">
-										<div class="content">
-											<div class="header">Elliot Fu</div>
-											<div class="meta">Friend</div>
-											<div class="description">Elliot Fu is a film-maker from New York.</div>
-										</div>
-									</div>
-								</div>
-
-								<h3 class="ui header">
-									<i class="heartbeat icon"></i>
-									<div class="content">
-										Lorem ipsum dolor sit amet
-										<div class="sub header">Lorem ipsum dolor sit amet</div>
-									</div>
-								</h3>
-						
-								<div class="ui centered cards">
-									<div class="card">
-										<div class="content">
-											<div class="header">Elliot Fu</div>
-											<div class="meta">Friend</div>
-											<div class="description">Elliot Fu is a film-maker from New York.</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
+		<div class="ui container cadre" ng-app="routerApp">
+			<nav ui-view="nav"></nav>
+			<div ui-view="view"></div>
 		</div>
-
 	</body>
 </html>

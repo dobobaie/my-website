@@ -15,12 +15,17 @@ var browser 	=
 	('chrome') : ('firefox')))
 ;
 
-gulp.task('index', function() {
+gulp.task('html', function() {
 	return gulp
 		.src('public/*.html')
-		.pipe(browserSync.reload({
-			stream: true
-		}))
+		.pipe(browserSync.reload({ stream: true }))
+	;
+});
+
+gulp.task('templates', function() {
+	return gulp
+		.src('public/templates/*.html')
+		.pipe(browserSync.reload({ stream: true }))
 	;
 });
 
@@ -42,14 +47,28 @@ gulp.task('css', function() {
 	;
 });
 
-gulp.task('watch', ['index', 'css', 'js'], function() {
+gulp.task('app', function() {
+	return gulp
+		.src('public/app/*.json')
+		.pipe(browserSync.reload({
+			stream: true
+		}))
+	;
+});
+
+gulp.task('watch', ['html', 'templates', 'app', 'css', 'js'], function() {
+	gulp.watch(['./public/js/*.js'], ['js']);
+	gulp.watch(['./public/css/*.css'], ['css']);
+	gulp.watch(['./public/*.html'], ['html']);
+	gulp.watch(['./public/templates/*.html'], ['templates']);
+	gulp.watch(['./public/app/*.json'], ['app']);
 	return gulp;
 });
 
 gulp.task('export', function() {
 	phantom.create().then(function(ph) {
 		ph.createPage().then(function(page) {
-			page.property('viewportSize', {width: 800, height: 600}).then(function() {
+			page.property('viewportSize', { width: 2480 / 2, height: 3508 / 2 }).then(function() {
 				page.open('public/index.html').then(function(status) {
 					page.render('cv.pdf').then(function() {
 						console.log('Page Rendered');
@@ -67,6 +86,9 @@ gulp.task('lib', function() {
 	gulp.src('./node_modules/semantic-ui/dist/semantic.min.js').pipe(gulp.dest('./public/lib/semantic'));
 	gulp.src('./node_modules/semantic-ui/dist/semantic.min.css').pipe(gulp.dest('./public/lib/semantic'));
 	gulp.src('./node_modules/semantic-ui/dist/themes/**/*').pipe(gulp.dest('./public/lib/semantic/themes'));
+	gulp.src('./node_modules/angular/*').pipe(gulp.dest('./public/lib/angular'));
+	gulp.src('./node_modules/angular-ui-router/release/*').pipe(gulp.dest('./public/lib/angular-ui-router'));
+	gulp.src('./node_modules/oclazyload/dist/*').pipe(gulp.dest('./public/lib/oclazyload'));
 	return gulp;
 });
 
