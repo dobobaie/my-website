@@ -14,20 +14,14 @@
 				}
 			}
 		</style>
-		<link rel="stylesheet" href="./lib/semantic-ui/dist/semantic.min.css">
-		<script type="text/javascript" src="./lib/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="./lib/semantic-ui/dist/semantic.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
-		<script src="https://raw.githubusercontent.com/MrRio/jsPDF/master/plugins/from_html.js"></script>
-		<script src="https://raw.githubusercontent.com/MrRio/jsPDF/master/plugins/split_text_to_size.js"></script>
-		<script src="https://raw.githubusercontent.com/MrRio/jsPDF/master/plugins/standard_fonts_metrics.js"></script>
-
+		<link rel="stylesheet" href="./lib/semantic/semantic.min.css">
+		<script type="text/javascript" src="./lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="./lib/semantic/semantic.min.js"></script>
 		<script>
-			let resizeElementFixed = function() {
+			var resizeElementFixed = function() {
 				$('.fixed').each(function(index, value) {
-					let width = $(value).parent().css('width');
-					let padding = $(value).parent().css('padding');
+					var width = $(value).parent().css('width');
+					var padding = $(value).parent().css('padding');
 					width = parseFloat(width.substring(0, width.length - 2));
 					padding = parseFloat(padding.substring(0, padding.length - 2));
 					$(value).css({'max-width': (width - (padding * 2))});
@@ -36,18 +30,6 @@
 
 			$(document).ready(function() {
 				resizeElementFixed();
-
-
-				var specialElementHandlers = {
-					'#editor': function (element,renderer) {
-						return true;
-					}
-				};
-				var doc = new jsPDF();
-				console.log($('body').html());
-				doc.fromHTML($('body').html(), 15, 15, { 'width': 800, 'elementHandlers': specialElementHandlers });
-				doc.save('sample-file.pdf');
-
 			});
 
 			$(window).resize(function() {
@@ -108,7 +90,7 @@
 										
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -130,7 +112,7 @@
 									
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -152,7 +134,7 @@
 									
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -174,7 +156,7 @@
 									
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -196,7 +178,7 @@
 										
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -234,7 +216,7 @@
 										
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -256,7 +238,7 @@
 									
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
@@ -278,7 +260,7 @@
 									
 										<div class="ui divided items">
 											<div class="item">
-												<div class="image"><img src="/images/image.png"></div>
+												<div class="image"><img src="./images/image.png"></div>
 												<div class="content">
 													<a class="header">Lorem ipsum dolor sit amet</a>
 													<div class="meta">
