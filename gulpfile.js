@@ -3,8 +3,10 @@
 var os 			= require('os');
 var gulp 		= require('gulp');
 var rename		= require('gulp-rename');
+var php 		= require('gulp-connect-php');
 var browserSync = require('browser-sync').create();
 var phantom 	= require('phantom');   
+var shell 		= require('shelljs');
 
 var browser 	=
 	(os.platform() == 'linux') ?
@@ -118,6 +120,18 @@ gulp.task('serve', function() {
 		browser: browser,
 	});
 	gulp.start('watch');
+});
+
+gulp.task('backend', function() {
+	var pathPhpExe = process.env.PHP_EXE || shell.exec('where php.exe').stdout.replace(/(?:\r\n|\r|\n)/g, '');
+	var pathPhpIni = process.env.PHP_INI || shell.exec('where php.ini').stdout.replace(/(?:\r\n|\r|\n)/g, '');
+	console.log(pathPhpExe, pathPhpIni);
+	php.server({
+		hostname: '0.0.0.0',
+		bin: pathPhpExe,
+		ini: pathPhpIni,
+		base: 'private/',
+	});
 });
 
 gulp.task('default', function() {
