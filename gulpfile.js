@@ -71,7 +71,7 @@ gulp.task('lib', function() {
 });
 
 gulp.task('init', ['lib'], function() {
-	let mode = process.env.NODE_ENV || 'dev';
+	var mode = process.env.NODE_ENV || 'dev';
 	if (mode == 'dev') {
 		gulp
 			.src('./public/app/config_dev.json')
