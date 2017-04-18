@@ -27,13 +27,24 @@ appRoute
 							files: [
 								'./js/models/network.js',
 								'./js/models/system.js',
+								'./js/models/navigation.js',
 							]
 						});
 					}]
 				},
 				views: {
 					'nav': {
-						templateUrl: './templates/nav.html',
+						templateUrl: './templates/navigation.html',
+						controller: 'NavigationCtr',
+						resolve: {
+							loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+								return $ocLazyLoad.load({
+									files: [
+										'./js/controllers/navigation.js',
+									] 
+								});
+							}],
+						}
 					},
 				}
 			})
@@ -49,6 +60,25 @@ appRoute
 								return $ocLazyLoad.load({
 									files: [
 										'./js/controllers/home.js',
+									] 
+								});
+							}],
+						}
+					}
+				}
+			})
+			.state('app.projects',
+			{
+				url: '/projects',
+				views: {
+				  'view@': {
+						templateUrl: './templates/projects.html',
+						controller: 'ProjectsCtr',
+						resolve: {
+							loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+								return $ocLazyLoad.load({
+									files: [
+										'./js/controllers/projects.js',
 									] 
 								});
 							}],
