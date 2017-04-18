@@ -1,0 +1,127 @@
+{
+	"pictureUrl" : "https://www.linkedin.com/mpr/mpr/AAEAAQAAAAAAAAXdAAAAJDg3ZDY3YWViLTIxOWMtNDg3YS05NDkxLWNlNTliNzI5ODM2MA.jpg",
+	"birthday" : 776131200,
+	"skills" : [
+		{
+			"category" : "programmation",
+			"list" : [
+				{
+					"name" : "Javascript/TypeScript",
+					"advancement" : "98"
+				},
+				{
+					"name" : "HTML/CSS",
+					"advancement" : "98"
+				},
+				{
+					"name" : "PHP",
+					"advancement" : "90"
+				},
+				{
+					"name" : "C / C+ / C++",
+					"advancement" : "80"
+				},
+				{
+					"name" : "JAVA / C# / Ruby / Python",
+					"advancement" : "70"
+				}
+			]
+		},
+		{
+			"category" : "frameworks_library",
+			"list" : [
+				{
+					"name" : "Jquery / CSS (boostrap, materialize, semantic-ui)",
+					"advancement" : "100"
+				},
+				{
+					"name" : "Angular 1 / Angular 2 / Backbones",
+					"advancement" : "90"
+				},
+				{
+					"name" : "ReactJs / Laravel",
+					"advancement" : "75"
+				}
+			]
+		},
+		{
+			"category" : "tools",
+			"list" : [
+				{
+					"name" : "nodejs (npm) / gulp / phonegap (cordova & ionic) / git",
+					"advancement" : "100"
+				},
+				{
+					"name" : "Composer / Travis / Sass",
+					"advancement" : "95"
+				},
+				{
+					"name" : "Babel / Aws / Heroku / Docker",
+					"advancement" : "85"
+				}
+			]
+		},
+		{
+			"category" : "system",
+			"list" : [
+				{
+					"name" : "Windows / Unix",
+					"advancement" : "95"
+				},
+				{
+					"name" : "iOs",
+					"advancement" : "80"
+				}
+			]
+		},
+		{
+			"category" : "other",
+			"list" : [
+				{
+					"name" : "Chargé de projet IT",
+					"advancement" : "90"
+				},
+				{
+					"name" : "UPEDU",
+					"advancement" : "85"
+				},
+				{
+					"name" : "Scrum",
+					"advancement" : "80"
+				}
+			]
+		}
+	],
+	"language" : [
+		{
+			"name" : "Français",
+			"advancement" : "Natale"
+		},
+		{
+			"name" : "Anglais",
+			"advancement" : "Professionnel"
+		}
+	],
+	"interest" : [
+		{
+			"name" : "La gestion de projet et la programmation",
+			"description" : "Être le chef d'orchestre sur un projet IT et participer au développement est pour moi l'un des meilleurs travaille au monde."
+		},
+		{
+			"name" : "Les films de sciences fictions",
+			"description" : "Pour les amateurs du Seigneur des anneaux et du Hobbit, oui oui, j'aime les films du Hobbit tout comme j'ai aimé le dernier Matrix."
+		},
+		{
+			"name" : "La plongée sous-marine",
+			"description" : "Niveau 2 acquis en Corse, pour les amoureux de la faune marine, je conseil à 400% de pratiquer ce sport."
+		},
+		{
+			"name" : "L'idée de la physique quantique",
+			"description" : "N'étant pas un expert dans la physique en général, mes connaissances sont limités, toutefois c'est un domaine fascinant !"
+		},
+		{
+			"name" : "La philosophie et la psychanalyse",
+			"description" : "Mon métier m'oblige à avoir ma philosophie et à apprendre celle des autres pour toujours améliorer le processus sociales à appliqué sur les parties prenantes d'un projet."
+		}
+	]
+}
