@@ -1,6 +1,10 @@
 {
 	"pictureUrl" : "https://www.linkedin.com/mpr/mpr/AAEAAQAAAAAAAAXdAAAAJDg3ZDY3YWViLTIxOWMtNDg3YS05NDkxLWNlNTliNzI5ODM2MA.jpg",
 	"birthday" : 771033600000,
+	"phone" : "+33 6 27 03 69 69",
+	"mail" : "eddy.mhalli@eptiech.eu",
+	"locality" : "Paris",
+	"presentation" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 	"experience" : [
 		{
 			"link" : "http://fearless-vr.com/",
@@ -44,7 +48,7 @@
 			"logo" : "./photos/BELAIR.PNG",
 			"start_date" : 1404172800000,
 			"end_date" : 1420070400000,
-			"short_description" : "<p>Création d'un extranet pour courtier en assurance, déployé en interne, destiné aux clients de l'entreprise ainsi qu'aux utilisateurs des clients.</p><p>L'extranet propose aux clients, de rediriger leur site internet vers l'url de l'extranet afin que celui-ci puisse s'adapter selon l'url d'origine et de modifier son apparence ainsi que son contenu selon la configuration spécifique du client.</p><p>Mon travail a été d'établir l'échéancier des différents rendus et de réfléchir à l'architecture et au fonctionnement du système pour ensuite le développer selon le cahier des charges.</p>",
+			"short_description" : "<p>Création d'un extranet pour courtier en assurance, déployé en interne, destiné aux clients de l'entreprise ainsi qu'aux utilisateurs des clients.</p><p>Mon travail a été d'établir l'échéancier des différents rendus et de réfléchir à l'architecture et au fonctionnement du système pour ensuite le développer selon le cahier des charges.</p>",
 			"description" : "<p>Création d'un extranet pour courtier en assurance, déployé en interne, destiné aux clients de l'entreprise ainsi qu'aux utilisateurs des clients.</p><p>L'extranet propose aux clients, de rediriger leur site internet vers l'url de l'extranet afin que celui-ci puisse s'adapter selon l'url d'origine et de modifier son apparence ainsi que son contenu selon la configuration spécifique du client.</p><p>L'objectif de l'extranet est de proposer des services pour les utilisateurs des clients, comme déclarer un sinistre, prendre contact avec son assurance, déclarer un membre de la famille ou un moyen/objet (voiture, maison, ...). Ainsi que de proposer aux courtiers de gérer leurs utilisateurs et leurs déclarations à partir de l'extranet.</p><br/><p>Mon travail a été d'établir l'échéancier des différents rendus et de réfléchir à l'architecture et au fonctionnement du système pour ensuite le développer selon le cahier des charges.</p>",
 			"skills" : [
 				"Jquery",
@@ -60,7 +64,7 @@
 			"logo" : "./photos/JOBSETMUSIK.JPG",
 			"start_date" : 1325376000000,
 			"end_date" : 1356998400000,
-			"short_description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier à dû être fait à partir des maquettes déjà existantes.</p><p>L'utilisation du modèle incrémental était la meilleure solution pour répondre aux besoins de l'association car, les maquettes visuelle était déjà créée et le site internet déjà en production, le plus gros problème était au niveau de l'architecture et des outils utilisés pour sa conception. Le projet a donc été découpé en plusieurs sous-modules pour mettre en ligne au plus vite des modules fonctionnels.</p>",
+			"short_description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier à dû être fait à partir des maquettes déjà existantes.</p>",
 			"description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Le site a pour objectif d'afficher et de gérer divers contenus, comme des articles contenants des vidéos et des photos, ainsi que d'afficher les actualités provenant des réseaux sociaux.</p><p>La webradio est le plus grand atout du site, il est accessible depuis la page d'accueil.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier à dû être fait à partir des maquettes déjà existantes.</p><p>L'utilisation du modèle incrémental était la meilleure solution pour répondre aux besoins de l'association car, les maquettes visuelle était déjà créée et le site internet déjà en production, le plus gros problème était au niveau de l'architecture et des outils utilisés pour sa conception. Le projet a donc été découpé en plusieurs sous-modules pour mettre en ligne au plus vite des modules fonctionnels.</p>",
 			"skills" : [
 				"Jquery",
@@ -76,7 +80,7 @@
 			"logo" : "./photos/SBEAUTE.PNG",
 			"start_date" : 1238544000000,
 			"end_date" : 1317427200000,
-			"short_description" : "<p>Création d'un site internet vitrine pour une entreprise d'esthétique.</p><p>Mon travail a été d'établir le budget et la deadline du projet, ainsi que de créer des maquettes selon les envies de l'entreprise pour commencer le développement du site internet.</p><p>L'utilisation du modèle transformationnel était la meilleure solution pour répondre aux besoins de l'entreprise qui n'avait auparavant aucun site internet.</p>",
+			"short_description" : "<p>Création d'un site internet vitrine pour une entreprise d'esthétique.</p><p>Mon travail a été d'établir le budget et la deadline du projet, ainsi que de créer des maquettes selon les envies de l'entreprise pour commencer le développement du site internet.</p>",
 			"description" : "<p>Création d'un site internet vitrine pour une entreprise d'esthétique.</p><p>Le site avait pour objectif d'afficher et de gérer les prestations et produit proposées par l'entreprise, ainsi que d'afficher et de gérer divers média, comme des vidéos ou des photos, et également une partie pour afficher et gérer les informations de contact en plus d'un formulaire dynamique.</p><br/><p>Mon travail a été d'établir le budget et la deadline du projet, ainsi que de créer des maquettes selon les envies de l'entreprise pour commencer le développement du site internet.</p><p>L'utilisation du modèle transformationnel était la meilleure solution pour répondre aux besoins de l'entreprise qui n'avait auparavant aucun site internet.</p>",
 			"skills" : [
 				"Jquery",
@@ -166,7 +170,7 @@
 			"category" : "tools",
 			"list" : [
 				{
-					"name" : "nodejs (npm) / gulp / phonegap (cordova & ionic) / git",
+					"name" : "NodeJs (npm) / gulp / phonegap (cordova & ionic) / git",
 					"advancement" : "100"
 				},
 				{

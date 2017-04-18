@@ -8,6 +8,21 @@ nav
 	margin: 15px auto !important;
 }
 
+.extra.meta
+{
+	margin: 5px -5px;
+}
+
+.extra.meta>div
+{
+	padding: 2px 0;
+}
+
+.ui.items>.item .extra
+{
+	max-width: 320px;
+}
+
 .ui.cards>.card
 {
 	width: 100% !important;
@@ -44,4 +59,33 @@ nav
 	.device.only {
 		display: none !important;
 	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.tablet.only {
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.mobile.only {
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.ui.items:not(.unstackable)>.item {
+		flex-direction: initial;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.ui.items:not(.unstackable)>.item>.image+.content {
+		padding: 0 0 0 1em;
+	}
+}
+
+.hide
+{
+	display: none !important;
 }
