@@ -1,3 +1,8 @@
+body
+{
+	background: url('../images/background.png') right bottom fixed no-repeat, url('../images/background2.png') left top fixed no-repeat !important;
+}
+
 nav
 {
 	margin-bottom: 25px;
@@ -33,6 +38,11 @@ nav
 	max-width: 150px !important;
 }
 
+.ui.card>.image>img, .ui.cards>.card>.image>img
+{
+	min-height: 150px;
+}
+
 .ui.indicating.progress
 {
 	position: relative;
@@ -45,6 +55,30 @@ nav
 	top: -100%;
 	left: 0px;
 	text-align: left;
+}
+
+.ui.segment, .ui.segments .segment {
+	border-top-width: 1px !important;
+}
+
+.ui.linkedin .icon
+{
+	color: #0077B5;
+}
+
+.ui.github .icon
+{
+	color: #000000;
+}
+
+.ui.google.plus .icon
+{
+	color: #dd4b39;
+}
+
+.ui.facebook .icon
+{
+	color: #3b5998;
 }
 
 @media (min-width: 992px) {

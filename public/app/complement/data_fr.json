@@ -5,6 +5,32 @@
 	"mail" : "eddy.mhalli@eptiech.eu",
 	"locality" : "Paris",
 	"presentation" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+	"social_network" : [
+		{
+			"color" : "linkedin",
+			"link" : "https://www.linkedin.com/in/eddy-mhalli-232527a7/",
+			"icon" : "linkedin square",
+			"name" : "eddy-mhalli-232527a7"
+		},
+		{
+			"color" : "github",
+			"link" : "https://github.com/dobobaie",
+			"icon" : "github",
+			"name" : "dobobaie"
+		},
+		{
+			"color" : "google plus",
+			"link" : "https://plus.google.com/109774423458574527171",
+			"icon" : "google plus square",
+			"name" : "109774423458574527171"
+		},
+		{
+			"color" : "facebook",
+			"link" : "https://www.facebook.com/Dobobaie",
+			"icon" : "facebook",
+			"name" : "Dobobaie"
+		}
+	],
 	"experience" : [
 		{
 			"link" : "http://fearless-vr.com/",
@@ -208,7 +234,7 @@
 					"advancement" : "85"
 				},
 				{
-					"name" : "Scrum",
+					"name" : "Scrum / XP",
 					"advancement" : "80"
 				}
 			]

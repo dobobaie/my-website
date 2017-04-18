@@ -18,6 +18,7 @@ angular
 				presentation: data_complement_json.presentation,
 				mail: data_complement_json.mail,
 				birthday: $filter('date')((new Date()), 'yyyy') - $filter('date')(data_complement_json.birthday, 'yyyy'),
+				social_network: data_complement_json.social_network,
 				experience: data_complement_json.experience,
 				education: data_complement_json.education,
 				skills: data_complement_json.skills,
@@ -27,10 +28,10 @@ angular
 			$scope.getColorItem = function(id)
 			{
 				var list_color = [
-					'red',
-					'blue',
 					'green',
+					'red',
 					'yellow',
+					'blue',
 					'orange',
 				];
 				return (id == 0 ? '' : list_color[id - 1]);
@@ -51,7 +52,7 @@ angular
 						titleElem.css({top: '-'+(parseFloat(heightTitle) + 3)+'px'});
 					}
 				}
-				resizeElementFixed(150);
+				resizeElementFixed();
 			});
 			
 			if (navigator.userAgent.indexOf('PhantomJS') != -1) {
