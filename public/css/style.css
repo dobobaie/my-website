@@ -1,0 +1,46 @@
+nav
+{
+	margin-bottom: 25px;
+}
+
+.cadre
+{
+	margin: 15px auto !important;
+}
+
+.ui.cards>.card
+{
+	width: 100% !important;
+}
+
+.ui.items:not(.unstackable)>.item>.image>img
+{
+	max-height: 150px !important;
+}
+
+.ui.indicating.progress
+{
+	position: relative;
+}
+
+.ui.indicating.progress>.title.label
+{
+	z-index: 1;
+	position: absolute;
+	top: -100%;
+	left: 0px;
+	text-align: left;
+}
+
+@media screen and (min-height: 600px) {
+	.fixed
+	{
+		position: fixed !important;
+	}
+}
+
+@media (min-width: 991px) {
+	.device.only {
+		display: none !important;
+	}
+}
