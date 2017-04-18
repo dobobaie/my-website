@@ -50,6 +50,7 @@ jspm_packages
 .idea
 
 # Project
+export/
 public/lib
 public/app/config.json
 dist/*
