@@ -30,7 +30,6 @@ nav
 
 .ui.items:not(.unstackable)>.item>.image>img
 {
-	max-height: 150px !important;
 	max-width: 150px !important;
 }
 
@@ -48,14 +47,7 @@ nav
 	text-align: left;
 }
 
-@media screen and (min-height: 600px) {
-	.fixed
-	{
-		position: fixed !important;
-	}
-}
-
-@media (min-width: 991px) {
+@media (min-width: 992px) {
 	.device.only {
 		display: none !important;
 	}

@@ -51,6 +51,7 @@ angular
 						titleElem.css({top: '-'+(parseFloat(heightTitle) + 3)+'px'});
 					}
 				}
+				resizeElementFixed(150);
 			});
 			
 			if (navigator.userAgent.indexOf('PhantomJS') != -1) {
@@ -62,8 +63,6 @@ angular
 				$('div[ui-view="view"]').css({'padding' : '0 50px'});
 			}
 
-			resizeElementFixed();
-		
 			console.log('Good', data_json, data_complement_json, lang_json);
 		});
 	}])
