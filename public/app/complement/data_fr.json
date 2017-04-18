@@ -1,6 +1,6 @@
 {
 	"pictureUrl" : "https://www.linkedin.com/mpr/mpr/AAEAAQAAAAAAAAXdAAAAJDg3ZDY3YWViLTIxOWMtNDg3YS05NDkxLWNlNTliNzI5ODM2MA.jpg",
-	"birthday" : 771033600,
+	"birthday" : 771033600000,
 	"experience" : [
 		{
 			"link" : "http://fearless-vr.com/",
@@ -157,7 +157,7 @@
 					"advancement" : "90"
 				},
 				{
-					"name" : "ReactJs / Laravel",
+					"name" : "ReactJs / Laravel (eloquent) / Slim",
 					"advancement" : "75"
 				}
 			]
@@ -222,24 +222,29 @@
 	],
 	"interest" : [
 		{
+			"icon" : "rocket",
 			"name" : "La gestion de projet et la programmation",
-			"description" : "Être le chef d'orchestre sur un projet IT et participer au développement est pour moi l'un des meilleurs travaille au monde."
+			"description" : "Être le chef d'orchestre sur un projet IT et participer au développement est pour moi l'un des meilleurs travaille au monde. Toujours plus vers l'innovation !"
 		},
 		{
+			"icon" : "hand spock",
 			"name" : "Les films de sciences fictions",
-			"description" : "Pour les amateurs du Seigneur des anneaux et du Hobbit, oui oui, j'aime les films du Hobbit tout comme j'ai aimé le dernier Matrix."
+			"description" : "Pour les amateurs du Seigneur des anneaux et The Hobbit, oui oui, j'aime les films The Hobbit tout comme j'ai aimé le dernier Matrix."
 		},
 		{
+			"icon" : "anchor",
 			"name" : "La plongée sous-marine",
 			"description" : "Niveau 2 acquis en Corse, pour les amoureux de la faune marine, je conseil à 400% de pratiquer ce sport."
 		},
 		{
-			"name" : "L'idée de la physique quantique",
+			"icon" : "diamond",
+			"name" : "La physique quantique",
 			"description" : "N'étant pas un expert dans la physique en général, mes connaissances sont limités, toutefois c'est un domaine fascinant !"
 		},
 		{
+			"icon" : "spy",
 			"name" : "La philosophie et la psychanalyse",
-			"description" : "Mon métier m'oblige à avoir ma philosophie et à apprendre celle des autres pour toujours améliorer le processus sociales à appliqué sur les parties prenantes d'un projet."
+			"description" : "Mon métier me demande de mettre en pratique ma philosophie, mais pour cela, je dois connaitre et apprendre celle des autres et analyser le comportement des parties prenantes."
 		}
 	]
 }

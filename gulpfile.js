@@ -87,7 +87,7 @@ gulp.task('export', function() {
 							console.log('Page Rendered');
 							ph.exit();
 						});
-					}, 500);
+					}, 2000);
 				});
 			});
 		});
