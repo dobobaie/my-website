@@ -68,7 +68,7 @@ gulp.task('php', function() {
 });
 
 gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() {
-	gulp.watch(['./public/js/*.js'], ['js']);
+	gulp.watch(['./public/js/*.js', './public/js/**/*.js'], ['js']);
 	gulp.watch(['./public/css/*.css'], ['css']);
 	gulp.watch(['./public/*.html'], ['html']);
 	gulp.watch(['./public/templates/*.html'], ['templates']);
@@ -80,12 +80,14 @@ gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() 
 gulp.task('export', function() {
 	phantom.create().then(function(ph) {
 		ph.createPage().then(function(page) {
-			page.property('viewportSize', { width: 2480 / 2, height: 3508 / 2 }).then(function() {
+			page.property('viewportSize', { width: 2480 / 3, height: 3508 / 3 }).then(function() {
 				page.open('public/index.html').then(function(status) {
-					page.render('cv.pdf').then(function() {
-						console.log('Page Rendered');
-						ph.exit();
-					});
+					setTimeout(function() {
+						page.render('cv.pdf').then(function() {
+							console.log('Page Rendered');
+							ph.exit();
+						});
+					}, 500);
 				});
 			});
 		});
@@ -108,14 +110,14 @@ gulp.task('init', ['lib'], function() {
 	var mode = process.env.NODE_ENV || 'dev';
 	if (mode == 'dev') {
 		gulp
-			.src('./public/app/config_dev.json')
+			.src('./public/app/config/config_dev.json')
 			.pipe(rename('./public/app/config.json'))
 			.pipe(gulp.dest('./'))
 		;
 		return gulp;
 	}
 	gulp
-		.src('./public/app/config_prod.json')
+		.src('./public/app/config/config_prod.json')
 		.pipe(rename('./public/app/config.json'))
 		.pipe(gulp.dest('./'))
 	;

@@ -3,8 +3,8 @@
 		
 		<div class="ui centered card fixed">
 			<div class="image">
-				<img src="./images/elliot.jpg">
-				<!-- <img ng-src="{{infos_cv.pictureUrl}}"> -->
+				<!-- <img src="./images/elliot.jpg"> -->
+				<img ng-src="{{infos_cv.pictureUrl}}">
 			</div>
 			<div class="content">
 				<a class="header">{{infos_cv.firstName}} {{infos_cv.lastName}}</a>
@@ -31,9 +31,10 @@
 					<div class="ui segment cadre">
 						<div class="ui divided items">
 							<div class="item">
-								<div class="image"><img src="./images/elliot.jpg"></div>
+								<!-- <div class="image"><img src="./images/elliot.jpg"></div> -->
+								<div class="image"><img ng-src="{{infos_cv.pictureUrl}}"></div>
 								<div class="content">
-									<a class="header">Kristy Clément</a>
+									<a class="header">{{infos_cv.firstName}} {{infos_cv.lastName}}</a>
 									<div class="meta">
 										<span class="cinema">Born in 2013</span>
 									</div>
@@ -59,8 +60,8 @@
 				<h3 class="ui header">
 					<i class="travel icon"></i>
 					<div class="content">
-						Lorem ipsum dolor sit amet
-						<div class="sub header">Lorem ipsum dolor sit amet</div>
+						{{infos_lang.experience}}
+						<!-- <div class="sub header">Lorem ipsum dolor sit amet</div> -->
 					</div>
 				</h3>
 	
@@ -181,8 +182,7 @@
 				<h3 class="ui header">
 					<i class="book icon"></i>
 					<div class="content">
-						Lorem ipsum dolor sit amet
-						<div class="sub header">Lorem ipsum dolor sit amet</div>
+						{{infos_lang.education}}
 					</div>
 				</h3>
 
@@ -264,17 +264,21 @@
 					<h3 class="ui header">
 						<i class="tasks icon"></i>
 						<div class="content">
-							Lorem ipsum dolor sit amet
-							<div class="sub header">Lorem ipsum dolor sit amet</div>
+							{{infos_lang.skill}}
 						</div>
 					</h3>
 			
 					<div class="ui centered cards">
 						<div class="card">
-							<div class="content">
-								<div class="header">Elliot Fu</div>
-								<div class="meta">Friend</div>
-								<div class="description">Elliot Fu is a film-maker from New York.</div>
+							<div class="content" ng-repeat="infos_skill in infos_cv.skills" >
+								<div class="header">{{infos_lang[infos_skill.category]}}</div>
+								<!-- <div class="description">Elliot Fu is a film-maker from New York.</div> -->
+								<div ng-repeat="skill in infos_skill.list" class="ui indicating progress" id="{{infos_skill.category}}_{{$index}}">
+									<div class="title label">{{skill.name}}</div>
+									<div class="bar">
+										<div class="progress"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -282,8 +286,7 @@
 					<h3 class="ui header">
 						<i class="comments outline icon"></i>
 						<div class="content">
-							Lorem ipsum dolor sit amet
-							<div class="sub header">Lorem ipsum dolor sit amet</div>
+							{{infos_lang.language}}
 						</div>
 					</h3>
 			
@@ -300,8 +303,7 @@
 					<h3 class="ui header">
 						<i class="heartbeat icon"></i>
 						<div class="content">
-							Lorem ipsum dolor sit amet
-							<div class="sub header">Lorem ipsum dolor sit amet</div>
+							{{infos_lang.interest}}
 						</div>
 					</h3>
 			
