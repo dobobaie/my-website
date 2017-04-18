@@ -101,6 +101,7 @@ gulp.task('lib', function() {
 	gulp.src('./node_modules/semantic-ui/dist/semantic.min.css').pipe(gulp.dest('./public/lib/semantic'));
 	gulp.src('./node_modules/semantic-ui/dist/themes/**/*').pipe(gulp.dest('./public/lib/semantic/themes'));
 	gulp.src('./node_modules/angular/*').pipe(gulp.dest('./public/lib/angular'));
+	gulp.src('./node_modules/angular-i18n/*').pipe(gulp.dest('./public/lib/angular-i18n'));
 	gulp.src('./node_modules/angular-ui-router/release/*').pipe(gulp.dest('./public/lib/angular-ui-router'));
 	gulp.src('./node_modules/oclazyload/dist/*').pipe(gulp.dest('./public/lib/oclazyload'));
 	return gulp;

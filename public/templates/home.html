@@ -72,14 +72,20 @@
 									<div class="content">
 										<a class="header">{{experience.name}}</a>
 										<div class="meta">
-											<span class="cinema">{{experience.status}}</span>
-										</div>
-										<div class="description">
-											<!-- <p ng-bind="experience.description"></p> -->
+											<span class="status">{{experience.status}}</span>
 										</div>
 										<div class="extra">
-											<div class="ui label">IMAX</div>
-											<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+											<div class="meta">
+												<span class="status">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span></span>
+											</div>
+											<div class="ui label" ng-repeat="skill in experience.skills">{{skill}}</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<div class="description">
+											<p ng-bind-html="safeHtml(experience.short_description)"></p>
 										</div>
 									</div>
 								</div>
@@ -103,14 +109,23 @@
 									<div class="content">
 										<a class="header">{{education.name}}</a>
 										<div class="meta">
-											<span class="cinema">{{education.status}}</span>
+											<div class="meta">
+												<span class="status">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></span>
+											</div>
+											<span class="status">{{education.status}}</span>
+											<div class="extra">
+												<div class="meta">
+													<span class="status">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></span>
+												</div>
+												<div class="ui label" ng-repeat="skill in education.skills">{{skill}}</div>
+											</div>
 										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
 										<div class="description">
-											<!-- <p ng-bind="education.description"></p> -->
-										</div>
-										<div class="extra">
-											<div class="ui label">IMAX</div>
-											<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+											<p ng-bind-html="safeHtml(education.short_description)"></p>
 										</div>
 									</div>
 								</div>
