@@ -1,11 +1,11 @@
-var resizeElementFixed = function(fixedMarge) {
+var resizeElementFixed = function() {
 	$('.fixed').each(function(index, value) {
 		var rect = value.getBoundingClientRect();
 		var width = $(value).parent().css('width');
 		var padding = $(value).parent().css('padding');
 		width = parseFloat(width.substring(0, width.length - 2));
 		padding = parseFloat(padding.substring(0, padding.length - 2));
-		if ($(window).height() >= rect.top + $(value).outerHeight() + fixedMarge) {
+		if ($(window).height() >= rect.top + $(value).outerHeight()) {
 			$(value).css({'position' : 'fixed', 'max-width': (width - (padding * 2))});
 			return ;
 		}

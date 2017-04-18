@@ -21,13 +21,14 @@
 					<div class="description">{{infos_cv.presentation}}</div>
 				</div>
 			</div>
-			<div class="ui centered purple card">
+			<div class="ui centered purple card" ng-if="infos_cv.social_network.length > 0">
 				<div class="content">
-					<div class="extra meta">
-						<div class="linkedin"><a><i class="large linkedin square icon"></i> 123</a></div>
-						<div class="github"><a><i class="large github icon"></i> 123</a></div>
-						<div class="google plus"><a><i class="large google plus square icon"></i> 123</a></div>
-						<div class="facebook"><a><i class="large facebook icon"></i> 123</a></div>
+					<div class="extra content">
+						<span ng-repeat="social_network in infos_cv.social_network" class="ui {{social_network.color}}">
+							<a href="{{social_network.link}}" target="_blank">
+								<i class="big {{social_network.icon}} icon"></i>
+							</a>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -55,6 +56,13 @@
 										<div class="locality" ng-if="infos_cv.locality != ''"><a href="http://maps.google.com/maps?q={{infos_cv.locality}}" target="_blank"><i class="marker icon"></i> {{infos_cv.locality}}</a></div>
 										<div class="phone" ng-if="infos_cv.phone != ''"><a href="tel:{{infos_cv.phone}}"><i class="phone icon"></i> {{infos_cv.phone}}</a></div>
 										<div class="mail" ng-if="infos_cv.mail != ''"><a href="mailto:{{infos_cv.mail}}"><i class="mail icon"></i> {{infos_cv.mail}}</a></div>
+									</div>
+									<div class="exta meta">
+										<span ng-repeat="social_network in infos_cv.social_network" class="ui {{social_network.color}}">
+											<a href="{{social_network.link}}" target="_blank">
+												<i class="big {{social_network.icon}} icon"></i>
+											</a>
+										</span>
 									</div>
 								</div>
 								<div class="ui vertical divider hide tablet only" ng-if="infos_cv.presentation != ''"></div>
