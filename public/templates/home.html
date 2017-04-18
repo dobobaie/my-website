@@ -160,39 +160,49 @@
 					</div>
 				</div>
 
-				<div class="ui container cadre">
+				<div class="ui container cadre" ng-if="infos_cv.language.length > 0">
 					<h3 class="ui header">
 						<i class="comments outline icon"></i>
 						<div class="content">
 							{{infos_lang.language}}
 						</div>
 					</h3>
-			
 					<div class="ui centered yellow cards">
 						<div class="card">
 							<div class="content">
-								<div class="header">Elliot Fu</div>
-								<div class="meta">Friend</div>
-								<div class="description">Elliot Fu is a film-maker from New York.</div>
+								<div class="ui relaxed divided list">
+									<div class="item" ng-repeat="lang in infos_cv.language">
+										<!-- <i class="large github middle aligned icon"></i> -->
+										<div class="content">
+											<a class="header">{{lang.name}}</a>
+											<div class="description">{{lang.advancement}}</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="ui container cadre">
+				<div class="ui container cadre" ng-if="infos_cv.interest.length > 0">
 					<h3 class="ui header">
 						<i class="heartbeat icon"></i>
 						<div class="content">
 							{{infos_lang.interest}}
 						</div>
 					</h3>
-			
 					<div class="ui centered red cards">
 						<div class="card">
 							<div class="content">
-								<div class="header">Elliot Fu</div>
-								<div class="meta">Friend</div>
-								<div class="description">Elliot Fu is a film-maker from New York.</div>
+								<div class="ui relaxed divided list">
+									<div class="item" ng-repeat="interest in infos_cv.interest">
+										<!-- <i class="large github middle aligned icon"></i> -->
+										<div class="content">
+											<a class="header">{{interest.name}}</a>
+											<div class="description">{{interest.description}}</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

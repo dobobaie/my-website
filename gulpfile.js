@@ -83,7 +83,7 @@ gulp.task('export', function() {
 			page.property('viewportSize', { width: 2480 / 3, height: 3508 / 3 }).then(function() {
 				page.open('public/index.html').then(function(status) {
 					setTimeout(function() {
-						page.render('cv.pdf').then(function() {
+						page.render('export/cv.pdf').then(function() {
 							console.log('Page Rendered');
 							ph.exit();
 						});
