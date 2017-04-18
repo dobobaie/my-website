@@ -55,222 +55,82 @@
 		</div>
 
 		<div class="ui grid">
-			<div class="ten wide column">
+			<div class="sixteen wide mobile ten wide tablet ten wide computer column">
 				
-				<h3 class="ui header">
-					<i class="travel icon"></i>
-					<div class="content">
-						{{infos_lang.experience}}
-						<!-- <div class="sub header">Lorem ipsum dolor sit amet</div> -->
-					</div>
-				</h3>
-	
-				<div class="ui segments">
-					<div class="ui segment">
-						
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+				<div class="ui container" ng-if="infos_cv.experience.length > 0">
+					<h3 class="ui header">
+						<i class="travel icon"></i>
+						<div class="content">
+							{{infos_lang.experience}}
+						</div>
+					</h3>
+					<div class="ui segments">
+						<div ng-repeat="experience in infos_cv.experience" ng-class="'ui segment ' + getColorItem($index)">
+							<div class="ui divided items">
+								<div class="item">
+									<div class="image"><img ng-src="{{experience.logo}}"></div>
+									<div class="content">
+										<a class="header">{{experience.name}}</a>
+										<div class="meta">
+											<span class="cinema">{{experience.status}}</span>
+										</div>
+										<div class="description">
+											<!-- <p ng-bind="experience.description"></p> -->
+										</div>
+										<div class="extra">
+											<div class="ui label">IMAX</div>
+											<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
-					<div class="ui red segment">
-					
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="ui blue segment">
-					
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="ui green segment">
-					
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="ui yellow segment">
-						
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
 				</div>
 
-				<h3 class="ui header">
-					<i class="book icon"></i>
-					<div class="content">
-						{{infos_lang.education}}
-					</div>
-				</h3>
-
-				<div class="ui segments">
-
-					<div class="ui segment">
-						
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+				<div class="ui container cadre" ng-if="infos_cv.education.length > 0">
+					<h3 class="ui header">
+						<i class="book icon"></i>
+						<div class="content">
+							{{infos_lang.education}}
+						</div>
+					</h3>
+					<div class="ui segments">
+						<div ng-repeat="education in infos_cv.education" ng-class="'ui segment ' + getColorItem($index)">
+							<div class="ui divided items">
+								<div class="item">
+									<div class="image"><img ng-src="{{education.logo}}"></div>
+									<div class="content">
+										<a class="header">{{education.name}}</a>
+										<div class="meta">
+											<span class="cinema">{{education.status}}</span>
+										</div>
+										<div class="description">
+											<!-- <p ng-bind="education.description"></p> -->
+										</div>
+										<div class="extra">
+											<div class="ui label">IMAX</div>
+											<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
-					<div class="ui red segment">
-					
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="ui blue segment">
-					
-						<div class="ui divided items">
-							<div class="item">
-								<div class="image"><img src="./images/image.png"></div>
-								<div class="content">
-									<a class="header">Lorem ipsum dolor sit amet</a>
-									<div class="meta">
-										<span class="cinema">Lorem ipsum dolor sit amet2</span>
-									</div>
-									<div class="description">
-										<p></p>
-									</div>
-									<div class="extra">
-										<div class="ui label">IMAX</div>
-										<div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				
 				</div>
 			</div>
-			<div class="six wide column">
+			<div class="sixteen wide mobile six wide tablet six wide computer column">
 	
-				<div class="ui container cadre">
-
+				<div class="ui container" ng-if="infos_cv.skills.length > 0">
 					<h3 class="ui header">
 						<i class="tasks icon"></i>
 						<div class="content">
 							{{infos_lang.skill}}
 						</div>
 					</h3>
-			
 					<div class="ui centered cards">
 						<div class="card">
-							<div class="content" ng-repeat="infos_skill in infos_cv.skills" >
+							<div class="content" ng-repeat="infos_skill in infos_cv.skills">
 								<div class="header">{{infos_lang[infos_skill.category]}}</div>
 								<!-- <div class="description">Elliot Fu is a film-maker from New York.</div> -->
 								<div ng-repeat="skill in infos_skill.list" class="ui indicating progress" id="{{infos_skill.category}}_{{$index}}">
@@ -282,7 +142,9 @@
 							</div>
 						</div>
 					</div>
+				</div>
 
+				<div class="ui container cadre">
 					<h3 class="ui header">
 						<i class="comments outline icon"></i>
 						<div class="content">
@@ -299,7 +161,9 @@
 							</div>
 						</div>
 					</div>
+				</div>
 
+				<div class="ui container cadre">
 					<h3 class="ui header">
 						<i class="heartbeat icon"></i>
 						<div class="content">
@@ -316,7 +180,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 
 			</div>
