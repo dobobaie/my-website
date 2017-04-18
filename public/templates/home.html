@@ -70,7 +70,8 @@
 								<div class="item">
 									<div class="image"><img ng-src="{{experience.logo}}"></div>
 									<div class="content">
-										<a class="header">{{experience.name}}</a>
+										<a class="header" ng-if="experience.link.length > 0" ng-href="{{experience.link}}" target="_blank">{{experience.name}}</a>
+										<a class="header" ng-if="experience.link.length == 0">{{experience.name}}</a>
 										<div class="meta">
 											<span class="status">{{experience.status}}</span>
 										</div>
@@ -143,7 +144,7 @@
 							{{infos_lang.skill}}
 						</div>
 					</h3>
-					<div class="ui centered cards">
+					<div class="ui centered green cards">
 						<div class="card">
 							<div class="content" ng-repeat="infos_skill in infos_cv.skills">
 								<div class="header">{{infos_lang[infos_skill.category]}}</div>
@@ -167,7 +168,7 @@
 						</div>
 					</h3>
 			
-					<div class="ui centered cards">
+					<div class="ui centered yellow cards">
 						<div class="card">
 							<div class="content">
 								<div class="header">Elliot Fu</div>
@@ -186,7 +187,7 @@
 						</div>
 					</h3>
 			
-					<div class="ui centered cards">
+					<div class="ui centered red cards">
 						<div class="card">
 							<div class="content">
 								<div class="header">Elliot Fu</div>
