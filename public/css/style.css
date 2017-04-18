@@ -16,6 +16,7 @@ nav
 .ui.items:not(.unstackable)>.item>.image>img
 {
 	max-height: 150px !important;
+	max-width: 150px !important;
 }
 
 .ui.indicating.progress

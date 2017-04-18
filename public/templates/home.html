@@ -9,9 +9,10 @@
 			<div class="content">
 				<a class="header">{{infos_cv.firstName}} {{infos_cv.lastName}}</a>
 				<div class="meta">
-					<span class="date">Born in 2013</span>
+					<span class="birthday"><i class="birthday icon"></i> {{infos_cv.birthday}} {{infos_lang.years}}</span>
+					<span class="live"><i class="live icon"></i> {{infos_cv.birthday}} {{infos_lang.years}}</span>
+					<span class="phone"><i class="phone icon"></i> {{infos_cv.birthday}} {{infos_lang.years}}</span>
 				</div>
-				<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 			</div>
 			<div class="extra content">
 				<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -110,16 +111,13 @@
 									<div class="content">
 										<a class="header">{{education.name}}</a>
 										<div class="meta">
+											<span class="status">{{education.status}}</span>
+										</div>
+										<div class="extra">
 											<div class="meta">
 												<span class="status">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></span>
 											</div>
-											<span class="status">{{education.status}}</span>
-											<div class="extra">
-												<div class="meta">
-													<span class="status">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></span>
-												</div>
-												<div class="ui label" ng-repeat="skill in education.skills">{{skill}}</div>
-											</div>
+											<div class="ui label" ng-repeat="skill in education.skills">{{skill}}</div>
 										</div>
 									</div>
 								</div>
@@ -197,6 +195,7 @@
 								<div class="ui relaxed divided list">
 									<div class="item" ng-repeat="interest in infos_cv.interest">
 										<!-- <i class="large github middle aligned icon"></i> -->
+										<i ng-if="typeof(interest.icon) != 'undefined'" class="large {{interest.icon}} middle aligned icon"></i>
 										<div class="content">
 											<a class="header">{{interest.name}}</a>
 											<div class="description">{{interest.description}}</div>
