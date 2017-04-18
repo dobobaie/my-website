@@ -1,7 +1,7 @@
 angular
 	.module(config.nameRoute)
 	.controller('HomeCtr', ['$scope', '$timeout', '$sce', '$filter', 'appSystem', function ($scope, $timeout, $sce, $filter, appSystem) {
-		appSystem.ready(function ()
+		appSystem.ready(function()
 		{
 			var lang_json = appSystem.get('lang_json');
 			var data_json = appSystem.get('data_json');
