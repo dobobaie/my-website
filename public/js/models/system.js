@@ -20,6 +20,8 @@ angular
 				$analytics.setUserProperties({
 					userId: _engine.data.config_json.google_analytics,
 				});
+				ga('create', _engine.data.config_json.google_analytics, 'auto');
+				ga('send', 'pageview');
 			}
 			var execListFunc = function() {
 				for (var index in _engine.list_ready) {
