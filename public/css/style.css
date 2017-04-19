@@ -23,6 +23,11 @@ nav
 	padding: 2px 0;
 }
 
+.extra.content.social_network
+{
+	text-align: center;
+}
+
 .card.picture
 {
 	max-width: 200px;
@@ -97,6 +102,7 @@ nav
 	color: #3b5998;
 }
 
+
 @media (min-width: 992px) {
 	.device.only {
 		display: none !important;
@@ -106,7 +112,7 @@ nav
 @media only screen and (max-width: 991px) {
 	.ui.items>.item .meta *
 	{
-		margin: .3em 0 !important;
+		margin: .1em 0 !important;
 	}
 }
 
