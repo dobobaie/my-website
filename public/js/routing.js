@@ -1,5 +1,5 @@
 appRoute
-	.config(function($httpProvider, $compileProvider)
+	.config(function($httpProvider, $compileProvider, $analyticsProvider)
 	{
 		//
 		$compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ms-appx|ms-appdata|x-wmapp0|tel|file|filesystem|http|local|data|ftp|mailto|chrome-extension):/);
@@ -10,7 +10,11 @@ appRoute
 		$httpProvider.defaults.headers.post = {};
 		$httpProvider.defaults.headers.put = {};
 		$httpProvider.defaults.headers.patch = {};
-		$httpProvider.defaults.useXDomain = true;	
+		$httpProvider.defaults.useXDomain = true;
+
+		//
+		$analyticsProvider.virtualPageviews(true);
+		$analyticsProvider.withAutoBase(true);
 	})
 	.config(function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider)
 	{
@@ -30,7 +34,7 @@ appRoute
 								'./js/models/navigation.js',
 							]
 						});
-					}]
+					}],
 				},
 				views: {
 					'nav': {

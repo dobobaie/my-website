@@ -1,6 +1,6 @@
 angular
 	.module(config.nameRoute)
-	.factory('appSystem', ['$injector', '$rootScope', 'appNetwork', function($injector, $rootScope, appNetwork)
+	.factory('appSystem', ['$injector', '$rootScope', '$analytics', 'appNetwork', function($injector, $rootScope, $analytics, appNetwork)
 	{
 		var _engine = {
 			list_ready: [],
@@ -16,10 +16,16 @@ angular
 
 		var initSystem = (function()
 		{
+			var analyticsConfig = function() {
+				$analytics.setUserProperties({
+					userId: _engine.data.config_json.google_analytics,
+				});
+			}
 			var execListFunc = function() {
 				for (var index in _engine.list_ready) {
 					_engine.list_ready[index]();
 				}
+				analyticsConfig();
 			}
 			var getLang = function() {
 				appNetwork

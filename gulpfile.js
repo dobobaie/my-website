@@ -104,6 +104,8 @@ gulp.task('lib', function() {
 	gulp.src('./node_modules/angular/*').pipe(gulp.dest('./public/lib/angular'));
 	gulp.src('./node_modules/angular-i18n/*').pipe(gulp.dest('./public/lib/angular-i18n'));
 	gulp.src('./node_modules/angular-ui-router/release/*').pipe(gulp.dest('./public/lib/angular-ui-router'));
+	gulp.src('./node_modules/angulartics/dist/*').pipe(gulp.dest('./public/lib/angulartics'));
+	gulp.src('./node_modules/angulartics-google-analytics/dist/*').pipe(gulp.dest('./public/lib/angulartics-google-analytics'));
 	gulp.src('./node_modules/oclazyload/dist/*').pipe(gulp.dest('./public/lib/oclazyload'));
 	return gulp;
 });
