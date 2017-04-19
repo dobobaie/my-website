@@ -5,6 +5,7 @@ var gulp 		= require('gulp');
 var rename		= require('gulp-rename');
 var php 		= require('gulp-connect-php');
 var browserSync = require('browser-sync');
+var browserInit = browserSync.create();
 var phantom 	= require('phantom');   
 var shell 		= require('shelljs');
 
@@ -20,21 +21,21 @@ var browser 	=
 gulp.task('html', function() {
 	return gulp
 		.src('public/*.html')
-		.pipe(browserSync.reload({ stream: true }))
+		.pipe(browserInit.reload({ stream: true }))
 	;
 });
 
 gulp.task('templates', function() {
 	return gulp
 		.src('public/templates/*.html')
-		.pipe(browserSync.reload({ stream: true }))
+		.pipe(browserInit.reload({ stream: true }))
 	;
 });
 
 gulp.task('js', function() {
 	return gulp
 		.src('public/js/*.js')
-		.pipe(browserSync.reload({
+		.pipe(browserInit.reload({
 			stream: true
 		}))
 	;
@@ -43,7 +44,7 @@ gulp.task('js', function() {
 gulp.task('css', function() {
 	return gulp
 		.src('public/css/*.css')
-		.pipe(browserSync.reload({
+		.pipe(browserInit.reload({
 			stream: true
 		}))
 	;
@@ -52,7 +53,7 @@ gulp.task('css', function() {
 gulp.task('app', function() {
 	return gulp
 		.src('public/app/*.json')
-		.pipe(browserSync.reload({
+		.pipe(browserInit.reload({
 			stream: true
 		}))
 	;
@@ -61,7 +62,7 @@ gulp.task('app', function() {
 gulp.task('php', function() {
 	return gulp
 		.src('private/*.php')
-		.pipe(browserSync.reload({
+		.pipe(browserInit.reload({
 			stream: true
 		}))
 	;
@@ -126,7 +127,7 @@ gulp.task('init', ['lib'], function() {
 });
 
 gulp.task('serve', ['watch'], function() {
-	browserSync.create().init({
+	browserInit.init({
 		server: {
 			baseDir: 'public/',
 		},
