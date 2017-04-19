@@ -63,8 +63,6 @@ angular
 				});
 				$('div[ui-view="view"]').css({'padding' : '0 50px'});
 			}
-
-			console.log('Good', data_json, data_complement_json, lang_json);
 		});
 	}])
 ;
