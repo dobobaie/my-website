@@ -1,6 +1,4 @@
-## My website
-
-### Compiler le frontend
+# My website
 
 ## Installer Node JS
 * Windows : http://nodejs.org/download/
@@ -13,7 +11,9 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo bash -
 sudo apt-get install nodejs
 ```
 
-## Installation des dependances
+## Compiler le frontend
+
+### Installation des dependances
 
 ```sh
 npm install
@@ -22,36 +22,36 @@ npm install
 ### Semantic option
 Vous pouvez choisir l'option proposer par défaut, nous utilisons uniquement le dossier dans `node_module`.
 
-## Lancer le frontend
+### Lancer le frontend
 
 ```sh
 gulp init
 gulp serve
 ```
 
-### Compiler le backend (api linkedin)
+## Compiler le backend (api linkedin)
 
-## Installation des dependance
+### Installation des dependance
 * Composer : https://getcomposer.org/
 
 ```
 composer install
 ```
 
-## Configuration
+### Configuration
 
 - Déplacer ".env_config.sample" vers ".env_config"
 - Ouvrir le fichier
 - Compléter "LINKEDIN_ID" et "LINKEDIN_SECRET"
 - Enregister
 
-## Lancer le backend
+### Lancer le backend
 
 ```sh
 gulp backend
 ```
 
-## NOTE 
+### NOTE 
 
 N'oubliez pas d'ajouter la ligne ci-dessous dans php.ini
 ```
