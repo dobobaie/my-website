@@ -4,7 +4,7 @@
 	"phone" : "+33 6 27 03 69 69",
 	"mail" : "eddy.mhalli@eptiech.eu",
 	"locality" : "Paris",
-	"presentation" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+	"presentation" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire, m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveau challenge, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
 	"social_network" : [
 		{
 			"color" : "linkedin",
@@ -154,7 +154,7 @@
 			"category" : "programmation",
 			"list" : [
 				{
-					"name" : "Javascript/TypeScript",
+					"name" : "Javascript (nodeJs) / TypeScript",
 					"advancement" : "98"
 				},
 				{
@@ -196,7 +196,7 @@
 			"category" : "tools",
 			"list" : [
 				{
-					"name" : "NodeJs (npm) / gulp / phonegap (cordova & ionic) / git",
+					"name" : "Npm / gulp / phonegap (cordova & ionic) / git",
 					"advancement" : "100"
 				},
 				{

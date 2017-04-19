@@ -23,6 +23,22 @@ nav
 	padding: 2px 0;
 }
 
+.card.picture
+{
+	max-width: 200px;
+	margin: auto;
+	padding: 15px;
+}
+
+.ui.card>.content>.description,
+.ui.cards>.card>.content>.description,
+.ui.list .list>.item .description,
+.ui.list>.item .description,
+.ui.items>.item>.content p
+{
+	text-align: justify;
+}
+
 .ui.items>.item .meta *
 {
 	margin: .3em;
@@ -87,9 +103,20 @@ nav
 	}
 }
 
+@media only screen and (max-width: 991px) {
+	.ui.items>.item .meta *
+	{
+		margin: .3em 0 !important;
+	}
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
 	.tablet.only {
 		display: block !important;
+		width: 55% !important;
+	}
+	.ui.items>.item>.image+.content {
+		width: 35% !important;
 	}
 }
 
