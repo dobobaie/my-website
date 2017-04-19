@@ -19,8 +19,8 @@
 						<div class="mail" ng-if="infos_cv.mail != ''"><a href="mailto:{{infos_cv.mail}}"><i class="mail icon"></i> {{infos_cv.mail}}</a></div>
 					</div>
 				</div>
-				<div class="extra content" ng-if="infos_cv.presentation != ''">
-					<div class="description">{{infos_cv.presentation}}</div>
+				<div class="extra content" ng-if="infos_cv.summary != ''">
+					<div class="description">{{infos_cv.summary}}</div>
 				</div>
 			</div>
 			<div class="ui centered purple card" ng-if="infos_cv.social_network.length > 0">
@@ -65,14 +65,14 @@
 										</span>
 									</div>
 								</div>
-								<div class="ui vertical divider hide tablet only" ng-if="infos_cv.presentation != ''"></div>
-								<div class="extra content hide tablet only" ng-if="infos_cv.presentation != ''">
-									<div class="description">{{infos_cv.presentation}}</div>
+								<div class="ui vertical divider hide tablet only" ng-if="infos_cv.summary != ''"></div>
+								<div class="extra content hide tablet only" ng-if="infos_cv.summary != ''">
+									<div class="description">{{infos_cv.summary}}</div>
 								</div>
 							</div>
-							<div class="ui divider hide mobile only" ng-if="infos_cv.presentation != ''"></div>
-							<div class="extra content hide mobile only" ng-if="infos_cv.presentation != ''">
-								<div class="description">{{infos_cv.presentation}}</div>
+							<div class="ui divider hide mobile only" ng-if="infos_cv.summary != ''"></div>
+							<div class="extra content hide mobile only" ng-if="infos_cv.summary != ''">
+								<div class="description">{{infos_cv.summary}}</div>
 							</div>
 						</div>
 					</div>
@@ -100,7 +100,7 @@
 										<a class="header" ng-if="experience.link.length > 0" ng-href="{{experience.link}}" target="_blank">{{experience.name}}</a>
 										<a class="header" ng-if="experience.link.length == 0">{{experience.name}}</a>
 										<div class="meta">
-											<span class="status">{{experience.status}}</span>
+											<span class="status" ng-bind-html="safeHtml(experience.status)"></span>
 										</div>
 									</div>
 								</div>

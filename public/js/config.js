@@ -4,7 +4,7 @@ var config = {
 	moduleCtr: [],
 	
 	nameRoute: 'routerApp',
-	moduleRoute: ['controllerApp', 'ui.router', 'oc.lazyLoad'],
+	moduleRoute: ['controllerApp', 'ui.router', 'oc.lazyLoad', 'angulartics', 'angulartics.google.analytics'],
 	
 };
 
