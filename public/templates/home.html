@@ -24,14 +24,12 @@
 				</div>
 			</div>
 			<div class="ui centered purple card" ng-if="infos_cv.social_network.length > 0">
-				<div class="content">
-					<div class="extra content">
-						<span ng-repeat="social_network in infos_cv.social_network" class="ui {{social_network.color}}">
-							<a href="{{social_network.link}}" target="_blank">
-								<i class="big {{social_network.icon}} icon"></i>
-							</a>
-						</span>
-					</div>
+				<div class="extra content social_network">
+					<span ng-repeat="social_network in infos_cv.social_network" class="ui {{social_network.color}}">
+						<a href="{{social_network.link}}" target="_blank">
+							<i class="big {{social_network.icon}} icon"></i>
+						</a>
+					</span>
 				</div>
 			</div>
 		</div>
