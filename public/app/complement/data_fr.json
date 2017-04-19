@@ -4,7 +4,8 @@
 	"phone" : "+33 6 27 03 69 69",
 	"mail" : "eddy.mhalli@eptiech.eu",
 	"locality" : "Paris",
-	"presentation" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire, m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveau challenge, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
+	"headline" : "Recherche part-time de 3 jours par semaine à partir de Septembre",
+	"summary" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire, m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveau challenge, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
 	"social_network" : [
 		{
 			"color" : "linkedin",
@@ -35,7 +36,7 @@
 		{
 			"link" : "http://fearless-vr.com/",
 			"name" : "Fearless VR",
-			"status" : "Gestionnaire de projet et développeur",
+			"status" : "Gestionnaire de projet et développeur<br/><b>Projet de fin d'étude</b>",
 			"logo" : "./photos/FEARLESS.png",
 			"start_date" : 1443657600000,
 			"end_date" : null,
