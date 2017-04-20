@@ -59,7 +59,7 @@
 						</div>
 					</div>
 
-					<div class="flat clouds items">
+					<div class="flat orange items">
 						<div class="item">
 							<div class="header">{{infos_cv.headline}}</div>
 							<div class="description">{{infos_cv.summary}}</div>
@@ -68,12 +68,19 @@
 
 				</div>
 
-				<div class="flat yellow items">
-					<div class="item" ng-repeat="experience in infos_cv.experience">
-						<div class="header">{{experience.name}}</div>
-						<div class="description" ng-bind-html="safeHtml(experience.short_description)"></div>
+				<div class="flat items pin">
+					<div class="item">
+						<div class="meta delimit">
+							<div class="title left font"><a><i class="travel icon"></i> {{infos_lang.experience}}</a></div>
+						</div>
 					</div>
 				</div>
+				<ul class="flat clouds items">
+					<li ng-repeat="experience in infos_cv.experience" class="item">
+						<div class="header">{{experience.name}}</div>
+						<div class="description" ng-bind-html="safeHtml(experience.short_description)"></div>
+					</li>
+				</ul>
 
 				<div class="flat blue items">
 					<div class="item" ng-repeat="education in infos_cv.education">
@@ -95,7 +102,7 @@
 				<div class="flat items pin">
 					<div class="item">
 						<div class="meta">
-							<div class="name" ng-if="infos_cv.name != ''"><a><i class="user icon"></i> {{infos_cv.firstName}} {{infos_cv.lastName}}</a></div>
+							<div class="title"><a><i class="user icon"></i> {{infos_cv.firstName}} {{infos_cv.lastName}}</a></div>
 						</div>
 					</div>
 				</div>
@@ -120,114 +127,8 @@
 </div>
 
 <div class="ui grid">
-	<div class="sixteen wide mobile ten wide tablet ten wide computer column">
-		
-		<div class="ui container" ng-if="infos_cv.experience.length > 0">
-			<h3 class="ui header">
-				<i class="travel icon"></i>
-				<div class="content">
-					{{infos_lang.experience}}
-				</div>
-			</h3>
-			<div class="ui segments">
-				<div ng-repeat="experience in infos_cv.experience" ng-class="'ui segment ' + getColorItem($index)">
-					<div class="ui divided items">
-						<div class="item">
-							<div class="image"><img ng-src="{{experience.logo}}"></div>
-							<div class="content">
-								<a class="header" ng-if="experience.link.length > 0" ng-href="{{experience.link}}" target="_blank">{{experience.name}}</a>
-								<a class="header" ng-if="experience.link.length == 0">{{experience.name}}</a>
-								<div class="meta">
-									<span class="status" ng-bind-html="safeHtml(experience.status)"></span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="content">
-								<div class="extra">
-									<div class="meta">
-										<span class="status">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span></span>
-									</div>
-								</div>
-								<div class="description">
-									<p ng-bind-html="safeHtml(experience.short_description)"></p>
-								</div>
-								<div class="extra">
-									<div class="meta">
-										<div class="ui label" ng-repeat="skill in experience.skills">{{skill}}</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="ui container cadre" ng-if="infos_cv.education.length > 0">
-			<h3 class="ui header">
-				<i class="book icon"></i>
-				<div class="content">
-					{{infos_lang.education}}
-				</div>
-			</h3>
-			<div class="ui segments">
-				<div ng-repeat="education in infos_cv.education" ng-class="'ui segment ' + getColorItem($index)">
-					<div class="ui divided items">
-						<div class="item">
-							<div class="image"><img ng-src="{{education.logo}}"></div>
-							<div class="content">
-								<a class="header">{{education.name}}</a>
-								<div class="meta">
-									<span class="status">{{education.status}}</span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="content">
-								<div class="extra">
-									<div class="meta">
-										<span class="status">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></span>
-									</div>
-								</div>
-								<div class="description">
-									<p ng-bind-html="safeHtml(education.short_description)"></p>
-								</div>
-								<div class="extra">
-									<div class="meta">
-										<div class="ui label" ng-repeat="skill in education.skills">{{skill}}</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="sixteen wide mobile six wide tablet six wide computer column">
-
-		<div class="ui container" ng-if="infos_cv.skills.length > 0">
-			<h3 class="ui header">
-				<i class="tasks icon"></i>
-				<div class="content">
-					{{infos_lang.skill}}
-				</div>
-			</h3>
-			<div class="ui centered green cards">
-				<div class="card">
-					<div class="content" ng-repeat="infos_skill in infos_cv.skills">
-						<div class="header">{{infos_lang[infos_skill.category]}}</div>
-						<div ng-repeat="skill in infos_skill.list" class="ui indicating progress" id="{{infos_skill.category}}_{{$index}}">
-							<div class="title label">{{skill.name}}</div>
-							<div class="bar">
-								<div class="progress"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="ui container cadre" ng-if="infos_cv.language.length > 0">
 			<h3 class="ui header">

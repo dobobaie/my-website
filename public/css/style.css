@@ -166,14 +166,30 @@ nav
 {
 	margin: -2em 0 15px 0;
 }
+ul.flat.items
+{
+	border-left: 2px solid #34495E;
+	border-radius: 0;
+	padding: 0 5px;
+	list-style: none;
+}
+ul.flat.items>li.item:before
+{
+	content: "•";
+	color: #34495E;
+	font-size: 2em;
+	margin-left: -28px;
+}
 .flat.items
 {
+	border: 0.1px dashed #34495E;
 	padding: 1em;
 	color: #FFF;
 	border-radius: 5px;
 }
 .flat.items.pin
 {
+	border: 0;
 	text-align: center;
 	padding: 1px 5px;
 }
@@ -239,6 +255,7 @@ nav
 .flat.items>.item>.description
 {
 	text-align: justify;
+	margin: 5px 0;
 }
 .flat.items>.item>.progress
 {
@@ -261,6 +278,18 @@ nav
 {
 	margin: 1em 0;
 	font-size: 1.2em;
+}
+.flat.items>.item>.meta.delimit
+{
+	margin: 0;
+}
+.flat.items>.item>.meta>.title
+{
+	font-size: 1.4em;
+}
+.flat.items>.item>.meta>.left.font
+{
+	text-align: left;
 }
 .flat.items>.item>.meta>*
 {

@@ -197,7 +197,7 @@
 			"category" : "tools",
 			"list" : [
 				{
-					"name" : "Npm / gulp / phonegap (cordova & ionic) / git",
+					"name" : "Npm / gulp / phonegap (cordova & ionic) / git / svn",
 					"advancement" : "100"
 				},
 				{
