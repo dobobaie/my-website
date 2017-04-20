@@ -77,7 +77,8 @@
 				</div>
 				<ul class="flat clouds items">
 					<li ng-repeat="experience in infos_cv.experience" class="item">
-						<div class="header">{{experience.name}}</div>
+						<div class="date">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span></div>
+						<div class="header">{{experience.name}} - <span class="sub-title" ng-bind-html="safeHtml(experience.status)"></span></div>
 						<div class="description" ng-bind-html="safeHtml(experience.short_description)"></div>
 					</li>
 				</ul>

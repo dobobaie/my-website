@@ -237,12 +237,23 @@ ul.flat.items>li.item:before
 {
 	text-align: center;
 }
+.flat.items>.item>.date
+{
+	margin: -20px 0 15px 0;
+	text-transform: uppercase;
+	font-size: .8em;
+}
 .flat.items>.item>.title
 {
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 34px;
 	opacity: .95;
+}
+.flat.items>.item>.header>.sub-title
+{
+	font-size: 0.9em;
+	font-weight: 300;
 }
 .flat.items>.item>.sub-title
 {
@@ -255,7 +266,7 @@ ul.flat.items>li.item:before
 .flat.items>.item>.description
 {
 	text-align: justify;
-	margin: 5px 0;
+	margin: 10px 0;
 }
 .flat.items>.item>.progress
 {
