@@ -148,3 +148,175 @@ nav
 {
 	display: none !important;
 }
+
+
+
+
+
+.flat.parent
+{
+	padding: 0 2em;
+}
+.flat.pinut
+{
+	float: left;
+	margin: 5px;
+}
+.flat.delimit
+{
+	margin: -2em 0 15px 0;
+}
+.flat.items
+{
+	padding: 1em;
+	color: #FFF;
+	border-radius: 5px;
+}
+.flat.items.pin
+{
+	text-align: center;
+	padding: 1px 5px;
+}
+.flat.items.pin.rounded
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 8px 5px;
+}
+.flat.items.pin.rounded>.item>.meta
+{
+	margin: 0;
+	font-size: 1.2em;
+}
+.flat.items.pin.rounded>.item>.meta>*
+{
+	margin: 0;
+}
+.flat.items>.item
+{
+	padding: 1em;
+	border-top: 1px dashed #2c3e50;
+}
+.flat.items.pin>.item
+{
+	padding: 0;
+}
+.flat.items>.item:first-child
+{
+	border-top: 0;
+}
+.flat.items>.item>.exta
+{
+	margin: 2em 0 0 0;
+	text-align: center;
+}
+.flat.items>.item>.header
+{
+	font-size: 1.28571429em;
+	font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-weight: 700;
+}
+.flat.items>.item>.center.font
+{
+	text-align: center;
+}
+.flat.items>.item>.title
+{
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 34px;
+	opacity: .95;
+}
+.flat.items>.item>.sub-title
+{
+	text-align: left;
+}
+.flat.items>.item>.status
+{
+	color: #bfc9ca;
+}
+.flat.items>.item>.description
+{
+	text-align: justify;
+}
+.flat.items>.item>.progress
+{
+	background: #ebedef;
+	border-radius: 32px;
+	height: 12px;
+	box-shadow: none;
+}
+.flat.items>.item>.progress>.progress-bar
+{
+	border-radius: 32px;
+	height: 100%;
+	float: left;
+	font-size: 12px;
+	background: #1abc9c;
+	line-height: 12px;
+	box-shadow: none;
+}
+.flat.items>.item>.meta
+{
+	margin: 1em 0;
+	font-size: 1.2em;
+}
+.flat.items>.item>.meta>*
+{
+	margin: .3em 0;
+}
+.flat.items>.item>.meta a
+{
+	color: #FFF;
+	word-wrap: break-word;
+	white-space: initial;
+}
+.flat.items>.item>.image
+{
+	text-align: center;
+}
+.flat.items>.item>.image>img
+{
+	max-width: 175px;
+	border: 0.1px solid #808080;
+	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+	border-radius: 50%;
+}
+.flat.orange.items
+{
+	background: #F39C12;
+}
+.flat.blue.items
+{
+	background: #3498DB;
+}
+.flat.blue.dark.items
+{
+	background: #4c8db8;
+}
+.flat.green.items
+{
+	background: #27AE60;
+}
+.flat.yellow.items
+{
+	background: #F1C40F;
+}
+.flat.purple.items
+{
+	background: #9B59B6;
+}
+.flat.red.items
+{
+	background: #E74C3C;
+}
+.flat.turquoise.items, .flat.turquoise.parent
+{
+	background: #1ABC9C;
+}
+.flat.clouds.items
+{
+	background: #ECF0F1;
+	color: #34495e;
+}
