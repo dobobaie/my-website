@@ -5,7 +5,7 @@
 	"mail" : "eddy.mhalli@eptiech.eu",
 	"locality" : "Paris",
 	"headline" : "Recherche part-time de 3 jours par semaine à partir de Septembre",
-	"summary" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire, m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveau challenge, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
+	"summary" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques, dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveaux challenges, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
 	"social_network" : [
 		{
 			"color" : "linkedin",
@@ -21,7 +21,7 @@
 		},
 		{
 			"color" : "google plus",
-			"link" : "https://plus.google.com/109774423458574527171",
+			"link" : "https://google.com/+EddyMhalli",
 			"icon" : "google plus square",
 			"name" : "109774423458574527171"
 		},
@@ -36,12 +36,12 @@
 		{
 			"link" : "http://fearless-vr.com/",
 			"name" : "Fearless VR",
-			"status" : "Gestionnaire de projet et développeur<br/><b>Projet de fin d'étude</b>",
+			"status" : "Gestionnaire de projet et développeur - <b>Projet de fin d'étude</b>",
 			"logo" : "./photos/FEARLESS.png",
 			"start_date" : 1443657600000,
 			"end_date" : null,
-			"short_description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactifs dans lequel le patient peut se mettre en immersion et surpasser ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également des communications avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
-			"description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactifs dans lequel le patient peut se mettre en immersion et surpasser ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Grâce à nos partenaires, nous essayons de produire des scènes de qualités en interrogeant des spécialistes pour nous conseiller dans nos pratiques et dans nos choix de scénario. Nous n'oublions pas notre priorité qui est la sécurité des patients et le confort des spécialistes.</p><p>Actuellement en beta sur les téléphones mobiles, n'hésitez pas à nous retrouver sur notre site internet : <a href='http://fearless-vr.com'>Fearless VR</a></p><br/><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également des communications avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
+			"short_description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
+			"description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Grâce à nos partenaires, nous essayons de produire des scènes de qualités en interrogeant des spécialistes pour nous conseiller dans nos pratiques et dans nos choix de scénario. Nous n'oublions pas notre priorité qui est la sécurité des patients et le confort des spécialistes.</p><p>Actuellement en beta sur les téléphones mobiles, n'hésitez pas à nous retrouver sur notre site internet : <a href='http://fearless-vr.com'>Fearless VR</a></p><br/><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
 			"skills" : []
 		},
 		{
@@ -51,8 +51,8 @@
 			"logo" : "./photos/SEITOSEI.png",
 			"start_date" : 1443657600000,
 			"end_date" : 1470528000000,
-			"short_description" : "<p>Création de deux applications VINCI Actualités et Actionnaires mobile (ios, android et wp), destiné l'une pour le grand public et l'autre pour les actionnaires VINCI.</p><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer l'architecture ainsi que d'établir l'échéancier et le budget du projet. Pour ensuite, développer ses applications et les publier sur les stores.</p><p>J'ai également été sollicité pour développer des features sur l'application \"La pataterie\"​ et le CRM de SEITOSEI selon le cahier des charges.</p>",
-			"description" : "<p>Création de deux applications VINCI Actualités et Actionnaires mobile (ios, android et wp), destiné l'une pour le grand public et l'autre pour les actionnaires VINCI.</p><p>Les deux applications ont pour objectif d'informer les utilisateurs de VINCI des diverses actualités de l'entreprise ainsi que de suivre leurs fils d'actualités sur les réseaux sociaux. Il est également possible de récupérer les documents en libre-service et de prendre contact avec un interlocuteur de VINCI grâce à un formulaire. Pour finir, il existe un espace utilisateur qui permet à un employé ou un actionnaire d'accéder à des services un plus spécifique.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer l'architecture ainsi que d'établir l'échéancier et le budget du projet. Pour ensuite, développer ses applications et les publier sur les stores.</p><p>J'ai également été sollicité pour développer des features sur l'application \"La pataterie\"​ et le CRM de SEITOSEI selon le cahier des charges.</p>",
+			"short_description" : "<p>Création de deux applications multi-platforme : VINCI Actualités et Actionnaires mobile. L'une destinée au grand public et l'autre aux actionnaires VINCI.</p><p>Mon travail a été de remettre le projet sur de bonnes bases et de restructurer l'architecture ainsi que d'établir l'échéancier et le budget du projet. Pour ensuite, développer ses applications et les publier sur les stores.</p><p>J'ai également été sollicité pour développer des features sur l'application \"La pataterie\"​ et le CRM de SEITOSEI selon le cahier des charges.</p>",
+			"description" : "<p>Création de deux applications multi-platforme : VINCI Actualités et Actionnaires mobile. L'une destinée au grand public et l'autre aux actionnaires VINCI.</p><p>Les deux applications ont pour objectif d'informer les utilisateurs de VINCI des diverses actualités de l'entreprise ainsi que de suivre leurs fils d'actualités sur les réseaux sociaux. Il est également possible de récupérer les documents en libre-service et de prendre contact avec un interlocuteur de VINCI grâce à un formulaire. Pour finir, il existe un espace utilisateur qui permet à un employé ou un actionnaire d'accéder à des services un plus spécifique.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes bases et de restructurer l'architecture ainsi que d'établir l'échéancier et le budget du projet. Pour ensuite, développer ses applications et les publier sur les stores.</p><p>J'ai également été sollicité pour développer des features sur l'application \"La pataterie\"​ et le CRM de SEITOSEI selon le cahier des charges.</p>",
 			"skills" : [
 				"Jquery",
 				"AngularJs (v1)",
@@ -91,8 +91,8 @@
 			"logo" : "./photos/JOBSETMUSIK.jpg",
 			"start_date" : 1325376000000,
 			"end_date" : 1356998400000,
-			"short_description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier à dû être fait à partir des maquettes déjà existantes.</p>",
-			"description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Le site a pour objectif d'afficher et de gérer divers contenus, comme des articles contenants des vidéos et des photos, ainsi que d'afficher les actualités provenant des réseaux sociaux.</p><p>La webradio est le plus grand atout du site, il est accessible depuis la page d'accueil.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier à dû être fait à partir des maquettes déjà existantes.</p><p>L'utilisation du modèle incrémental était la meilleure solution pour répondre aux besoins de l'association car, les maquettes visuelle était déjà créée et le site internet déjà en production, le plus gros problème était au niveau de l'architecture et des outils utilisés pour sa conception. Le projet a donc été découpé en plusieurs sous-modules pour mettre en ligne au plus vite des modules fonctionnels.</p>",
+			"short_description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier a dû être effectuée à partir des maquettes déjà existantes.</p>",
+			"description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Le site a pour objectif d'afficher et de gérer divers contenus, comme des articles contenants des vidéos et des photos, ainsi que d'afficher les actualités provenant des réseaux sociaux.</p><p>La webradio est le plus grand atout du site, il est accessible depuis la page d'accueil.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier a dû être effectuée à partir des maquettes déjà existantes.</p><p>L'utilisation du modèle incrémental était la meilleure solution pour répondre aux besoins de l'association car, les maquettes visuelle était déjà créée et le site internet déjà en production, le plus gros problème était au niveau de l'architecture et des outils utilisés pour sa conception. Le projet a donc été découpé en plusieurs sous-modules pour mettre en ligne au plus vite des modules fonctionnels.</p>",
 			"skills" : [
 				"Jquery",
 				"Bootstrap",
@@ -156,7 +156,7 @@
 			"list" : [
 				{
 					"name" : "Javascript (nodeJs) / TypeScript",
-					"advancement" : "98"
+					"advancement" : "95"
 				},
 				{
 					"name" : "HTML/CSS",
@@ -181,7 +181,7 @@
 			"list" : [
 				{
 					"name" : "Jquery / CSS (boostrap, materialize, semantic-ui)",
-					"advancement" : "100"
+					"advancement" : "95"
 				},
 				{
 					"name" : "Angular 1 / Angular 2 / Backbones",
@@ -197,12 +197,16 @@
 			"category" : "tools",
 			"list" : [
 				{
-					"name" : "Npm / gulp / phonegap (cordova & ionic) / git",
-					"advancement" : "100"
+					"name" : "Npm / gulp / phonegap & cordova & ionic",
+					"advancement" : "95"
 				},
 				{
 					"name" : "Composer / Travis / Sass",
 					"advancement" : "95"
+				},
+				{
+					"name" : "Git / SVN",
+					"advancement" : "90"
 				},
 				{
 					"name" : "Babel / Aws / Heroku / Docker",
@@ -270,12 +274,12 @@
 		{
 			"icon" : "diamond",
 			"name" : "La physique quantique",
-			"description" : "N'étant pas un expert dans la physique en général, mes connaissances sont limités, toutefois c'est un domaine fascinant !"
+			"description" : "N'étant pas un expert dans la physique en général, mes connaissances sont limitées, toutefois c'est un domaine fascinant !"
 		},
 		{
 			"icon" : "spy",
 			"name" : "La philosophie et la psychanalyse",
-			"description" : "Mon métier me demande de mettre en pratique ma philosophie, mais pour cela, je dois connaitre et apprendre celle des autres et analyser le comportement des parties prenantes."
+			"description" : "En plus d'être une passion, ces domaines sont omniprésents dans mon métier et cela ne fait qu'accentuer le plaisir que je prends à pratiquer cette profession."
 		}
 	]
-}
+}qw
