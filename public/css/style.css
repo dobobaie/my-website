@@ -1,6 +1,7 @@
 body
 {
 	background: url('../images/background.png') right bottom fixed no-repeat, url('../images/background2.png') left top fixed no-repeat !important;
+	/*background: #ee6e73;*/
 }
 
 nav
@@ -102,6 +103,11 @@ nav
 	color: #3b5998;
 }
 
+.tablet.only.force
+{
+	display: block !important;
+	width: 38% !important;
+}
 
 @media (min-width: 992px) {
 	.device.only {
@@ -318,6 +324,7 @@ ul.flat.items>li.item:before
 }
 .flat.items>.item>.image>img
 {
+	width: 100%;
 	max-width: 175px;
 	border: 0.1px solid #808080;
 	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);

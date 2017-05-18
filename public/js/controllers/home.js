@@ -58,6 +58,7 @@ angular
 			if (navigator.userAgent.indexOf('PhantomJS') != -1) {
 				$('nav').hide();
 				$('.computer.only').hide();
+				$('.tablet.only').removeClass('hide').addClass('force');
 				$('.sixteen.wide.mobile').each(function(index, value) {
 					$(value).attr('class', $(value).attr('class').substring(('sixteen wide mobile').length));
 				});
