@@ -62,6 +62,10 @@ angular
 					$(value).attr('class', $(value).attr('class').substring(('sixteen wide mobile').length));
 				});
 				$('div[ui-view="view"]').css({'padding' : '0 50px'});
+				$('.phantomjs').removeClass('hide tablet only');
+				$('.left.content.phantomjs').css({'width' : '300px'});
+				$('.right.content.phantomjs').css({'width' : '450px', 'text-align' : 'justify'});
+
 			}
 		});
 	}])

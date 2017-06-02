@@ -15,7 +15,7 @@ var browser 	=
 	((os.platform() == 'darwin') ?
 	('google chrome') :
 	((os.platform() == 'win32') ?
-	('chrome') : ('firefox')))
+	('firefox') : ('chrome')))
 ;
 
 gulp.task('html', function() {
@@ -81,14 +81,16 @@ gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() 
 gulp.task('export', function() {
 	phantom.create().then(function(ph) {
 		ph.createPage().then(function(page) {
-			page.property('viewportSize', { width: 2480 / 3, height: 3508 / 3 }).then(function() {
-				page.open('public/index.html').then(function(status) {
-					setTimeout(function() {
-						page.render('export/cv.pdf').then(function() {
-							console.log('Page Rendered');
-							ph.exit();
-						});
-					}, 2000);
+			page.property('viewportSize', { width: 2480 / 3, height: 3508 / 1.65 }).then(function() {
+				page.property('paperSize', { width: 2480 / 3, height: 3508 / 1.65 }).then(function() {
+					page.open('public/index.html').then(function(status) {
+						setTimeout(function() {
+							page.render('export/cv.pdf').then(function() {
+								console.log('Page Rendered');
+								ph.exit();
+							});
+						}, 2000);
+					});
 				});
 			});
 		});
