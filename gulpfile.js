@@ -81,7 +81,7 @@ gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() 
 gulp.task('export', function() {
 	phantom.create().then(function(ph) {
 		ph.createPage().then(function(page) {
-			page.property('viewportSize', { width: 2480 / 3, height: 3508 / 1.65 }).then(function() {
+			page.property('viewportSize', { width: 595, height: 842 }).then(function() {
 				page.property('paperSize', { width: 2480 / 3, height: 3508 / 1.65 }).then(function() {
 					page.open('public/index.html').then(function(status) {
 						setTimeout(function() {
