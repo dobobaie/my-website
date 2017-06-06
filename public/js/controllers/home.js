@@ -22,6 +22,7 @@ angular
 				experience: data_complement_json.experience,
 				education: data_complement_json.education,
 				skills: data_complement_json.skills,
+				skills_pictures: data_complement_json.skills_pictures,
 				language: data_complement_json.language,
 				interest: data_complement_json.interest,
 			};
@@ -34,35 +35,38 @@ angular
 					'blue',
 					'orange',
 				];
-				return (id == 0 ? '' : list_color[id - 1]);
+				return (id == 0 ? '' : list_color[(id - 1) % list_color.length]);
 			}
 			$scope.safeHtml = function(text)
 			{
 				return $sce.trustAsHtml(text);
 			}
 
-			$timeout(function() {
-				for (var index in data_complement_json.skills) {
-					for (var index2 in data_complement_json.skills[index].list) {
-						var titleElem = $('#'+data_complement_json.skills[index].category+'_'+index2+'>.title.label');
-						var heightTitle = titleElem.css('height').substring(0, titleElem.css('height').length - 2);
-						$('#'+data_complement_json.skills[index].category+'_'+index2).progress({
-							percent: data_complement_json.skills[index].list[index2].advancement,
-						}).css({marginTop: heightTitle+'px'});
-						titleElem.css({top: '-'+(parseFloat(heightTitle) + 3)+'px'});
-					}
-				}
-				resizeElementFixed();
-			});
+			// $timeout(function() {
+			// 	for (var index in data_complement_json.skills) {
+			// 		for (var index2 in data_complement_json.skills[index].list) {
+			// 			var titleElem = $('#'+data_complement_json.skills[index].category+'_'+index2+'>.title.label');
+			// 			var heightTitle = titleElem.css('height').substring(0, titleElem.css('height').length - 2);
+			// 			$('#'+data_complement_json.skills[index].category+'_'+index2).progress({
+			// 				percent: data_complement_json.skills[index].list[index2].advancement,
+			// 			}).css({marginTop: heightTitle+'px'});
+			// 			titleElem.css({top: '-'+(parseFloat(heightTitle) + 3)+'px'});
+			// 		}
+			// 	}
+			// 	resizeElementFixed();
+			// });
 			
 			if (navigator.userAgent.indexOf('PhantomJS') != -1) {
 				$('nav').hide();
 				$('.computer.only').hide();
-				$('.tablet.only').removeClass('hide').addClass('force');
 				$('.sixteen.wide.mobile').each(function(index, value) {
 					$(value).attr('class', $(value).attr('class').substring(('sixteen wide mobile').length));
 				});
 				$('div[ui-view="view"]').css({'padding' : '0 50px'});
+				$('.phantomjs').removeClass('hide tablet only');
+				$('.left.content.phantomjs').css({'width' : '300px'});
+				$('.right.content.phantomjs').css({'width' : '450px', 'text-align' : 'justify'});
+
 			}
 		});
 	}])

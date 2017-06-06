@@ -2,9 +2,9 @@
 	"pictureUrl" : "https://www.linkedin.com/mpr/mpr/AAEAAQAAAAAAAAXdAAAAJDg3ZDY3YWViLTIxOWMtNDg3YS05NDkxLWNlNTliNzI5ODM2MA.jpg",
 	"birthday" : 771033600000,
 	"phone" : "+33 6 27 03 69 69",
-	"mail" : "eddy.mhalli@eptiech.eu",
+	"mail" : "eddy.mhalli@epitech.eu",
 	"locality" : "Paris",
-	"headline" : "Recherche part-time de 3 jours par semaine à partir de Septembre",
+	"headline" : "Développeur full-stack en alternance",
 	"summary" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques, dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveaux challenges, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
 	"social_network" : [
 		{
@@ -36,10 +36,12 @@
 		{
 			"link" : "http://fearless-vr.com/",
 			"name" : "Fearless VR",
-			"status" : "Gestionnaire de projet et développeur - <b>Projet de fin d'étude</b>",
+			"status" : "Gestionnaire de projet et développeur",
+			"more" : "Projet de fin d'étude",
 			"logo" : "./photos/FEARLESS.png",
 			"start_date" : 1443657600000,
 			"end_date" : null,
+			"locality": null,
 			"short_description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
 			"description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Grâce à nos partenaires, nous essayons de produire des scènes de qualités en interrogeant des spécialistes pour nous conseiller dans nos pratiques et dans nos choix de scénario. Nous n'oublions pas notre priorité qui est la sécurité des patients et le confort des spécialistes.</p><p>Actuellement en beta sur les téléphones mobiles, n'hésitez pas à nous retrouver sur notre site internet : <a href='http://fearless-vr.com'>Fearless VR</a></p><br/><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
 			"skills" : []
@@ -51,6 +53,7 @@
 			"logo" : "./photos/SEITOSEI.png",
 			"start_date" : 1443657600000,
 			"end_date" : 1470528000000,
+			"locality": "Levallois-Perret",
 			"short_description" : "<p>Création de deux applications multi-platforme : VINCI Actualités et Actionnaires mobile. L'une destinée au grand public et l'autre aux actionnaires VINCI.</p><p>Mon travail a été de remettre le projet sur de bonnes bases et de restructurer l'architecture ainsi que d'établir l'échéancier et le budget du projet. Pour ensuite, développer ses applications et les publier sur les stores.</p><p>J'ai également été sollicité pour développer des features sur l'application \"La pataterie\"​ et le CRM de SEITOSEI selon le cahier des charges.</p>",
 			"description" : "<p>Création de deux applications multi-platforme : VINCI Actualités et Actionnaires mobile. L'une destinée au grand public et l'autre aux actionnaires VINCI.</p><p>Les deux applications ont pour objectif d'informer les utilisateurs de VINCI des diverses actualités de l'entreprise ainsi que de suivre leurs fils d'actualités sur les réseaux sociaux. Il est également possible de récupérer les documents en libre-service et de prendre contact avec un interlocuteur de VINCI grâce à un formulaire. Pour finir, il existe un espace utilisateur qui permet à un employé ou un actionnaire d'accéder à des services un plus spécifique.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes bases et de restructurer l'architecture ainsi que d'établir l'échéancier et le budget du projet. Pour ensuite, développer ses applications et les publier sur les stores.</p><p>J'ai également été sollicité pour développer des features sur l'application \"La pataterie\"​ et le CRM de SEITOSEI selon le cahier des charges.</p>",
 			"skills" : [
@@ -75,6 +78,7 @@
 			"logo" : "./photos/BELAIR.png",
 			"start_date" : 1404172800000,
 			"end_date" : 1420070400000,
+			"locality": "Les Ulis",
 			"short_description" : "<p>Création d'un extranet pour courtier en assurance, déployé en interne, destiné aux clients de l'entreprise ainsi qu'aux utilisateurs des clients.</p><p>Mon travail a été d'établir l'échéancier des différents rendus et de réfléchir à l'architecture et au fonctionnement du système pour ensuite le développer selon le cahier des charges.</p>",
 			"description" : "<p>Création d'un extranet pour courtier en assurance, déployé en interne, destiné aux clients de l'entreprise ainsi qu'aux utilisateurs des clients.</p><p>L'extranet propose aux clients, de rediriger leur site internet vers l'url de l'extranet afin que celui-ci puisse s'adapter selon l'url d'origine et de modifier son apparence ainsi que son contenu selon la configuration spécifique du client.</p><p>L'objectif de l'extranet est de proposer des services pour les utilisateurs des clients, comme déclarer un sinistre, prendre contact avec son assurance, déclarer un membre de la famille ou un moyen/objet (voiture, maison, ...). Ainsi que de proposer aux courtiers de gérer leurs utilisateurs et leurs déclarations à partir de l'extranet.</p><br/><p>Mon travail a été d'établir l'échéancier des différents rendus et de réfléchir à l'architecture et au fonctionnement du système pour ensuite le développer selon le cahier des charges.</p>",
 			"skills" : [
@@ -91,6 +95,7 @@
 			"logo" : "./photos/JOBSETMUSIK.jpg",
 			"start_date" : 1325376000000,
 			"end_date" : 1356998400000,
+			"locality": "à distance",
 			"short_description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier a dû être effectuée à partir des maquettes déjà existantes.</p>",
 			"description" : "<p>Création d'un site internet et d'une webradio destinés aux personnes sans emploi qui recherchent de l'aide et des techniques pour améliorer leurs recherches et leurs entretiens d'embauche.</p><p>Le site a pour objectif d'afficher et de gérer divers contenus, comme des articles contenants des vidéos et des photos, ainsi que d'afficher les actualités provenant des réseaux sociaux.</p><p>La webradio est le plus grand atout du site, il est accessible depuis la page d'accueil.</p><br/><p>Mon travail a été de remettre le projet sur de bonnes voies et de restructurer le site qui était instable et inaccessible pour les utilisateurs. Une refonte du site entier a dû être effectuée à partir des maquettes déjà existantes.</p><p>L'utilisation du modèle incrémental était la meilleure solution pour répondre aux besoins de l'association car, les maquettes visuelle était déjà créée et le site internet déjà en production, le plus gros problème était au niveau de l'architecture et des outils utilisés pour sa conception. Le projet a donc été découpé en plusieurs sous-modules pour mettre en ligne au plus vite des modules fonctionnels.</p>",
 			"skills" : [
@@ -107,6 +112,7 @@
 			"logo" : "./photos/SBEAUTE.png",
 			"start_date" : 1238544000000,
 			"end_date" : 1317427200000,
+			"locality": "à distance",
 			"short_description" : "<p>Création d'un site internet vitrine pour une entreprise d'esthétique.</p><p>Mon travail a été d'établir le budget et la deadline du projet, ainsi que de créer des maquettes selon les envies de l'entreprise pour commencer le développement du site internet.</p>",
 			"description" : "<p>Création d'un site internet vitrine pour une entreprise d'esthétique.</p><p>Le site avait pour objectif d'afficher et de gérer les prestations et produit proposées par l'entreprise, ainsi que d'afficher et de gérer divers média, comme des vidéos ou des photos, et également une partie pour afficher et gérer les informations de contact en plus d'un formulaire dynamique.</p><br/><p>Mon travail a été d'établir le budget et la deadline du projet, ainsi que de créer des maquettes selon les envies de l'entreprise pour commencer le développement du site internet.</p><p>L'utilisation du modèle transformationnel était la meilleure solution pour répondre aux besoins de l'entreprise qui n'avait auparavant aucun site internet.</p>",
 			"skills" : [
@@ -117,38 +123,153 @@
 	],
 	"education" : [
 		{
-			"name" : "Université Laval",
-			"status" : "Baccalauréat en génie logiciel",
-			"logo" : "./photos/ULAVAL.jpg",
-			"start_date" : 1471996800000,
-			"end_date" : 1493596800000,
-			"description" : "",
-			"skills" : [
-				"Ville de Quebec - Canada"
-			]
-		},
-		{
-			"name" : "EPITECH - European Institute of Technology",
+			"name" : "EPITECH",
 			"status" : "Expert en Technologies de l'information",
+			"locality" : "Paris",
 			"logo" : "./photos/EPITECH.png",
 			"start_date" : 1372636800000,
 			"end_date" : null,
 			"description" : "",
-			"skills" : [
-				"Paris - France"
+			"degree" : [
+				{
+					"name" : "Bachelor en Technologies de l'information - BAC +3"
+				}
+			]
+		},
+		{
+			"name" : "Université Laval",
+			"status" : "Baccalauréat en génie logiciel - BAC +4",
+			"locality" : "Quebec - Canada",
+			"more" : "Programme d'échange",
+			"logo" : "./photos/ULAVAL.jpg",
+			"start_date" : 1471996800000,
+			"end_date" : 1493596800000,
+			"description" : "",
+			"degree" : [
+				{
+					"name" : "Certificat en génie logiciel - Bac +4"
+				}
 			]
 		},
 		{
 			"name" : "Lycée parc de Vilgénis",
 			"status" : "Baccalauréat professionnel systèmes électroniques numériques",
+			"locality" : "Massy",
 			"logo" : "./photos/VILGENIS.png",
 			"start_date" : 1277942400000,
 			"end_date" : 1372636800000,
 			"description" : "",
-			"skills" : [
-				"Massy - France"
+			"degree" : [
+				{
+					"name" : "Baccalauréat professionnel systèmes électroniques numériques"
+				},
+				{
+					"name" : "Brevet d'études professionnelles systèmes électroniques numériques"
+				}
 			]
 		}
+	],
+	"skills_pictures" : [
+		{
+			"name" : "html",
+			"image" : "./photos/atouts/HTML.png"
+		},
+		{
+			"name" : "css",
+			"image" : "./photos/atouts/CSS.png"
+		},
+		{
+			"name" : "js",
+			"image" : "./photos/atouts/JS.png"
+		},
+		{
+			"name" : "ts",
+			"image" : "./photos/atouts/TS.png"
+		},
+		{
+			"name" : "nodejs",
+			"image" : "./photos/atouts/NODEJS.png"
+		},
+		{
+			"name" : "php",
+			"image" : "./photos/atouts/PHP.png"
+		},
+		
+		{
+			"name" : "manager",
+			"image" : "./photos/atouts/MANAGER.jpg"
+		},
+		{
+			"name" : "ionic",
+			"image" : "./photos/atouts/IONIC.png"
+		},
+		{
+			"name" : "cordova",
+			"image" : "./photos/atouts/CORDOVA.png"
+		},
+		{
+			"name" : "json",
+			"image" : "./photos/atouts/JSON.png"
+		},
+		{
+			"name" : "mongodb",
+			"image" : "./photos/atouts/MONGODB.png"
+		},
+		{
+			"name" : "mysql",
+			"image" : "./photos/atouts/MYSQL.png"
+		},
+		{
+			"name" : "C",
+			"image" : "./photos/atouts/C.png"
+		},
+		{
+			"name" : "C++",
+			"image" : "./photos/atouts/C++.png"
+		},
+		{
+			"name" : "C#",
+			"image" : "./photos/atouts/CS.png"
+		},
+		{
+			"name" : "git",
+			"image" : "./photos/atouts/GIT.png"
+		},
+		{
+			"name" : "svn",
+			"image" : "./photos/atouts/SVN.png"
+		},
+		{
+			"name" : "scrum",
+			"image" : "./photos/atouts/SCRUM.png"
+		},
+
+		{
+			"name" : "windows",
+			"image" : "./photos/atouts/WINDOWS.png"
+		},
+		{
+			"name" : "linux",
+			"image" : "./photos/atouts/LINUX.png"
+		},
+		{
+			"name" : "ios/mac",
+			"image" : "./photos/atouts/IOS.png"
+		},
+		{
+			"name" : "android",
+			"image" : "./photos/atouts/ANDROID.png"
+		},
+		{
+			"name" : "AWS",
+			"image" : "./photos/atouts/AWS.png"
+		},
+		{
+			"name" : "java",
+			"image" : "./photos/atouts/JAVA.png"
+		}
+
+		
 	],
 	"skills" : [
 		{
@@ -171,7 +292,7 @@
 					"advancement" : "80"
 				},
 				{
-					"name" : "JAVA / C# / Ruby / Python",
+					"name" : "JAVA / C#",
 					"advancement" : "70"
 				}
 			]
@@ -247,19 +368,21 @@
 	],
 	"language" : [
 		{
-			"name" : "Français",
-			"advancement" : "Natale"
+			"name" : "Anglais",
+			"advancement" : "Professionnel",
+			"image" : "./photos/flag_france.svg"
 		},
 		{
-			"name" : "Anglais",
-			"advancement" : "Professionnel"
+			"name" : "Français",
+			"advancement" : "Langue maternelle",
+			"image" : "./photos/flag_english.jpg"
 		}
 	],
 	"interest" : [
 		{
 			"icon" : "rocket",
 			"name" : "La gestion de projet et la programmation",
-			"description" : "Être le chef d'orchestre sur un projet IT et participer au développement est pour moi l'un des meilleurs travaille au monde. Toujours plus vers l'innovation !"
+			"description" : "Être le chef d'orchestre sur un projet IT et participer au développement est pour moi l'un des meilleurs travail au monde. Toujours plus vers l'innovation !"
 		},
 		{
 			"icon" : "hand spock",
@@ -269,11 +392,11 @@
 		{
 			"icon" : "anchor",
 			"name" : "La plongée sous-marine",
-			"description" : "Niveau 2 acquis en Corse, pour les amoureux de la faune marine, je conseil à 400% de pratiquer ce sport."
+			"description" : "Niveau 2 acquis en Corse, pour les amoureux de la faune marine, je conseille à 400% de pratiquer ce sport."
 		},
 		{
 			"icon" : "diamond",
-			"name" : "La physique quantique",
+			"name" : "La physique",
 			"description" : "N'étant pas un expert dans la physique en général, mes connaissances sont limitées, toutefois c'est un domaine fascinant !"
 		},
 		{
@@ -282,4 +405,4 @@
 			"description" : "En plus d'être une passion, ces domaines sont omniprésents dans mon métier et cela ne fait qu'accentuer le plaisir que je prends à pratiquer cette profession."
 		}
 	]
-}qw
+}
