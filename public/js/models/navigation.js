@@ -14,9 +14,15 @@ angular
 			return $state.current.name;
 		}
 
+		var url = function(toUrl)
+		{
+			window.open(toUrl, '_blank');
+		}
+
 		return {
 			page:page,
 			current: current,
+			url: url,
 		}
 	}])
 ;

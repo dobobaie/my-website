@@ -1,5 +1,5 @@
 {
-	"pictureUrl" : "https://www.linkedin.com/mpr/mpr/AAEAAQAAAAAAAAXdAAAAJDg3ZDY3YWViLTIxOWMtNDg3YS05NDkxLWNlNTliNzI5ODM2MA.jpg",
+	"pictureUrl" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAzMAAAAJDA4MTcyMzQxLTIyZjQtNDkwMC1hNTg3LWJhZjcxZDg2OTNlOA.jpg",
 	"birthday" : 771033600000,
 	"phone" : "+33 6 27 03 69 69",
 	"mail" : "eddy.mhalli@epitech.eu",
@@ -44,7 +44,7 @@
 			"locality": null,
 			"short_description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
 			"description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Grâce à nos partenaires, nous essayons de produire des scènes de qualités en interrogeant des spécialistes pour nous conseiller dans nos pratiques et dans nos choix de scénario. Nous n'oublions pas notre priorité qui est la sécurité des patients et le confort des spécialistes.</p><p>Actuellement en beta sur les téléphones mobiles, n'hésitez pas à nous retrouver sur notre site internet : <a href='http://fearless-vr.com'>Fearless VR</a></p><br/><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
-			"skills" : []
+			"skills" : ["Project Manager", "Architectural designer", "Angular 1", "Angular 2", "NodeJs", "Express", "Socket.IO", "MeteorJs"]
 		},
 		{
 			"link" : "http://seitosei.com/",
