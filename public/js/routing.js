@@ -57,7 +57,7 @@ appRoute
 				url: '/home',
 				views: {
 				  'view@': {
-						templateUrl: './templates/home.html',
+						templateUrl: './templates/home_v3.html',
 						controller: 'HomeCtr',
 						resolve: {
 							loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {

@@ -15,7 +15,8 @@ var browser 	=
 	((os.platform() == 'darwin') ?
 	('google chrome') :
 	((os.platform() == 'win32') ?
-	('firefox') : ('chrome')))
+  // ('firefox') : ('chrome')))
+	('chrome') : ('firefox')))
 ;
 
 gulp.task('html', function() {
@@ -82,7 +83,7 @@ gulp.task('export', function() {
 	phantom.create().then(function(ph) {
 		ph.createPage().then(function(page) {
 			page.property('viewportSize', { width: 595, height: 842 }).then(function() {
-				page.property('paperSize', { width: 2480 / 1.65, height: 3508 / 1.65 }).then(function() {
+				page.property('paperSize', { width: 595 * 1.55, height: 842 * 1.75 }).then(function() { // width: 2480 / 3, height: 800
 					page.open('public/index.html').then(function(status) {
 						setTimeout(function() {
 							page.render('export/cv.pdf').then(function() {
@@ -100,9 +101,7 @@ gulp.task('export', function() {
 
 gulp.task('lib', function() {
 	gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./public/lib/jquery'));
-	gulp.src('./node_modules/semantic-ui/dist/semantic.min.js').pipe(gulp.dest('./public/lib/semantic'));
-	gulp.src('./node_modules/semantic-ui/dist/semantic.min.css').pipe(gulp.dest('./public/lib/semantic'));
-	gulp.src('./node_modules/semantic-ui/dist/themes/**/*').pipe(gulp.dest('./public/lib/semantic/themes'));
+	gulp.src('./node_modules/semantic-ui/dist/**').pipe(gulp.dest('./public/lib/semantic'));
 	gulp.src('./node_modules/angular/*').pipe(gulp.dest('./public/lib/angular'));
 	gulp.src('./node_modules/angular-i18n/*').pipe(gulp.dest('./public/lib/angular-i18n'));
 	gulp.src('./node_modules/angular-ui-router/release/*').pipe(gulp.dest('./public/lib/angular-ui-router'));

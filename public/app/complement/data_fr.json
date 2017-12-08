@@ -1,5 +1,5 @@
 {
-	"pictureUrl" : "https://www.linkedin.com/mpr/mpr/AAEAAQAAAAAAAAXdAAAAJDg3ZDY3YWViLTIxOWMtNDg3YS05NDkxLWNlNTliNzI5ODM2MA.jpg",
+	"pictureUrl" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAzMAAAAJDA4MTcyMzQxLTIyZjQtNDkwMC1hNTg3LWJhZjcxZDg2OTNlOA.jpg",
 	"birthday" : 771033600000,
 	"phone" : "+33 6 27 03 69 69",
 	"mail" : "eddy.mhalli@epitech.eu",
@@ -36,14 +36,27 @@
 		{
 			"link" : "http://fearless-vr.com/",
 			"name" : "Fearless VR",
-			"status" : "Gestionnaire de projet et développeur <div style='font-weight: bold;margin-top: 10px;'>Projet de fin d'étude</div>",
+			"status" : "Gestionnaire de projet et développeur",
+			"more" : "Projet de fin d'étude",
 			"logo" : "./photos/FEARLESS.png",
 			"start_date" : 1443657600000,
 			"end_date" : null,
 			"locality": null,
 			"short_description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
 			"description" : "<p>Fearless est un logiciel utilisant la réalité virtuelle afin d'aider les personnes ayant des troubles psychiques tels que les phobies, les addictions, le stress et les blocages, grâce à des scènes 3D interactives. Le patient se met en immersion et surpasse ses limites virtuelles pour mieux les gérer dans la vie réelle.</p><p>Grâce à nos partenaires, nous essayons de produire des scènes de qualités en interrogeant des spécialistes pour nous conseiller dans nos pratiques et dans nos choix de scénario. Nous n'oublions pas notre priorité qui est la sécurité des patients et le confort des spécialistes.</p><p>Actuellement en beta sur les téléphones mobiles, n'hésitez pas à nous retrouver sur notre site internet : <a href='http://fearless-vr.com'>Fearless VR</a></p><br/><p>Mon travail à Fearless, est de vérifier la vision de notre projet ainsi que d'établir et de mettre à jour nos échéanciers et nos budgets. Mise à part le développement, je m'occupe également de la communication avec les spécialistes et je reste à l'écoute pour chaque proposition qui permettrait d'améliorer la vie de ses personnes.</p>",
-			"skills" : []
+			"skills" : [
+				"Project Management",
+				"Architectural designer",
+				"Angular 1",
+				"Angular 4",
+				"TypeScript",
+				"NodeJs (es 6)",
+				"Express",
+				"Socket.IO", 
+				"MeteorJs",
+				"DevOps",
+				"C# Unity"
+			]
 		},
 		{
 			"link" : "http://seitosei.com/",
@@ -122,14 +135,32 @@
 	],
 	"education" : [
 		{
-			"name" : "EPITECH - European Institute of Technology",
-			"status" : "Expert en Technologies de l'information - BAC +5",
+			"name" : "EPITECH",
+			"status" : "Expert en Technologies de l'information",
+			"locality" : "Paris",
 			"logo" : "./photos/EPITECH.png",
 			"start_date" : 1372636800000,
 			"end_date" : null,
 			"description" : "",
-			"skills" : [
-				"Paris - France"
+			"degree" : [
+				{
+					"name" : "Bachelor en Technologies de l'information - BAC +3"
+				}
+			]
+		},
+		{
+			"name" : "Université Laval",
+			"status" : "Baccalauréat en génie logiciel - BAC +4",
+			"locality" : "Quebec - Canada",
+			"more" : "Programme d'échange",
+			"logo" : "./photos/ULAVAL.jpg",
+			"start_date" : 1471996800000,
+			"end_date" : 1493596800000,
+			"description" : "",
+			"degree" : [
+				{
+					"name" : "Certificat en génie logiciel - Bac +4"
+				}
 			]
 		},
 		{
@@ -146,14 +177,122 @@
 		{
 			"name" : "Lycée parc de Vilgénis",
 			"status" : "Baccalauréat professionnel systèmes électroniques numériques",
+			"locality" : "Massy",
 			"logo" : "./photos/VILGENIS.png",
 			"start_date" : 1277942400000,
 			"end_date" : 1372636800000,
 			"description" : "",
-			"skills" : [
-				"Massy - France"
+			"degree" : [
+				{
+					"name" : "Baccalauréat professionnel systèmes électroniques numériques"
+				},
+				{
+					"name" : "Brevet d'études professionnelles systèmes électroniques numériques"
+				}
 			]
 		}
+	],
+	"skills_pictures" : [
+		{
+			"name" : "html",
+			"image" : "./photos/atouts/HTML.png"
+		},
+		{
+			"name" : "css",
+			"image" : "./photos/atouts/CSS.png"
+		},
+		{
+			"name" : "js",
+			"image" : "./photos/atouts/JS.png"
+		},
+		{
+			"name" : "ts",
+			"image" : "./photos/atouts/TS.png"
+		},
+		{
+			"name" : "nodejs",
+			"image" : "./photos/atouts/NODEJS.png"
+		},
+		{
+			"name" : "php",
+			"image" : "./photos/atouts/PHP.png"
+		},
+		
+		{
+			"name" : "manager",
+			"image" : "./photos/atouts/MANAGER.jpg"
+		},
+		{
+			"name" : "ionic",
+			"image" : "./photos/atouts/IONIC.png"
+		},
+		{
+			"name" : "cordova",
+			"image" : "./photos/atouts/CORDOVA.png"
+		},
+		{
+			"name" : "json",
+			"image" : "./photos/atouts/JSON.png"
+		},
+		{
+			"name" : "mongodb",
+			"image" : "./photos/atouts/MONGODB.png"
+		},
+		{
+			"name" : "mysql",
+			"image" : "./photos/atouts/MYSQL.png"
+		},
+		{
+			"name" : "C",
+			"image" : "./photos/atouts/C.png"
+		},
+		{
+			"name" : "C++",
+			"image" : "./photos/atouts/C++.png"
+		},
+		{
+			"name" : "C#",
+			"image" : "./photos/atouts/CS.png"
+		},
+		{
+			"name" : "git",
+			"image" : "./photos/atouts/GIT.png"
+		},
+		{
+			"name" : "svn",
+			"image" : "./photos/atouts/SVN.png"
+		},
+		{
+			"name" : "scrum",
+			"image" : "./photos/atouts/SCRUM.png"
+		},
+
+		{
+			"name" : "windows",
+			"image" : "./photos/atouts/WINDOWS.png"
+		},
+		{
+			"name" : "linux",
+			"image" : "./photos/atouts/LINUX.png"
+		},
+		{
+			"name" : "ios/mac",
+			"image" : "./photos/atouts/IOS.png"
+		},
+		{
+			"name" : "android",
+			"image" : "./photos/atouts/ANDROID.png"
+		},
+		{
+			"name" : "AWS",
+			"image" : "./photos/atouts/AWS.png"
+		},
+		{
+			"name" : "java",
+			"image" : "./photos/atouts/JAVA.png"
+		}
+
+		
 	],
 	"skills" : [
 		{
@@ -176,7 +315,7 @@
 					"advancement" : "80"
 				},
 				{
-					"name" : "JAVA / C# / Ruby / Python",
+					"name" : "JAVA / C#",
 					"advancement" : "70"
 				}
 			]
@@ -252,12 +391,14 @@
 	],
 	"language" : [
 		{
-			"name" : "Français",
-			"advancement" : "Langue maternelle"
+			"name" : "Anglais",
+			"advancement" : "Professionnel",
+			"image" : "./photos/flag_france.svg"
 		},
 		{
-			"name" : "Anglais",
-			"advancement" : "Professionnel"
+			"name" : "Français",
+			"advancement" : "Langue maternelle",
+			"image" : "./photos/flag_english.jpg"
 		}
 	],
 	"interest" : [
@@ -268,7 +409,7 @@
 		},
 		{
 			"icon" : "hand spock",
-			"name" : "Les films de sciences fictions",
+			"name" : "Les films de fantasy et sciences fictions",
 			"description" : "Pour les amateurs du Seigneur des anneaux et The Hobbit, oui oui, j'aime les films The Hobbit tout comme j'ai aimé le dernier Matrix..."
 		},
 		{
