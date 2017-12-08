@@ -164,6 +164,17 @@
 			]
 		},
 		{
+			"name" : "Université Laval",
+			"status" : "Baccalauréat en génie logiciel - BAC +4 <div style='font-weight: bold;margin-top: 10px;'>Programme d'échange</div>",
+			"logo" : "./photos/ULAVAL.jpg",
+			"start_date" : 1471996800000,
+			"end_date" : 1493596800000,
+			"description" : "",
+			"skills" : [
+				"Ville de Quebec - Canada"
+			]
+		},
+		{
 			"name" : "Lycée parc de Vilgénis",
 			"status" : "Baccalauréat professionnel systèmes électroniques numériques",
 			"locality" : "Massy",

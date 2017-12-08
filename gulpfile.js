@@ -15,7 +15,7 @@ var browser 	=
 	((os.platform() == 'darwin') ?
 	('google chrome') :
 	((os.platform() == 'win32') ?
-	// ('firefox') : ('chrome')))
+  // ('firefox') : ('chrome')))
 	('chrome') : ('firefox')))
 ;
 

@@ -47,7 +47,7 @@
 						<div class="ui divided items">
 							<div class="item">
 								<div class="image"><img ng-src="{{infos_cv.pictureUrl}}"></div>
-								<div class="content">
+								<div class="left content phantomjs">
 									<a class="header">{{infos_cv.firstName}} {{infos_cv.lastName}}</a>
 									<div class="meta">
 										<div class="birthday"><b>{{infos_cv.birthday}} {{infos_lang.years}}</b></div>
@@ -65,8 +65,12 @@
 										</span>
 									</div>
 								</div>
-								<div class="ui vertical divider hide tablet only" ng-if="infos_cv.summary != ''"></div>
-								<div class="extra content hide tablet only" ng-if="infos_cv.summary != ''">
+								<div class="ui vertical divider hide tablet only phantomjs" ng-if="infos_cv.summary != ''"></div>
+								<div class="right content hide tablet only phantomjs" ng-if="infos_cv.summary != ''">
+									<h4 class="ui header">
+										<i class="comment icon"></i>
+										<div class="content">{{infos_lang.about}}</div>
+									</h4>
 									<div class="description">{{infos_cv.summary}}</div>
 								</div>
 							</div>
@@ -108,7 +112,7 @@
 									<div class="content">
 										<div class="extra">
 											<div class="meta">
-												<span class="status">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span></span>
+												<span class="status">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span> - <span ng-if="experience.locality != null">{{experience.locality}}</span></span>
 											</div>
 										</div>
 										<div class="description">
@@ -141,7 +145,7 @@
 									<div class="content">
 										<a class="header">{{education.name}}</a>
 										<div class="meta">
-											<span class="status">{{education.status}}</span>
+											<span class="status" ng-bind-html="safeHtml(education.status)"></span>
 										</div>
 									</div>
 								</div>
