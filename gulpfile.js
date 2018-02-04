@@ -1,15 +1,15 @@
 'use strict';
 
-var os 			= require('os');
-var gulp 		= require('gulp');
-var rename		= require('gulp-rename');
-var php 		= require('gulp-connect-php');
-var browserSync = require('browser-sync');
-var browserInit = browserSync.create();
-var phantom 	= require('phantom');   
-var shell 		= require('shelljs');
+const os 			= require('os');
+const gulp 			= require('gulp');
+const rename		= require('gulp-rename');
+const php 			= require('gulp-connect-php');
+const browserSync 	= require('browser-sync');
+const browserInit 	= browserSync.create();   
+const shell 		= require('shelljs');
+const htmlPdf		= require('html-pdf');
 
-var browser 	=
+const browser 	=
 	(os.platform() == 'linux') ?
 	('google-chrome') :
 	((os.platform() == 'darwin') ?
@@ -80,6 +80,7 @@ gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() 
 });
 
 gulp.task('export', function() {
+	const phantom 		= require('phantom');
 	phantom.create().then(function(ph) {
 		ph.createPage().then(function(page) {
 			page.property('viewportSize', { width: 595, height: 842 }).then(function() {
@@ -96,6 +97,30 @@ gulp.task('export', function() {
 			});
 		});
 	});
+	
+	// const HTMLToPDF = require('html5-to-pdf')
+	
+	// const htmlToPDF = new HTMLToPDF({
+	// 	inputPath: './public/index.html',
+	// 	outputPath: './export/cv.pdf',
+	// 	renderDelay: 10000,
+	// });
+
+	// htmlToPDF.build((error) => {
+	// 	if(error) throw error
+	// });
+
+	// const fs = require('fs');
+	// const html = fs.readFileSync('public/index.html', 'utf8');
+	// htmlPdf.create(html, {
+	// 	format: 'A4',
+	// 	base: 'public/',
+	// 	directory: 'public/',
+	// 	'renderDelay': 5000,
+	// }).toFile('export/cv.pdf', function(err, res) {
+	// 	if (err) return console.log(err);
+	// 	console.log(res);
+	// });
 	return gulp;
 });
 

@@ -56,16 +56,19 @@ angular
 			// 	resizeElementFixed();
 			// });
 			
-			if (navigator.userAgent.indexOf('PhantomJS') != -1) {
+			if (navigator.userAgent.indexOf('PhantomJS') !== -1) {
 				$('nav').hide();
-				$('.computer.only').hide();
-				$('.sixteen.wide.mobile').each(function(index, value) {
-					$(value).attr('class', $(value).attr('class').substring(('sixteen wide mobile').length));
-				});
+				$('.mobile').html('');
+				$('.tablet').html('');
 				$('div[ui-view="view"]').css({'padding' : '0 50px'});
-				$('.phantomjs').removeClass('hide tablet only');
-				$('.left.content.phantomjs').css({'width' : '300px'});
-				$('.right.content.phantomjs').css({'width' : '450px', 'text-align' : 'justify'});
+				
+				// $('.sixteen.wide.mobile').each(function(index, value) {
+				// 	$(value).attr('class', $(value).attr('class').substring(('sixteen wide mobile').length));
+				// });
+				// $('div[ui-view="view"]').css({'padding' : '0 50px'});
+				// $('.phantomjs').removeClass('hide tablet only');
+				// $('.left.content.phantomjs').css({'width' : '300px'});
+				// $('.right.content.phantomjs').css({'width' : '450px', 'text-align' : 'justify'});
 
 			}
 		});
