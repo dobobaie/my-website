@@ -69,13 +69,13 @@ gulp.task('php', function() {
 	;
 });
 
-gulp.task('watch', ['html', 'templates', 'app', 'css', 'js', 'php'], function() {
-	gulp.watch(['./public/js/*.js', './public/js/**/*.js'], ['js']);
-	gulp.watch(['./public/css/*.css'], ['css']);
-	gulp.watch(['./public/*.html'], ['html']);
-	gulp.watch(['./public/templates/*.html'], ['templates']);
-	gulp.watch(['./public/app/*.json'], ['app']);
-	gulp.watch(['./private/*.php'], ['php']);
+gulp.task('watch',  function() {
+	gulp.watch(['./public/js/*.js', './public/js/**/*.js'], gulp.series('js'));
+	gulp.watch(['./public/css/*.css'], gulp.series('css'));
+	gulp.watch(['./public/*.html'], gulp.series('html'));
+	gulp.watch(['./public/templates/*.html'], gulp.series('templates'));
+	gulp.watch(['./public/app/*.json'], gulp.series('app'));
+	gulp.watch(['./private/*.php'], gulp.series('php'));
 	return gulp;
 });
 
@@ -111,7 +111,7 @@ gulp.task('lib', function() {
 	return gulp;
 });
 
-gulp.task('init', ['lib'], function() {
+gulp.task('init', gulp.series('lib', function() {
 	var mode = process.env.NODE_ENV || 'dev';
 	if (mode == 'dev') {
 		gulp
@@ -127,18 +127,20 @@ gulp.task('init', ['lib'], function() {
 		.pipe(gulp.dest('./'))
 	;
 	return gulp;
-});
+}));
 
-gulp.task('serve', ['watch'], function() {
+gulp.task('browser-init', function() {
 	browserInit.init({
 		server: {
 			baseDir: 'public/',
 		},
-		browser: browser,
+		browser,
 	});
 });
 
-gulp.task('backend', ['watch'], function() {
+gulp.task('serve', gulp.parallel('watch', 'browser-init'));
+
+gulp.task('backend', gulp.series('watch', function() {
 	var pathPhpExe = process.env.PHP_EXE || shell.exec('where php.exe').stdout.replace(/(?:\r\n|\r|\n)/g, '');
 	var pathPhpIni = process.env.PHP_INI || shell.exec('where php.ini').stdout.replace(/(?:\r\n|\r|\n)/g, '');
 	php.server({
@@ -149,10 +151,10 @@ gulp.task('backend', ['watch'], function() {
 	}, function() {
 		browserSync({
 			proxy: '127.0.0.1:8000',
-			browser: browser,
+			browser,
 		});
 	});
-});
+}));
 
 gulp.task('default', function() {
 	console.log('Please follow the README.md file, thank you.');

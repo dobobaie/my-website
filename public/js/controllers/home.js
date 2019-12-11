@@ -4,14 +4,13 @@ angular
 		appSystem.ready(function()
 		{
 			var lang_json = appSystem.get('lang_json');
-			var data_json = appSystem.get('data_json');
 			var data_complement_json = appSystem.get('data_complement_json');
 
 			$scope.infos_lang = lang_json;
 			$scope.infos_cv = {
 				pictureUrl: data_complement_json.pictureUrl,
-				lastName: data_json.lastName,
-				firstName: data_json.firstName,
+				lastName: data_complement_json.last_name,
+				firstName: data_complement_json.first_name,
 				headline: data_complement_json.headline,
 				phone: data_complement_json.phone,
 				locality: data_complement_json.locality,

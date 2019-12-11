@@ -54,24 +54,12 @@ angular
 					})
 				;
 			}
-			var getData = function() {
-				appNetwork
-					.get('./app/data.json')
-					.success(function(data, params) {
-						_engine.data.data_json = data;
-						getDataComplement();
-					})
-					.error(function(data, params) {
-						// 
-					})
-				;
-			}
 			var getConfig = function() {
 				appNetwork
 					.get('./app/config.json')
 					.success(function(data, params) {
 						_engine.data.config_json = data;
-						getData();
+						getDataComplement();
 					})
 					.error(function(data, params) {
 						// 

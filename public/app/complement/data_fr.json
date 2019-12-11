@@ -1,10 +1,12 @@
 {
-	"pictureUrl" : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAzMAAAAJDA4MTcyMzQxLTIyZjQtNDkwMC1hNTg3LWJhZjcxZDg2OTNlOA.jpg",
+	"pictureUrl" : "/images/me.png",
+	"first_name": "Eddy",
+	"last_name": "Mhalli",
 	"birthday" : 771033600000,
 	"phone" : "+33 6 27 03 69 69",
 	"mail" : "eddy.mhalli@epitech.eu",
 	"locality" : "Paris",
-	"headline" : "Développeur full-stack en alternance",
+	"headline" : "Développeur full-stack Node.Js",
 	"summary" : "Passionné par l’univers informatique, je consacre l’entièreté de mon temps à explorer les nouvelles innovations et les différentes pratiques, dans l’optique de m’améliorer et de découvrir de nouvelles passions. Mon parcours scolaire m’a permis d’avoir une vision plus concrète du monde professionnel et d’approfondir mes connaissances dans la gestion de projets IT et dans le domaine de la programmation. À l’écoute d’opportunités et de nouveaux challenges, n’hésitez pas à me contacter, je me ferais un plaisir de partager ma culture avec vous.",
 	"social_network" : [
 		{

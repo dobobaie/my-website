@@ -290,7 +290,7 @@ ul.flat.items>li.item:after, ul.flat.horizontal.items:after, .flat.empty.items:a
 }
 .flat.horizontal.items>.item
 {
-	margin-top: 15px;
+	margin-top: 35px;
 	border-top: 0;
 	border-left: 1px dashed #2c3e50;
 }
@@ -419,8 +419,8 @@ ul.flat.items>li.item:after, ul.flat.horizontal.items:after, .flat.empty.items:a
 }
 .flat.items>.item>.image>img
 {
-	width: 100%;
 	max-width: 175px;
+	width: 80%;
 	border: 0.1px solid #808080;
 	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
 	border-radius: 50%;

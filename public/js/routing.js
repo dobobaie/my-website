@@ -26,6 +26,13 @@ appRoute
 				url: '/app',
 				abstract: true,
 				resolve: {
+					loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+						return $ocLazyLoad.load({
+							files: [
+								'./js/controllers/navigation.js',
+							] 
+						});
+					}],
 					deps: ['$ocLazyLoad', function($ocLazyLoad) {
 						return $ocLazyLoad.load({
 							files: [
@@ -39,61 +46,52 @@ appRoute
 				views: {
 					'nav': {
 						templateUrl: './templates/navigation.html',
-						controller: 'NavigationCtr',
-						resolve: {
-							loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
-								return $ocLazyLoad.load({
-									files: [
-										'./js/controllers/navigation.js',
-									] 
-								});
-							}],
-						}
+						controller: 'NavigationCtr'
 					},
 				}
 			})
 			.state('app.home',
 			{
 				url: '/home',
+				resolve: {
+					loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+						return $ocLazyLoad.load({
+							files: [
+								'./js/controllers/home.js',
+							] 
+						});
+					}],
+				},
 				views: {
 				  'view@': {
 						templateUrl: './templates/home_v3.html',
 						controller: 'HomeCtr',
-						resolve: {
-							loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
-								return $ocLazyLoad.load({
-									files: [
-										'./js/controllers/home.js',
-									] 
-								});
-							}],
-						}
 					}
 				}
 			})
 			.state('app.projects',
 			{
 				url: '/projects',
+				resolve: {
+					loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+						return $ocLazyLoad.load({
+							files: [
+								'./js/controllers/projects.js',
+							] 
+						});
+					}],
+				},
 				views: {
 				  'view@': {
 						templateUrl: './templates/projects.html',
-						controller: 'ProjectsCtr',
-						resolve: {
-							loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
-								return $ocLazyLoad.load({
-									files: [
-										'./js/controllers/projects.js',
-									] 
-								});
-							}],
-						}
+						controller: 'ProjectsCtr'
 					}
 				}
 			})
 		;
 
 		$ocLazyLoadProvider.config({
-			debug: false,
+			debug: true,
 			events: false,
 		});
 	})
