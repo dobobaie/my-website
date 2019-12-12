@@ -18,7 +18,7 @@ appRoute
 	})
 	.config(function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, $locationProvider)
 	{
-		$locationProvider.html5Mode(!(window.location.href.indexOf('localhost') + 1));
+		// $locationProvider.html5Mode(!(window.location.href.indexOf('localhost') + 1));
 
 		$urlRouterProvider.otherwise('/');
 
