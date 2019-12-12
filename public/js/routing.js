@@ -16,82 +16,64 @@ appRoute
 		$analyticsProvider.virtualPageviews(true);
 		$analyticsProvider.withAutoBase(true);
 	})
-	.config(function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider)
+	.config(function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, $locationProvider)
 	{
-		$urlRouterProvider.otherwise('/app/home');
+		$locationProvider.html5Mode(!(window.location.href.indexOf('localhost') + 1));
+
+		$urlRouterProvider.otherwise('/');
 
 		$stateProvider
 			.state('app',
 			{
-				url: '/app',
 				abstract: true,
 				resolve: {
 					loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
 						return $ocLazyLoad.load({
 							files: [
-								'./js/controllers/navigation.js',
+								'/js/controllers/navigation.js',
 							] 
 						});
 					}],
 					deps: ['$ocLazyLoad', function($ocLazyLoad) {
 						return $ocLazyLoad.load({
 							files: [
-								'./js/models/network.js',
-								'./js/models/system.js',
-								'./js/models/navigation.js',
+								'/js/models/network.js',
+								'/js/models/system.js',
+								'/js/models/navigation.js',
 							]
 						});
 					}],
 				},
 				views: {
 					'nav': {
-						templateUrl: './templates/navigation.html',
+						templateUrl: '/templates/navigation.html',
 						controller: 'NavigationCtr'
 					},
 				}
 			})
 			.state('app.home',
 			{
-				url: '/home',
+				url: '/',
 				resolve: {
 					loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
 						return $ocLazyLoad.load({
 							files: [
-								'./js/controllers/home.js',
+								'/js/controllers/home.js',
 							] 
 						});
 					}],
 				},
 				views: {
 				  'view@': {
-						templateUrl: './templates/home_v3.html',
+						templateUrl: '/templates/home_v3.html',
 						controller: 'HomeCtr',
-					}
-				}
-			})
-			.state('app.projects',
-			{
-				url: '/projects',
-				resolve: {
-					loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
-						return $ocLazyLoad.load({
-							files: [
-								'./js/controllers/projects.js',
-							] 
-						});
-					}],
-				},
-				views: {
-				  'view@': {
-						templateUrl: './templates/projects.html',
-						controller: 'ProjectsCtr'
 					}
 				}
 			})
 		;
 
 		$ocLazyLoadProvider.config({
-			debug: true,
+			debug: false,
 			events: false,
 		});
 	})

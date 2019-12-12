@@ -1,10 +1,41 @@
 <?php
-	require_once "../vendor/autoload.php";
+	if ( !defined( 'FM_SESSION_ID')) {
+    	define('FM_SESSION_ID', 'filemanager');
+	}
 
-	$env = file_get_contents('../.env_config');
+	session_cache_limiter('');
+    session_name(FM_SESSION_ID);
+    @session_start();
+
+	if (empty($_SESSION[FM_SESSION_ID]['logged'])) {
+		header('Location: index.php');
+		exit();
+	}
+?>
+
+<?php
+	$env = file_get_contents('../../.env_config');
 	$variables = explode(PHP_EOL, $env);
-	$linkedin_id = substr($variables[0], strlen('LINKEDIN_ID='));
-	$linkedin_secret = substr($variables[0], strlen('LINKEDIN_SECRET='));
+	$linkedin_id = substr($variables[1], strlen('LINKEDIN_ID='));
+	$linkedin_secret = substr($variables[1], strlen('LINKEDIN_SECRET='));
+
+	if (empty($_POST['linkedin_id']) || empty($_POST['linkedin_secret'])) {
+?>
+	<form action="" method="POST">
+		<input type="text" name="linkedin_id" placeholder="LinkedIn ID" value="<?php echo $linkedin_id; ?>"><br />
+		<input type="text" name="linkedin_secret" placeholder="LinkedIn secret" value="<?php echo $linkedin_secret; ?>"><br />
+		<input type="submit" value="Search"><br />
+	</form>
+<?php
+	exit(); 
+	}
+?>
+
+<?php
+	require_once "./vendor/autoload.php";
+
+	$linkedin_id = $_POST['linkedin_id'];
+	$linkedin_secret = $_POST['linkedin_secret'];
 
 	if (empty($linkedin_id) || empty($linkedin_secret)) {
 		echo 'Les informations api linkedin sont introuvables.<br/>';
@@ -112,11 +143,11 @@
 			')'
 		);
 	
-		file_put_contents('../public/app/data.json', json_encode($data));
-
-		echo 'Le fichier data a été mis à jours.<br/>';
+		// file_put_contents('../public/app/data.json', json_encode($data));
+		// echo 'Le fichier data a été mis à jours.<br/>';
 		// exit();
 
+		echo json_encode($data);
 	}
 
 	//

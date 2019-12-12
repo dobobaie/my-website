@@ -31,7 +31,7 @@ angular
 			}
 			var getLang = function() {
 				appNetwork
-					.get('./app/lang/data_'+_engine.language+'.json')
+					.get('/assets/app/lang/data_'+_engine.language+'.json')
 					.success(function(data, params) {
 						_engine.data.lang_json = data;
 						_engine.status = true;
@@ -44,7 +44,7 @@ angular
 			}
 			var getDataComplement = function() {
 				appNetwork
-					.get('./app/complement/data_'+_engine.language+'.json')
+					.get('/assets/app/complement/data_'+_engine.language+'.json')
 					.success(function(data, params) {
 						_engine.data.data_complement_json = data;
 						getLang();
@@ -56,7 +56,7 @@ angular
 			}
 			var getConfig = function() {
 				appNetwork
-					.get('./app/config.json')
+					.get('/assets/app/config.json')
 					.success(function(data, params) {
 						_engine.data.config_json = data;
 						getDataComplement();

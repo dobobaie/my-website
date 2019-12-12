@@ -140,14 +140,14 @@ gulp.task('browser-init', function() {
 
 gulp.task('serve', gulp.parallel('watch', 'browser-init'));
 
-gulp.task('backend', gulp.series('watch', function() {
+gulp.task('backend', gulp.parallel('watch', function() {
 	var pathPhpExe = process.env.PHP_EXE || shell.exec('where php.exe').stdout.replace(/(?:\r\n|\r|\n)/g, '');
 	var pathPhpIni = process.env.PHP_INI || shell.exec('where php.ini').stdout.replace(/(?:\r\n|\r|\n)/g, '');
 	php.server({
 		hostname: '0.0.0.0',
 		bin: pathPhpExe,
 		ini: pathPhpIni,
-		base: 'private/',
+		base: 'public/panel/',
 	}, function() {
 		browserSync({
 			proxy: '127.0.0.1:8000',

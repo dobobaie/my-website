@@ -30,26 +30,13 @@ gulp init
 gulp serve
 ```
 
-## Compiler le backend (api linkedin)
+## Compiler le backend 
 
 ### Installation des dependance
 * Composer : https://getcomposer.org/
 
 ```
 composer install
-```
-
-### Configuration
-
-- Déplacer ".env_config.sample" vers ".env_config"
-- Ouvrir le fichier
-- Compléter "LINKEDIN_ID" et "LINKEDIN_SECRET"
-- Enregister
-
-### Lancer le backend
-
-```sh
-gulp backend
 ```
 
 ### NOTE 

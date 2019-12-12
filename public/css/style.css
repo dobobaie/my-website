@@ -1,6 +1,6 @@
 body
 {
-	background: url('../images/background.png') right bottom fixed no-repeat, url('../images/background2.png') left top fixed no-repeat !important;
+	background: url('/assets/images/background.png') right bottom fixed no-repeat, url('/assets/images/background2.png') left top fixed no-repeat !important;
 	/*background: #ee6e73;*/
 }
 
@@ -290,7 +290,7 @@ ul.flat.items>li.item:after, ul.flat.horizontal.items:after, .flat.empty.items:a
 }
 .flat.horizontal.items>.item
 {
-	margin-top: 35px;
+	margin-top: 15px;
 	border-top: 0;
 	border-left: 1px dashed #2c3e50;
 }
@@ -415,15 +415,20 @@ ul.flat.items>li.item:after, ul.flat.horizontal.items:after, .flat.empty.items:a
 
 .flat.items>.item>.image
 {
-	text-align: center;
-}
-.flat.items>.item>.image>img
-{
-	max-width: 175px;
-	width: 80%;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
 	border: 0.1px solid #808080;
 	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
 	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+.flat.items>.item>.image>img
+{
+	position: absolute;
+	left: -38px;
+	width: 225px;
 }
 
 .flat.orange.items

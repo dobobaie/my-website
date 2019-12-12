@@ -65,3 +65,4 @@ vendor/
 scripts/
 .env_config
 public/app/data.json
+public/panel/vendor/

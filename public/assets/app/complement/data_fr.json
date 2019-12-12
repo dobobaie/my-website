@@ -1,8 +1,8 @@
 {
-	"pictureUrl" : "/images/me.png",
-	"first_name": "Eddy",
-	"last_name": "Mhalli",
+	"pictureUrl" : "/assets/images/me.png",
 	"birthday" : 771033600000,
+	"first_name" : "Eddy",
+	"last_name" : "MHALLI",
 	"phone" : "+33 6 27 03 69 69",
 	"mail" : "eddy.mhalli@epitech.eu",
 	"locality" : "Paris",
@@ -40,7 +40,7 @@
 			"name" : "Fearless VR",
 			"status" : "Gestionnaire de projet et développeur",
 			"more" : "Projet de fin d'étude",
-			"logo" : "./photos/FEARLESS.png",
+			"logo" : "/assets/photos/FEARLESS.png",
 			"start_date" : 1443657600000,
 			"end_date" : null,
 			"locality": null,
@@ -64,7 +64,7 @@
 			"link" : "http://seitosei.com/",
 			"name" : "SEITOSEI",
 			"status" : "Stagiaire développeur web et mobile",
-			"logo" : "./photos/SEITOSEI.png",
+			"logo" : "/assets/photos/SEITOSEI.png",
 			"start_date" : 1443657600000,
 			"end_date" : 1470528000000,
 			"locality": "Levallois-Perret",
@@ -89,7 +89,7 @@
 			"link" : "http://www.belair-info.fr/",
 			"name" : "Bel Air informatique",
 			"status" : "Stagiaire développeur web responsive",
-			"logo" : "./photos/BELAIR.png",
+			"logo" : "/assets/photos/BELAIR.png",
 			"start_date" : 1404172800000,
 			"end_date" : 1420070400000,
 			"locality": "Les Ulis",
@@ -106,7 +106,7 @@
 			"link" : "http://jobsetmusik.com/",
 			"name" : "Jobs&Musik",
 			"status" : "Auto-entrepreneur et développeur",
-			"logo" : "./photos/JOBSETMUSIK.jpg",
+			"logo" : "/assets/photos/JOBSETMUSIK.jpg",
 			"start_date" : 1325376000000,
 			"end_date" : 1356998400000,
 			"locality": "à distance",
@@ -123,7 +123,7 @@
 			"link" : "",
 			"name" : "Sbeauté",
 			"status" : "Auto-entrepreneur et développeur",
-			"logo" : "./photos/SBEAUTE.png",
+			"logo" : "/assets/photos/SBEAUTE.png",
 			"start_date" : 1238544000000,
 			"end_date" : 1317427200000,
 			"locality": "à distance",
@@ -140,7 +140,7 @@
 			"name" : "EPITECH",
 			"status" : "Expert en Technologies de l'information",
 			"locality" : "Paris",
-			"logo" : "./photos/EPITECH.png",
+			"logo" : "/assets/photos/EPITECH.png",
 			"start_date" : 1372636800000,
 			"end_date" : null,
 			"description" : "",
@@ -155,7 +155,7 @@
 			"status" : "Baccalauréat en génie logiciel - BAC +4",
 			"locality" : "Quebec - Canada",
 			"more" : "Programme d'échange",
-			"logo" : "./photos/ULAVAL.jpg",
+			"logo" : "/assets/photos/ULAVAL.jpg",
 			"start_date" : 1471996800000,
 			"end_date" : 1493596800000,
 			"description" : "",
@@ -166,21 +166,10 @@
 			]
 		},
 		{
-			"name" : "Université Laval",
-			"status" : "Baccalauréat en génie logiciel - BAC +4 <div style='font-weight: bold;margin-top: 10px;'>Programme d'échange</div>",
-			"logo" : "./photos/ULAVAL.jpg",
-			"start_date" : 1471996800000,
-			"end_date" : 1493596800000,
-			"description" : "",
-			"skills" : [
-				"Ville de Quebec - Canada"
-			]
-		},
-		{
 			"name" : "Lycée parc de Vilgénis",
 			"status" : "Baccalauréat professionnel systèmes électroniques numériques",
 			"locality" : "Massy",
-			"logo" : "./photos/VILGENIS.png",
+			"logo" : "/assets/photos/VILGENIS.png",
 			"start_date" : 1277942400000,
 			"end_date" : 1372636800000,
 			"description" : "",
@@ -197,101 +186,101 @@
 	"skills_pictures" : [
 		{
 			"name" : "html",
-			"image" : "./photos/atouts/HTML.png"
+			"image" : "/assets/photos/atouts/HTML.png"
 		},
 		{
 			"name" : "css",
-			"image" : "./photos/atouts/CSS.png"
+			"image" : "/assets/photos/atouts/CSS.png"
 		},
 		{
 			"name" : "js",
-			"image" : "./photos/atouts/JS.png"
+			"image" : "/assets/photos/atouts/JS.png"
 		},
 		{
 			"name" : "ts",
-			"image" : "./photos/atouts/TS.png"
+			"image" : "/assets/photos/atouts/TS.png"
 		},
 		{
 			"name" : "nodejs",
-			"image" : "./photos/atouts/NODEJS.png"
+			"image" : "/assets/photos/atouts/NODEJS.png"
 		},
 		{
 			"name" : "php",
-			"image" : "./photos/atouts/PHP.png"
+			"image" : "/assets/photos/atouts/PHP.png"
 		},
 		
 		{
 			"name" : "manager",
-			"image" : "./photos/atouts/MANAGER.jpg"
+			"image" : "/assets/photos/atouts/MANAGER.jpg"
 		},
 		{
 			"name" : "ionic",
-			"image" : "./photos/atouts/IONIC.png"
+			"image" : "/assets/photos/atouts/IONIC.png"
 		},
 		{
 			"name" : "cordova",
-			"image" : "./photos/atouts/CORDOVA.png"
+			"image" : "/assets/photos/atouts/CORDOVA.png"
 		},
 		{
 			"name" : "json",
-			"image" : "./photos/atouts/JSON.png"
+			"image" : "/assets/photos/atouts/JSON.png"
 		},
 		{
 			"name" : "mongodb",
-			"image" : "./photos/atouts/MONGODB.png"
+			"image" : "/assets/photos/atouts/MONGODB.png"
 		},
 		{
 			"name" : "mysql",
-			"image" : "./photos/atouts/MYSQL.png"
+			"image" : "/assets/photos/atouts/MYSQL.png"
 		},
 		{
 			"name" : "C",
-			"image" : "./photos/atouts/C.png"
+			"image" : "/assets/photos/atouts/C.png"
 		},
 		{
 			"name" : "C++",
-			"image" : "./photos/atouts/C++.png"
+			"image" : "/assets/photos/atouts/C++.png"
 		},
 		{
 			"name" : "C#",
-			"image" : "./photos/atouts/CS.png"
+			"image" : "/assets/photos/atouts/CS.png"
 		},
 		{
 			"name" : "git",
-			"image" : "./photos/atouts/GIT.png"
+			"image" : "/assets/photos/atouts/GIT.png"
 		},
 		{
 			"name" : "svn",
-			"image" : "./photos/atouts/SVN.png"
+			"image" : "/assets/photos/atouts/SVN.png"
 		},
 		{
 			"name" : "scrum",
-			"image" : "./photos/atouts/SCRUM.png"
+			"image" : "/assets/photos/atouts/SCRUM.png"
 		},
 
 		{
 			"name" : "windows",
-			"image" : "./photos/atouts/WINDOWS.png"
+			"image" : "/assets/photos/atouts/WINDOWS.png"
 		},
 		{
 			"name" : "linux",
-			"image" : "./photos/atouts/LINUX.png"
+			"image" : "/assets/photos/atouts/LINUX.png"
 		},
 		{
 			"name" : "ios/mac",
-			"image" : "./photos/atouts/IOS.png"
+			"image" : "/assets/photos/atouts/IOS.png"
 		},
 		{
 			"name" : "android",
-			"image" : "./photos/atouts/ANDROID.png"
+			"image" : "/assets/photos/atouts/ANDROID.png"
 		},
 		{
 			"name" : "AWS",
-			"image" : "./photos/atouts/AWS.png"
+			"image" : "/assets/photos/atouts/AWS.png"
 		},
 		{
 			"name" : "java",
-			"image" : "./photos/atouts/JAVA.png"
+			"image" : "/assets/photos/atouts/JAVA.png"
 		}
 
 		
@@ -395,12 +384,12 @@
 		{
 			"name" : "Anglais",
 			"advancement" : "Professionnel",
-			"image" : "./photos/flag_france.svg"
+			"image" : "/assets/photos/flag_france.svg"
 		},
 		{
 			"name" : "Français",
 			"advancement" : "Langue maternelle",
-			"image" : "./photos/flag_english.jpg"
+			"image" : "/assets/photos/flag_english.jpg"
 		}
 	],
 	"interest" : [
