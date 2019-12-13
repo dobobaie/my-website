@@ -14,7 +14,7 @@ angular
 			},
 		};
 
-		var initSystem = (function()
+		var initSystem = function()
 		{
 			var analyticsConfig = function() {
 				$analytics.setUserProperties({
@@ -50,7 +50,10 @@ angular
 						getLang();
 					})
 					.error(function(data, params) {
-						// 
+						if (_engine.language !== "en") {
+							_engine.language = "en";
+							initSystem();
+						}
 					})
 				;
 			}
@@ -67,7 +70,17 @@ angular
 				;
 			}
 			getConfig();
-		})();
+		};
+
+		var setLang = function(lang) {
+			_engine.language = lang;
+			console.log(lang);
+			initSystem();
+		}
+
+		var getLang = function() {
+			return _engine.language;
+		}
 
 		var ready = function(func)
 		{
@@ -97,9 +110,13 @@ angular
 			}
 		}
 
+		initSystem();
+
 		return {
 			get:get,
 			ready:ready,
+			getLang: getLang,
+			setLang: setLang
 		}
 	}])
 ;

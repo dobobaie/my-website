@@ -1,0 +1,16 @@
+{
+	"to" : "to",
+	"current" : "Actual",
+	"years" : "yo",
+	"experience" : "Experiences",
+	"education" : "Education",
+	"skill" : "Skills",
+	"language" : "Languages",
+	"interest" : "Interests",
+	"programmation" : "Programmation",
+	"frameworks_library" : "Frameworks / Library",
+	"tools" : "Tools",
+	"other" : "Other",
+	"about" : "About",
+	"system" : "System"
+}

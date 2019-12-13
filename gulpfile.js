@@ -80,21 +80,12 @@ gulp.task('watch',  function() {
 });
 
 gulp.task('export', function() {
-	phantom.create().then(function(ph) {
-		ph.createPage().then(function(page) {
-			page.property('viewportSize', { width: 595, height: 842 }).then(function() {
-				page.property('paperSize', { width: 595 * 1.55, height: 842 * 1.75 }).then(function() { // width: 2480 / 3, height: 800
-					page.open('public/index.html').then(function(status) {
-						setTimeout(function() {
-							page.render('export/cv.pdf').then(function() {
-								console.log('Page Rendered');
-								ph.exit();
-							});
-						}, 2000);
-					});
-				});
-			});
-		});
+	const Renderer = require('@pdftron/web-to-pdf');
+	const renderer = new Renderer({ dirname: __dirname });
+	renderer.render({
+	  templateSource: 'http://localhost:3000/',
+	  outputFolder: 'export',
+	  outputName: 'cv'
 	});
 	return gulp;
 });

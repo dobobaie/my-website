@@ -21,7 +21,7 @@
 					</div>
 					<div class="eight wide column">
 
-						<a class="flat right pinut" ng-repeat="lang in infos_cv.language" alt="{{lang.advancement}}">
+						<a class="flat right pinut pointer" ng-repeat="lang in infos_cv.language" alt="{{lang.advancement}}" ng-click="setLang(lang.key)">
 							<div class="flat items pin rounded">
 								<div class="image"><img ng-src="{{lang.image}}" alt="{{lang.advancement}}"></div>
 							</div>
@@ -132,7 +132,7 @@
 						</div>
 					</div>
 					<div class="three wide column">
-						<a class="flat pinut" ng-repeat="lang in infos_cv.language" alt="{{lang.advancement}}">
+						<a class="flat pinut pointer" ng-repeat="lang in infos_cv.language" alt="{{lang.advancement}}" ng-click="setLang(lang.key)">
 							<div class="flat items pin rounded">
 								<div class="image"><img ng-src="{{lang.image}}" alt="{{lang.advancement}}"></div>
 							</div>
@@ -232,7 +232,7 @@
 					<div class="cloud">
 						<div class="ui grid">
 							<div class="four wide column">
-								<div class="date">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span></div>
+								<div class="date">{{formatDate(experience.start_date)}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{formatDate(experience.end_date)}}</span></div>
 								<div class="header">{{experience.name}}</div>
 								<div class="image"><img ng-src="{{experience.logo}}"></div>
 								<div class="more" ng-if="experience.more">{{experience.more}}</div>
@@ -295,7 +295,7 @@
 								</div>
 							</div>
 							<div class="four wide column">
-								<div class="date">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></div>
+								<div class="date">{{formatDate(education.start_date)}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{formatDate(education.end_date)}}</span></div>
 								<div class="image"><img ng-src="{{education.logo}}"></div>
 							</div>
 						</div>	
@@ -419,7 +419,7 @@
 							</div>
 						</div>
 						<div class="three wide column">
-							<a class="flat pinut" ng-repeat="lang in infos_cv.language" alt="{{lang.advancement}}">
+							<a class="flat pinut pointer" ng-repeat="lang in infos_cv.language" alt="{{lang.advancement}}" ng-click="setLang(lang.key)">
 								<div class="flat items pin rounded">
 									<div class="image"><img ng-src="{{lang.image}}" alt="{{lang.advancement}}"></div>
 								</div>
@@ -457,7 +457,7 @@
 						<div class="cloud">
 							<div class="ui grid">
 								<div class="four wide column">
-									<div class="date">{{experience.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{experience.end_date | date: 'MMM yyyy'}}</span></div>
+									<div class="date">{{formatDate(experience.start_date)}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{formatDate(experience.end_date)}}</span></div>
 									<div class="header">{{experience.name}}</div>
 									<div class="image"><img ng-src="{{experience.logo}}"></div>
 									<div class="more" ng-if="experience.more">{{experience.more}}</div>
@@ -540,7 +540,7 @@
 				<ul class="flat inverse clouds items">
 					<li ng-repeat="education in infos_cv.education" class="item">
 						<div class="cloud">
-							<div class="date">{{education.start_date | date: 'MMM yyyy'}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{education.end_date | date: 'MMM yyyy'}}</span></div>
+							<div class="date">{{formatDate(education.start_date)}} {{infos_lang.to}} <span ng-if="education.end_date == null">-</span><span ng-if="education.end_date != null">{{formatDate(education.end_date)}}</span></div>
 							<div class="header">{{education.name}}</div>
 							<div class="small image"><img ng-src="{{education.logo}}"></div>
 							<div class="more" ng-if="education.more">{{education.more}}</div>

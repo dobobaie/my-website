@@ -9,6 +9,10 @@ nav
 	margin-bottom: 25px;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
 .cadre
 {
 	margin: 15px auto !important;

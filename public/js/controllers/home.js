@@ -1,6 +1,14 @@
 angular
 	.module(config.nameRoute)
 	.controller('HomeCtr', ['$scope', '$timeout', '$sce', '$filter', 'appSystem', function ($scope, $timeout, $sce, $filter, appSystem) {
+		$scope.setLang = function(lang) {
+			appSystem.setLang(lang);
+		};
+		$scope.formatDate = function(date) {
+			var d = new Date(date);
+			const options = { year: 'numeric', month: 'short' };
+			return d.toLocaleDateString(appSystem.getLang(), options);
+		}
 		appSystem.ready(function()
 		{
 			var lang_json = appSystem.get('lang_json');
@@ -16,7 +24,7 @@ angular
 				locality: data_complement_json.locality,
 				summary: data_complement_json.summary,
 				mail: data_complement_json.mail,
-				birthday: $filter('date')((new Date()), 'yyyy') - $filter('date')(data_complement_json.birthday, 'yyyy'),
+				birthday: (b => $filter('date')((new Date()), 'yyyy') - $filter('date')(new Date(b), 'yyyy'))(data_complement_json.birthday),
 				social_network: data_complement_json.social_network,
 				experience: data_complement_json.experience,
 				education: data_complement_json.education,
@@ -55,7 +63,19 @@ angular
 			// 	resizeElementFixed();
 			// });
 			
-			if (navigator.userAgent.indexOf('PhantomJS') != -1) {
+			// alert(navigator.userAgent);
+			var a = document.createElement('div');
+			a.innerText = navigator.userAgent;
+			document.querySelector('.menu').appendChild(a);
+
+			if (navigator.userAgent.indexOf('HeadlessChrome') != -1) {
+				$("body").css({ zoom: "25%" });
+				
+				$(".mobile").remvove();
+				$(".tablet").remvove();
+				$(".computer").removeClass("computer");
+
+
 				$('nav').hide();
 				$('.computer.only').hide();
 				$('.sixteen.wide.mobile').each(function(index, value) {
