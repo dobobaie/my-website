@@ -62,19 +62,15 @@ angular
 			// 	}
 			// 	resizeElementFixed();
 			// });
-			
-			// alert(navigator.userAgent);
-			var a = document.createElement('div');
-			a.innerText = navigator.userAgent;
-			document.querySelector('.menu').appendChild(a);
 
 			if (navigator.userAgent.indexOf('HeadlessChrome') != -1) {
 				$("body").css({ zoom: "25%" });
 				
-				$(".mobile").remvove();
-				$(".tablet").remvove();
-				$(".computer").removeClass("computer");
-
+				$(".mobile").each((index, elem) => elem.remove());
+				$(".tablet").each((index, elem) => elem.remove());
+				$(".computer").removeClass("computer").removeClass("only");
+				$(".pdfhide").hide();
+				$(".pdfshort").removeClass("pdfshort");
 
 				$('nav').hide();
 				$('.computer.only').hide();

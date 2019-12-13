@@ -456,9 +456,8 @@
 					<li ng-repeat="experience in infos_cv.experience" class="item">
 						<div class="cloud">
 							<div class="ui grid">
-								<div class="four wide column">
+								<div class="four wide column pdfhide">
 									<div class="date">{{formatDate(experience.start_date)}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{formatDate(experience.end_date)}}</span></div>
-									<div class="header">{{experience.name}}</div>
 									<div class="image"><img ng-src="{{experience.logo}}"></div>
 									<div class="more" ng-if="experience.more">{{experience.more}}</div>
 									<div class="exta">
@@ -467,8 +466,20 @@
 										</div>
 									</div>
 								</div>
-								<div class="twelve wide column">
-									<div class="header"><span class="sub-title" ng-bind-html="safeHtml(experience.status)"></span></div>
+
+								<div class="twelve wide column pdfhide">
+									<div class="header"><span class="sub-title" ng-bind-html="safeHtml('[' + experience.name + '] - ' + experience.status)"></span></div>
+									<div class="description" ng-bind-html="safeHtml(experience.short_description)"></div>
+									<div class="extra">
+										<div class="meta">
+											<div class="ui label pin" ng-repeat="skill in experience.skills">{{skill}}</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="sixteen wide column pdfshort">
+									<div class="header"><span class="sub-title" ng-bind-html="safeHtml('[' + experience.name + '] - ' + experience.status)"></span></div>
+									<div class="date"><i class="marker icon"></i> {{experience.locality}} <i class="calendar icon"></i> {{formatDate(experience.start_date)}} {{infos_lang.to}} <span ng-if="experience.end_date == null">-</span><span ng-if="experience.end_date != null">{{formatDate(experience.end_date)}}</span> </div>
 									<div class="description" ng-bind-html="safeHtml(experience.short_description)"></div>
 									<div class="extra">
 										<div class="meta">
@@ -481,14 +492,14 @@
 					</li>
 				</ul>
 
-				<div class="flat items pin">
+				<div class="flat items pin pdfhide">
 					<div class="item">
 						<div class="meta delimit">
 							<div class="title left font"><a><i class="heartbeat icon"></i> {{infos_lang.interest}}</a></div>
 						</div>
 					</div>
 				</div>
-				<ul class="flat horizontal clouds items">
+				<ul class="flat horizontal clouds items pdfhide">
 					<li ng-repeat="interest in infos_cv.interest" class="item">
 						<div class="cloud">
 							<div class="header"><i ng-if="typeof(interest.icon) != 'undefined'" class="large {{interest.icon}} middle aligned icon"></i> <span class="sub-title" ng-bind-html="safeHtml(interest.name)"></span></div>
@@ -550,6 +561,22 @@
 									<div class="book" ng-if="education.degree != null" ng-repeat="degree in education.degree"><i class="book icon"></i> {{degree.name}}</div>
 								</div>
 							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="flat items pin pdfshort">
+					<div class="item">
+						<div class="meta delimit">
+							<div class="title left font"><a><i class="heartbeat icon"></i> {{infos_lang.interest}}</a></div>
+						</div>
+					</div>
+				</div>
+				<ul class="flat clouds items pdfshort">
+					<li ng-repeat="interest in infos_cv.interest" class="item">
+						<div class="cloud">
+							<div class="header"><i ng-if="typeof(interest.icon) != 'undefined'" class="large {{interest.icon}} middle aligned icon"></i> <span class="sub-title" ng-bind-html="safeHtml(interest.name)"></span></div>
+							<div class="description" ng-bind-html="safeHtml(interest.description)"></div>
 						</div>
 					</li>
 				</ul>
