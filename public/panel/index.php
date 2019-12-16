@@ -22,6 +22,7 @@
 	}
 
 	if (!empty($_SESSION[FM_SESSION_ID]['logged'])) {
+		echo '<a href="gcv.php">Generate CV</a><br />';
 		echo '<a href="tinyfilemanager.php">Tiny File Manager</a><br />';
 		echo '<a href="linkedin.php">LinkedIn informations</a><br />';
 		echo '<a href="index.php?logout">Log out</a><br />';

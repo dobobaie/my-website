@@ -114,7 +114,7 @@ $GLOBALS['online_viewer'] = 'google';
 $sticky_navbar = true;
 
 // max upload file size
-define('MAX_UPLOAD_SIZE', '2048');
+define('MAX_UPLOAD_SIZE', '20048');
 
 //--- EDIT BELOW CAREFULLY OR DO NOT EDIT AT ALL
 

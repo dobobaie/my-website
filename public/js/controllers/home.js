@@ -71,6 +71,7 @@ angular
 				$(".computer").removeClass("computer").removeClass("only");
 				$(".pdfhide").hide();
 				$(".pdfshort").removeClass("pdfshort");
+				$("#__bs_notify__")[0].remove();
 
 				$('nav').hide();
 				$('.computer.only').hide();

@@ -79,15 +79,14 @@ gulp.task('watch',  function() {
 	return gulp;
 });
 
-gulp.task('export', function() {
+gulp.task('export', async function() {
 	const Renderer = require('@pdftron/web-to-pdf');
 	const renderer = new Renderer({ dirname: __dirname });
-	renderer.render({
+	await renderer.render({
 	  templateSource: 'http://localhost:3000/',
 	  outputFolder: 'export',
 	  outputName: 'cv'
 	});
-	return gulp;
 });
 
 gulp.task('lib', function() {
