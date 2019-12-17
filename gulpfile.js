@@ -80,10 +80,13 @@ gulp.task('watch',  function() {
 });
 
 gulp.task('export', async function() {
+	const lang = process.argv.reduce((acc, cval, index) =>
+		cval === "--lang" ? index + 1 : acc
+	);
 	const Renderer = require('@pdftron/web-to-pdf');
 	const renderer = new Renderer({ dirname: __dirname, width: 827, height: 1170 });
 	await renderer.render({
-	  templateSource: 'http://localhost:3000/',
+	  templateSource: `http://localhost:3000/?lang=${lang ? process.argv[lang] : 'fr'}`,
 	  outputFolder: 'export',
 	  outputName: 'cv'
 	});

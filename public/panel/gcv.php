@@ -41,8 +41,8 @@
 		$env = file_get_contents('../../.env_config');
 		$variables = explode(PHP_EOL, $env);
 		$path_gulp_file = substr($variables[3], strlen('PATH_GULP_FILE='));
-		$cv_name = !empty($_GET['exec_cmd_real_time']) ? $_GET['exec_cmd_real_time'] : "CV.pdf";
-		$command = 'cd ' . $path_gulp_file . ' && echo "CV generating is running" && gulp export && echo "CV generated" && cp export/CV.pdf public/assets/data/' . $cv_name;
+		$cv_lang = !empty($_GET['exec_cmd_real_time']) ? $_GET['exec_cmd_real_time'] : "fr";
+		$command = 'cd ' . $path_gulp_file . ' && echo "CV generating is running in '. $cv_lang .'" && gulp export --lang '. $cv_lang .' && echo "CV generated" && cp export/CV.pdf public/assets/data/CV_'. $cv_lang .'.pdf';
 		
 		header("Content-type: text/plain");
 		disable_ob();
@@ -51,11 +51,11 @@
 	}
 
 	if (isset($_POST['run'])) {
-		echo '<iframe src="gcv.php?exec_cmd_real_time='. $_POST['name_cv'] .'" width="400px" height="400px" frameborder="0"></iframe>';
+		echo '<iframe src="gcv.php?exec_cmd_real_time='. $_POST['cv_lang'] .'" width="400px" height="400px" frameborder="0"></iframe>';
 	}
 ?>
 
 <form method="post" action="">
-	<input type="text" name="name_cv" placeholder="CV name" value="CV_fr.pdf"/><br/>
+	CV Language: <select name="cv_lang"><option value="fr">fr</option><option value="en">en</option></select><br/>
 	<input type="submit" name="run" value="Generate CV">
 </form>

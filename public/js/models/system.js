@@ -2,10 +2,13 @@ angular
 	.module(config.nameRoute)
 	.factory('appSystem', ['$injector', '$rootScope', '$analytics', 'appNetwork', function($injector, $rootScope, $analytics, appNetwork)
 	{
+		var pg_url = new URL(window.location.href);
+		var pg_lang = pg_url.searchParams.get("lang");
+
 		var _engine = {
 			list_ready: [],
 			status: false,
-			language: 'fr',
+			language: pg_lang || 'fr',
 			data: {
 				lang_json: null,
 				data_json: null,
