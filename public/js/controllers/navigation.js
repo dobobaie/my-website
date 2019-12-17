@@ -4,5 +4,6 @@ angular
 		$scope.navigateTo = appNavigation.page;
 		$scope.currentPage = appNavigation.current;
 		$scope.url = appNavigation.url;
+		$scope.lang = appSystem.getLang();
 	}])
 ;

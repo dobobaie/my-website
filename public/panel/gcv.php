@@ -41,7 +41,8 @@
 		$env = file_get_contents('../../.env_config');
 		$variables = explode(PHP_EOL, $env);
 		$path_gulp_file = substr($variables[3], strlen('PATH_GULP_FILE='));
-		$command = 'cd ' . $path_gulp_file . ' && echo "CV generating is running" && gulp export && echo "CV generated" && cp export/CV.pdf public/assets/data/';
+		$cv_name = !empty($_GET['exec_cmd_real_time']) ? $_GET['exec_cmd_real_time'] : "CV.pdf";
+		$command = 'cd ' . $path_gulp_file . ' && echo "CV generating is running" && gulp export && echo "CV generated" && cp export/CV.pdf public/assets/data/' . $cv_name;
 		
 		header("Content-type: text/plain");
 		disable_ob();
@@ -50,10 +51,11 @@
 	}
 
 	if (isset($_POST['run'])) {
-		echo '<iframe src="gcv.php?exec_cmd_real_time" width="400px" height="400px" frameborder="0"></iframe>';
+		echo '<iframe src="gcv.php?exec_cmd_real_time='. $_POST['name_cv'] .'" width="400px" height="400px" frameborder="0"></iframe>';
 	}
 ?>
 
 <form method="post" action="">
+	<input type="text" name="name_cv" placeholder="CV name" value="CV_fr.pdf"/><br/>
 	<input type="submit" name="run" value="Generate CV">
 </form>
