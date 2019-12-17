@@ -64,7 +64,7 @@ angular
 			// });
 
 			if (navigator.userAgent.indexOf('HeadlessChrome') != -1) {
-				$("body").css({ zoom: "25%" });
+				$("body").css({ zoom: "53%" });
 				
 				$(".mobile").each((index, elem) => elem.remove());
 				$(".tablet").each((index, elem) => elem.remove());

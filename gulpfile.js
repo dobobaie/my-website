@@ -81,7 +81,7 @@ gulp.task('watch',  function() {
 
 gulp.task('export', async function() {
 	const Renderer = require('@pdftron/web-to-pdf');
-	const renderer = new Renderer({ dirname: __dirname });
+	const renderer = new Renderer({ dirname: __dirname, width: 827, height: 1170 });
 	await renderer.render({
 	  templateSource: 'http://localhost:3000/',
 	  outputFolder: 'export',

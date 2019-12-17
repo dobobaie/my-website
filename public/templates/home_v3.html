@@ -492,14 +492,14 @@
 					</li>
 				</ul>
 
-				<div class="flat items pin pdfhide">
+				<div class="flat items pin">
 					<div class="item">
 						<div class="meta delimit">
 							<div class="title left font"><a><i class="heartbeat icon"></i> {{infos_lang.interest}}</a></div>
 						</div>
 					</div>
 				</div>
-				<ul class="flat horizontal clouds items pdfhide">
+				<ul class="flat horizontal clouds items">
 					<li ng-repeat="interest in infos_cv.interest" class="item">
 						<div class="cloud">
 							<div class="header"><i ng-if="typeof(interest.icon) != 'undefined'" class="large {{interest.icon}} middle aligned icon"></i> <span class="sub-title" ng-bind-html="safeHtml(interest.name)"></span></div>
@@ -561,22 +561,6 @@
 									<div class="book" ng-if="education.degree != null" ng-repeat="degree in education.degree"><i class="book icon"></i> {{degree.name}}</div>
 								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
-
-				<div class="flat items pin pdfshort">
-					<div class="item">
-						<div class="meta delimit">
-							<div class="title left font"><a><i class="heartbeat icon"></i> {{infos_lang.interest}}</a></div>
-						</div>
-					</div>
-				</div>
-				<ul class="flat clouds items pdfshort">
-					<li ng-repeat="interest in infos_cv.interest" class="item">
-						<div class="cloud">
-							<div class="header"><i ng-if="typeof(interest.icon) != 'undefined'" class="large {{interest.icon}} middle aligned icon"></i> <span class="sub-title" ng-bind-html="safeHtml(interest.name)"></span></div>
-							<div class="description" ng-bind-html="safeHtml(interest.description)"></div>
 						</div>
 					</li>
 				</ul>
