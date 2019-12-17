@@ -64,5 +64,9 @@ composer.lock
 vendor/
 scripts/
 .env_config
-public/app/data.json
+public/assets/app/data.json
 public/panel/vendor/
+public/assets/app/complement
+public/assets/data
+public/assets/photos
+
