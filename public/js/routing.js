@@ -65,7 +65,7 @@ appRoute
 				},
 				views: {
 				  'view@': {
-						templateUrl: '/templates/home_v3.html',
+						templateUrl: '/templates/home.html',
 						controller: 'HomeCtr',
 					}
 				}
