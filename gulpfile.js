@@ -6,7 +6,6 @@ var rename		= require('gulp-rename');
 var php 		= require('gulp-connect-php');
 var browserSync = require('browser-sync');
 var browserInit = browserSync.create();
-var phantom 	= require('phantom');   
 var shell 		= require('shelljs');
 
 var browser 	=
