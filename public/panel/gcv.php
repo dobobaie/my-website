@@ -38,7 +38,11 @@
 		    }
 		}
 
-		$command = 'cd ' . __DIR__ . '/../../ && echo "CV generating is running" && gulp export && echo "CV generated" && cp export/CV.pdf public/assets/data/';
+		$env = file_get_contents('../../.env_config');
+		$variables = explode(PHP_EOL, $env);
+		$path_gulp_file = substr($variables[1], strlen('PATH_GULP_FILE='));
+		$command = 'cd ' . $path_gulp_file . ' && echo "CV generating is running" && gulp export && echo "CV generated" && cp export/CV.pdf public/assets/data/';
+		
 		header("Content-type: text/plain");
 		disable_ob();
 		system($command);
