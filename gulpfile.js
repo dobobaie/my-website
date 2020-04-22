@@ -93,7 +93,7 @@ gulp.task('export', async function() {
 
 gulp.task('lib', function() {
 	gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./public/lib/jquery'));
-	gulp.src('./node_modules/semantic-ui/dist/**').pipe(gulp.dest('./public/lib/semantic'));
+	gulp.src('./node_modules/fomantic-ui/dist/**').pipe(gulp.dest('./public/lib/semantic'));
 	gulp.src('./node_modules/angular/*').pipe(gulp.dest('./public/lib/angular'));
 	gulp.src('./node_modules/angular-i18n/*').pipe(gulp.dest('./public/lib/angular-i18n'));
 	gulp.src('./node_modules/angular-ui-router/release/*').pipe(gulp.dest('./public/lib/angular-ui-router'));
