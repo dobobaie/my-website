@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@pdftron/web-to-pdf": "^0.6.0",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-i18n": "^1.7.9",
     "angular-ui-router": "^1.0.23",
     "angulartics": "^1.6.0",
