@@ -69,6 +69,16 @@ export default {
           return './techno/vr.png'
         case 'unity':
           return './techno/unity.webp'
+        case 'typescript':
+          return './techno/typescript.svg'
+        case 'nestjs':
+          return './techno/nestjs.png'
+        case 'fp-ts':
+          return './techno/fp-ts.png'
+        case 'graphql':
+          return './techno/graphql.png'
+        case 'kafka':
+          return './techno/kafka.png'
         default:
           console.log('===', name)
           return ''
