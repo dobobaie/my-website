@@ -1,5 +1,7 @@
-export const state = () => ({
-  item: {
+import { defineStore } from 'pinia'
+
+export const useMainStore = defineStore('main', {
+  state: () => ({
     name: 'Eddy Mhalli',
     picture: './photo.webp',
     headline: '💻 Digital Fridge Leader 🌍 Typescript universe',
@@ -380,22 +382,5 @@ export const state = () => ({
     //   short_description: "",
     //   pins: [],
     // }]
-  },
-})
-
-// export const mutations = {
-//   setItem(state: any, item: any): void {
-//     state.item = (item && Object.assign({}, state.item, item)) || null;
-//   },
-//   removeItem(state: any): void {
-//     state.item = null;
-//   },
-// };
-
-export const getters = {
-  get(state: any): any {
-    return state.item
-  },
-}
-
-export const namespaced: boolean = true
+  }),
+});

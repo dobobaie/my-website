@@ -1,38 +1,33 @@
 <template>
-  <div class="text-left">
+  <v-container class="pa-1">
     <v-btn
       v-for="(info, index) in profile.info"
       :key="'info_' + index"
-      class="mx-2 pa-0"
-      color="grey lighten-2"
-      small
-      dense
-      text
-      exact
-      dark
-    >
-      <v-icon>{{ info.icon }}</v-icon>
-      <span class="ml-2">{{ info.shortName }}</span>
-    </v-btn>
-  </div>
+      :prepend-icon="info.icon"
+      size="small"
+      variant="text"
+      width="100%"
+      :ripple="false"
+    >{{ info.shortName }}</v-btn>
+  </v-container>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { useMainStore } from '~/store/profile';
 
 export default {
-  computed: mapGetters({
-    profile: 'profile/get',
-  }),
+  setup() {
+    return { profile: useMainStore() }
+  }
 }
 </script>
 
 <style scoped>
-/deep/ div.v-responsive__content {
+:deep() div.v-responsive__content {
   width: auto !important;
 }
-/deep/ button.v-btn {
-  text-transform: initial;
-  display: block;
+button.v-btn {
+  justify-content: left;
+  height: 30px;
 }
 </style>

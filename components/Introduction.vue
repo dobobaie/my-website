@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { useMainStore } from '~/store/profile';
 
 export default {
-  computed: mapGetters({
-    profile: 'profile/get',
-  }),
+  setup() {
+    return { profile: useMainStore() }
+  }
 }
 </script>
 
@@ -36,7 +36,7 @@ div.title {
   margin: -25px auto;
   width: auto;
   max-width: max-content;
-  background: url('../static/decore.png') left;
+  background: url('./decore.png') left;
   background-size: 100%;
   background-color: #e5e3e6;
 }

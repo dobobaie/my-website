@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { useMainStore } from '~/store/profile';
 
 import Chips from '~/components/Chips'
 
@@ -32,8 +32,8 @@ export default {
   components: {
     Chips,
   },
-  computed: mapGetters({
-    profile: 'profile/get',
-  }),
+  setup() {
+    return { profile: useMainStore() }
+  }
 }
 </script>

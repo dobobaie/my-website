@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { useMainStore } from '~/store/profile';
 
 import MainProgrammingTools from '~/components/MainProgrammingTools'
 import Hobbies from '~/components/Hobbies'
@@ -45,15 +45,15 @@ export default {
     Projects,
     Formations,
   },
-  computed: mapGetters({
-    profile: 'profile/get',
-  }),
+  setup() {
+    return { profile: useMainStore() }
+  }
 }
 </script>
 
 <style>
 div#body {
-  background: url('../static/decore.png');
+  background: url('./decore.png');
   background-size: contain;
   background-color: #e5e3e6;
 }

@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { useMainStore } from '~/store/profile';
 
 export default {
-  computed: mapGetters({
-    profile: 'profile/get',
-  }),
+  setup() {
+    return { profile: useMainStore() }
+  }
 }
 </script>
 

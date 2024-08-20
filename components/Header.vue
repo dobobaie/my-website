@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 div#header {
-  background: url('../static/decore.png') top;
+  background: url('./decore.png') top;
   background-size: contain;
   background-color: #1a2d3b;
   color: #fff;
