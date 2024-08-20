@@ -9,7 +9,7 @@
       >
         <v-icon size="45">{{ hobbie.icon }}</v-icon>
         <div class="subtitle">{ {{ hobbie.name }} }</div>
-        <div class="text">{{ hobbie.short_description }}</div>
+        <div class="text" v-html="hobbie.short_description" />
       </v-col>
     </v-row>
     <div class="date">{{ profile.hobbie.description }}</div>

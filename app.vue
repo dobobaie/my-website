@@ -5,7 +5,7 @@
 </template>
 
 <style>
-div.v-application {
+body, div.v-application {
   background: url('./background.jpg') repeat;
   background-size: 40%;
 }

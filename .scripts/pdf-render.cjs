@@ -3,9 +3,8 @@ const html_to_pdf = require('html-pdf-node');
 
 const file = { url: 'http://localhost:3000/' };
 const options = {
-  format: 'A4',
+  // format: 'A4',
   printBackground: true,
-  preferCSSPageSize: true,
 };
 
 html_to_pdf.generatePdf(file, options).then(pdfBuffer => {

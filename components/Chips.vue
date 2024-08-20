@@ -8,7 +8,7 @@
       :small="maxWidth === '24'"
     >
       <v-avatar :max-width="maxWidth">
-        <v-img :src="getAvatar(pin)" contain />
+        <v-img :src="getAvatar(pin)" :alt="pin" contain />
       </v-avatar>
     </v-chip>
   </div>
@@ -49,6 +49,10 @@ export default {
           return './techno/more.webp'
         case 'nuxt':
           return './techno/nuxt.png'
+        case 'etl':
+          return './techno/etl.jpg'
+        case 'bubble':
+          return './techno/bubble.png'
         case 'php':
           return './techno/php.png'
         case 'postgresql':

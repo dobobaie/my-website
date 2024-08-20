@@ -7,7 +7,7 @@
       :key="'experience_' + index"
     >
       <div class="subtitle">{ {{ exp.name }} }</div>
-      <div class="text">{{ exp.short_description }}</div>
+      <div class="text" v-html="exp.short_description" />
       <Chips :pins="exp.pins" />
     </section>
   </div>

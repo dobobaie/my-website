@@ -2,7 +2,7 @@
   <v-card elevation="0" color="transparent" class="text-center" dark>
     <div class="mt-1">
       <v-avatar
-        size="50%"
+        size="30%"
         rounded="50%"
       >
         <v-img

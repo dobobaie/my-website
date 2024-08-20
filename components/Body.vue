@@ -72,7 +72,7 @@ div.date {
   font-size: 0.8rem;
 }
 div.subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #3e6abf;
 }

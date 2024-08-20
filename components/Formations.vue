@@ -4,6 +4,7 @@
     <section
       v-for="(formation, index) in profile.formations"
       :key="'formation_' + index"
+      class="py-2"
     >
       <div class="subtitle">
         { {{ formation.name }} } - <span>{{ formation.status }}</span>
