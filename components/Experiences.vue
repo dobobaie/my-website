@@ -37,3 +37,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  ul {
+    margin-left: 20px;
+  }
+  ul li {
+    font-weight: initial !important;
+  }
+</style>

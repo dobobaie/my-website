@@ -4,6 +4,7 @@
       <v-row class="pa-2">
         <v-col class="pr-0">
           <Experiences />
+          <!-- <PersonalExploration /> -->
         </v-col>
         <v-col class="pr-0">
           <MainProgrammingTools />
@@ -24,6 +25,10 @@
           />
         </v-col>
       </v-row>
+      <v-row class="pa-2">
+        <v-col class="pr-0">
+        </v-col>
+      </v-row>
     </v-col>
   </v-row>
 </template>
@@ -31,11 +36,12 @@
 <script>
 import { useMainStore } from '~/store/profile';
 
-import MainProgrammingTools from '~/components/MainProgrammingTools'
-import Hobbies from '~/components/Hobbies'
-import Experiences from '~/components/Experiences'
-import Projects from '~/components/Projects'
-import Formations from '~/components/Formations'
+import MainProgrammingTools from './MainProgrammingTools'
+import Hobbies from './Hobbies'
+import Experiences from './Experiences'
+import Projects from './Projects'
+import Formations from './Formations'
+import PersonalExploration from './PersonalExploration.vue';
 
 export default {
   components: {
@@ -44,6 +50,7 @@ export default {
     Experiences,
     Projects,
     Formations,
+    PersonalExploration,
   },
   setup() {
     return { profile: useMainStore() }

@@ -6,9 +6,7 @@
         {{ profile.headline }}
         <v-chip class="ma-2 h-5 px-2" color="#3B6787" label />
       </div>
-      <div class="mt-7 text-center subtitle">
-        {{ profile.summary }}
-      </div>
+      <div class="mt-7 pa-2 text-center subtitle" v-html="profile.summary" />
     </v-col>
   </v-row>
 </template>
@@ -43,7 +41,8 @@ div.title {
 div.subtitle {
   font-size: 0.8rem;
   font-weight: bold;
-  color: rgb(247, 247, 247);
+  color: #535353;
+  text-align: justify !important;
 }
 span.h-5 {
   height: 5px;

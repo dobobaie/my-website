@@ -3,16 +3,17 @@
     <div class="title"><span class="indentation" />Hobbies</div>
     <v-row>
       <v-col
-        v-for="(hobbie, index) in profile.hobbies"
-        :key="'hobbie_' + index"
+        v-for="(hobbit, index) in profile.hobbies"
+        :key="'hobbit_' + index"
         class="text-center"
+        cols="3"
       >
-        <v-icon size="45">{{ hobbie.icon }}</v-icon>
-        <div class="subtitle">{ {{ hobbie.name }} }</div>
-        <div class="text" v-html="hobbie.short_description" />
+        <v-icon size="45">{{ hobbit.icon }}</v-icon>
+        <div class="subtitle">{ {{ hobbit.name }} }</div>
+        <div class="text" v-html="hobbit.short_description" />
       </v-col>
     </v-row>
-    <div class="date">{{ profile.hobbie.description }}</div>
+    <div class="date">{{ profile.hobbit.description }}</div>
   </div>
 </template>
 

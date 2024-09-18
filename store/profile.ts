@@ -6,10 +6,10 @@ export const useMainStore = defineStore('main', {
     picture: './photo.webp',
     headline: '💻 Digital Fridge Leader 🌍 Typescript universe',
     summary: `
-      Digital Fridge Leader....? You know this famous machine used, almost, by the whole world. Where fruits, vegetables and other perishable foods can be store and used, cooked and consumed.
+      <b>Digital Fridge Leader</b>....? You know this famous machine used, almost, by the whole world. Where fruits, vegetables and other perishable foods can be store and used, cooked and consumed.
       You also know the comfort to go to the restaurant, let these talented cooks preparing some delicious dishes for you. 
       My role is exactly the same, to know what products to use, to know the associations, to investigate the reliability and to orchestrate the mixtures.
-      Having a strong taste for my job, my role is to select the right products, to prepare the combination and cook these products for you. Because I am a Digital Fridge Leader.`,
+      Having a strong taste for my job, my role is to select the right products, to prepare the combination and cook these products for you. Because <b>I am a Digital Fridge Leader</b>.`,
     languages: [
       {
         code: 'fr',
@@ -37,7 +37,7 @@ export const useMainStore = defineStore('main', {
         link: 'https://fr.linkedin.com/in/eddy-mhalli-232527a7',
         color: 'blue lighten-1',
         icon: 'mdi-linkedin',
-        shortName: 'eddy-mhalli-232527a7',
+        shortName: 'Eddy Mhalli',
       },
       {
         link: 'https://github.com/dobobaie',
@@ -62,13 +62,13 @@ export const useMainStore = defineStore('main', {
     ],
     experiences: [
       {
-        link: 'http://swan.co/',
+        link: 'http://urbyn.io/',
         name: 'Urbyn.io',
         status: 'Lead developer & lead engineer',
         logo: '',
         start_date: '01/2024',
         end_date: '08/2024',
-        locality: 'Remove',
+        locality: 'Remote',
         short_description: 'Urbyn help companies in their recycling process and tracking. My job was literally create automates to automatize some process including the use of modern approach to calculate, predict, fix and anticipate data.',
         description: '',
         pins: [
@@ -191,41 +191,6 @@ export const useMainStore = defineStore('main', {
         ],
       },
       {
-        link: 'http://trusk.com/',
-        name: 'Trusk',
-        status: 'Node.Js & tools developer',
-        logo: '/assets/photos/trusk.jpg',
-        start_date: '01/2018',
-        end_date: '01/2019',
-        locality: 'Paris, France',
-        short_description:
-          'Creation multiple micro-services, in charge of developing few app for delays/optimization/organization tours. Development of a new code base and project architectural.',
-        description:
-          '<p>Creation, restructuring, micro-service maintenances and CLI applications.</p><p> My work: architecture implementation, creation of various services/CLI and cleaning/optimization code debt.</ p>',
-        pins: [
-          'nodejs',
-          'react',
-          'docker',
-          'mongodb',
-          'postgresql',
-          'rabbitmq',
-          'redis',
-          'aws',
-          'google-cloud',
-        ],
-        skills: [
-          'NodeJs (koa)',
-          'Docker',
-          'PostgreSQL',
-          'RabbitMQ',
-          'Redis',
-          'TestRails',
-          'Google services',
-          'MongoDB',
-          'Telegram bot',
-        ],
-      },
-      {
         link: 'http://fearless-vr.com/',
         name: 'Fearless VR',
         status: 'Co-founder and fullstack developer',
@@ -263,6 +228,41 @@ export const useMainStore = defineStore('main', {
           'MeteorJs',
           'DevOps',
           'C# Unity',
+        ],
+      },
+      {
+        link: 'http://trusk.com/',
+        name: 'Trusk',
+        status: 'Node.Js & tools developer',
+        logo: '/assets/photos/trusk.jpg',
+        start_date: '01/2018',
+        end_date: '01/2019',
+        locality: 'Paris, France',
+        short_description:
+          'Creation multiple micro-services, in charge of developing few app for delays/optimization/organization tours. Development of a new code base and project architectural.',
+        description:
+          '<p>Creation, restructuring, micro-service maintenances and CLI applications.</p><p> My work: architecture implementation, creation of various services/CLI and cleaning/optimization code debt.</ p>',
+        pins: [
+          'nodejs',
+          'react',
+          'docker',
+          'mongodb',
+          'postgresql',
+          'rabbitmq',
+          'redis',
+          'aws',
+          'google-cloud',
+        ],
+        skills: [
+          'NodeJs (koa)',
+          'Docker',
+          'PostgreSQL',
+          'RabbitMQ',
+          'Redis',
+          'TestRails',
+          'Google services',
+          'MongoDB',
+          'Telegram bot',
         ],
       },
       {
@@ -360,19 +360,14 @@ export const useMainStore = defineStore('main', {
       'redis',
       'rabbitmq',
     ],
-    hobbie: {
+    hobbit: {
       description:
         'and many more... Like movies, cooking, sharing and of course coding ❤️',
     },
     hobbies: [
       {
-        icon: 'mdi-airplane-takeoff',
-        name: 'Traveling',
-        short_description: '',
-      },
-      {
-        icon: 'mdi-flask-outline',
-        name: 'Science',
+        icon: 'mdi-boxing-glove',
+        name: 'Boxing',
         short_description: '',
       },
       {
@@ -381,15 +376,69 @@ export const useMainStore = defineStore('main', {
         short_description: '',
       },
       {
-        icon: 'mdi-boxing-glove',
-        name: 'Boxing',
+        icon: 'mdi-puzzle-outline',
+        name: 'Problem solving',
+        short_description: '',
+      },
+      {
+        icon: 'mdi-airplane-takeoff',
+        name: 'Cultural diversity',
+        short_description: '',
+      },
+      {
+        icon: 'mdi-sprout',
+        name: 'Biology',
+        short_description: '',
+      },
+      {
+        icon: 'mdi-flask-outline',
+        name: 'Physics',
+        short_description: '',
+      },
+      {
+        icon: 'mdi-file-document-edit-outline',
+        name: 'Writing',
+        short_description: '',
+      },
+      {
+        icon: 'mdi-account-group-outline',
+        name: 'Impro',
         short_description: '',
       },
     ],
-    // projects: [{
-    //   name: "Freelance",
-    //   short_description: "",
-    //   pins: [],
-    // }]
+    projects: [{
+      name: "Chop-Chop",
+      short_description: "Marketplace platform - TikTok shop like - made from Vue.js, Nest like & Firebase",
+      pins: [],
+    }, {
+      name: "Nagory",
+      short_description: "Inventory & Kitchen manager - made from Vue.js, Strapi & Electron",
+      pins: [],
+    }, {
+      name: "Firefly",
+      short_description: "Backend framework - communication balancer (RPC, socket, HTTP, etc.) - made from raw Node.js",
+      pins: [],
+    }, {
+      name: "EasyAuth",
+      short_description: "Backend CMS / tools - Custom credentials manager (including oauth) - made from Nuxt.js",
+      pins: [],
+    }, {
+      name: "SpeedUp",
+      short_description: "Scraper - Including custom pattern - made from Vue.js, Node.js & Electron",
+      pins: [],
+    }, {
+      name: "And many more... =)",
+      short_description: "",
+      pins: [],
+    }],
+    personalExploration: [{
+      name: "Ask me about Chop-Chop, Nagory, HopHup, Firefly, etc. =)",
+      short_description: "",
+      pins: [],
+    }, {
+      name: "Ask me about Chop-Chop, Nagory, HopHup, Firefly, etc. =)",
+      short_description: "",
+      pins: [],
+    }]
   }),
 });
