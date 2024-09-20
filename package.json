@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "pdf:generate": "cd .scripts && node pdf-render.cjs"
+    "pdf:generate": "cd .scripts && cp html-pdf-node.js ../node_modules/html-pdf-node/index.js && node pdf-render.cjs"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
