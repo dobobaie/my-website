@@ -1,5 +1,5 @@
 <template>
-  <v-row id="body" style="padding-bottom: 350px">
+  <v-row id="body" style="padding-bottom: 244px">
     <v-col id="belly" class="pa-0 mx-4">
       <v-row class="pa-2">
         <v-col class="pr-0">
