@@ -1,16 +1,12 @@
 <template>
-  <v-row id="header" class="py-1 px-2 pb-3">
-    <v-col class="pa-0 d-flex flex-column justify-start">
-      <Languages />
-      <ProfileInfo />
-    </v-col>
-    <v-col class="pa-0">
-      <Profile />
-    </v-col>
-    <v-col class="pa-0 d-flex justify-end">
-      <ExternalLinks />
-    </v-col>
-  </v-row>
+  <div id="header"class="pa-3">
+    <Languages />
+    <Profile />
+    <ProfileInfo />
+    <ExternalLinks />
+    <MainProgrammingTools />
+    <Hobbies />
+  </div>
 </template>
 
 <script>
@@ -18,6 +14,8 @@ import Profile from '~/components/Profile.vue'
 import ProfileInfo from '~/components/ProfileInfo.vue'
 import Languages from '~/components/Languages.vue'
 import ExternalLinks from '~/components/ExternalLinks.vue'
+import MainProgrammingTools from './MainProgrammingTools'
+import Hobbies from './Hobbies'
 
 export default {
   components: {
@@ -25,6 +23,8 @@ export default {
     ProfileInfo,
     Languages,
     ExternalLinks,
+    MainProgrammingTools,
+    Hobbies,
   },
 }
 </script>

@@ -7,8 +7,8 @@
           <!-- <PersonalExploration /> -->
         </v-col>
         <v-col class="pr-0">
-          <MainProgrammingTools />
-          <Hobbies />
+          <!-- <MainProgrammingTools />
+          <Hobbies /> -->
           <v-img
             :src="'./undraw_maker_launch_crhe.svg'"
             contain
@@ -32,8 +32,8 @@
 <script>
 import { useMainStore } from '~/store/profile';
 
-import MainProgrammingTools from './MainProgrammingTools'
-import Hobbies from './Hobbies'
+// import MainProgrammingTools from './MainProgrammingTools'
+// import Hobbies from './Hobbies'
 import Experiences from './Experiences'
 import Projects from './Projects'
 import Formations from './Formations'
@@ -41,8 +41,8 @@ import PersonalExploration from './PersonalExploration.vue';
 
 export default {
   components: {
-    MainProgrammingTools,
-    Hobbies,
+    // MainProgrammingTools,
+    // Hobbies,
     Experiences,
     Projects,
     Formations,
@@ -66,10 +66,17 @@ div#belly {
   color: #283335;
 }
 
-div.title {
+div.title, div.left-title {
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: bold;
+}
+div.left-title {
+  display: flex;
+  font-size: 1rem;
+  grid-area: content;
+  justify-content: center;
+  white-space: nowrap;
 }
 div.date {
   font-size: 0.8rem;
@@ -93,6 +100,7 @@ ul li {
 }
 
 span.indentation {
+  display: flex;
   display: inline-block;
   height: 20px;
   width: 15px;

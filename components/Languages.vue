@@ -5,6 +5,7 @@
       :key="'language_' + index"
       color="transparent"
       size="small"
+      variant="text"
     >
       <v-img
         :alt="language.code"

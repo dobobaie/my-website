@@ -1,6 +1,6 @@
 <template>
-  <div class="mb-2">
-    <div class="title"><span class="indentation" />Main programming tools</div>
+  <div class="ml-4 mt-4">
+    <div class="left-title"><span class="indentation" />Technical Skills</div>
     <Chips
       :pins="profile.mainProgrammingTools"
       max-width="50"

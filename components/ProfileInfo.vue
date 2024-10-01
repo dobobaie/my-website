@@ -1,15 +1,13 @@
 <template>
-  <v-container class="pa-1">
-    <v-btn
-      v-for="(info, index) in profile.info"
-      :key="'info_' + index"
-      :prepend-icon="info.icon"
-      size="small"
-      variant="text"
-      width="100%"
-      :ripple="false"
-    >{{ info.shortName }}</v-btn>
-  </v-container>
+  <v-btn
+    v-for="(info, index) in profile.info"
+    :key="'info_' + index"
+    :prepend-icon="info.icon"
+    size="small"
+    variant="text"
+    width="100%"
+    :ripple="false"
+  >{{ info.shortName }}</v-btn>
 </template>
 
 <script>
@@ -27,7 +25,7 @@ export default {
   width: auto !important;
 }
 button.v-btn {
-  justify-content: left;
+  justify-content: space-between;
   height: 30px;
 }
 </style>

@@ -37,24 +37,16 @@ export const useMainStore = defineStore('main', {
         link: 'https://fr.linkedin.com/in/eddy-mhalli-232527a7',
         color: 'blue lighten-1',
         icon: 'mdi-linkedin',
-        shortName: 'Eddy Mhalli',
+        shortName: 'LinkedIn (Eddy Mhalli)',
       },
       {
         link: 'https://github.com/dobobaie',
         color: 'blue-grey lighten-3',
         icon: 'mdi-github',
-        shortName: 'dobobaie',
+        shortName: 'Github (dobobaie)',
       },
     ],
     info: [
-      {
-        icon: 'mdi-flag',
-        shortName: 'French',
-      },
-      {
-        icon: 'mdi-account',
-        shortName: '🎂 30 yo',
-      },
       {
         icon: 'mdi-map-marker',
         shortName: 'Annecy / Genève',

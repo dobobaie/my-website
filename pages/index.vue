@@ -6,34 +6,40 @@
     class="pt-2"
     style="overflow: hidden"
   >
-    <Header />
-    <Introduction />
-    <Content />
-    <v-row id="introduction">
-      <v-col class="pb-2" style="height: 100px;">
-        <div class="title" style="min-width: 70%;min-height: 30px;text-align: center;">What about calling me now? ;)</div>
-        <v-row no-gutters>
-          <v-col cols="auto">
-            <v-img
-              :src="'./google/dinosaur.png'"
-              class="mx-auto mt-5"
-              max-height="75px"
-              width="90px"
-              />
-          </v-col>
-          <v-col><div  id="google-ground">&nbsp;</div></v-col>
-          <v-col cols="auto">
-            <v-img
-              :src="'./google/cactus.png'"
-              class="mx-auto mt-5"
-              max-height="75px"
-              width="90px"
-              />
+    <v-row>
+      <v-col cols="4" class="pa-0">
+        <Header />
+      </v-col>
+      <v-col>
+        <Introduction />
+        <Content />
+        <v-row id="introduction">
+          <v-col class="pb-2" style="height: 100px;">
+            <div class="title" style="min-width: 70%;min-height: 30px;text-align: center;">What about calling me now? ;)</div>
+            <v-row no-gutters>
+              <v-col cols="auto">
+                <v-img
+                  :src="'./google/dinosaur.png'"
+                  class="mx-auto mt-5"
+                  max-height="75px"
+                  width="90px"
+                  />
+              </v-col>
+              <v-col><div  id="google-ground">&nbsp;</div></v-col>
+              <v-col cols="auto">
+                <v-img
+                  :src="'./google/cactus.png'"
+                  class="mx-auto mt-5"
+                  max-height="75px"
+                  width="90px"
+                  />
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
+        <v-row id="header" style="height: 150px;"></v-row>
       </v-col>
     </v-row>
-    <v-row id="header" style="height: 150px;"></v-row>
   </v-sheet>
 </template>
 
