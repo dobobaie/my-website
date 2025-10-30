@@ -23,71 +23,73 @@ export default {
     },
     maxWidth: {
       type: String,
-      default: '24',
+      default: "24",
     },
   },
   methods: {
     getAvatar(name) {
       switch (name) {
-        case 'nodejs':
-          return './techno/nodejs.png'
-        case 'vuejs':
-          return './techno/vuejs.webp'
-        case 'docker':
-          return './techno/docker.jpg'
-        case 'angularjs':
-          return './techno/angularjs.webp'
-        case 'csharp':
-          return './techno/csharp.svg'
-        case 'electron':
-          return './techno/electron.png'
-        case 'ionic':
-          return './techno/ionic.png'
-        case 'mongodb':
-          return './techno/mongodb.png'
-        case 'more':
-          return './techno/more.webp'
-        case 'nuxt':
-          return './techno/nuxt.png'
-        case 'etl':
-          return './techno/etl.jpg'
-        case 'bubble':
-          return './techno/bubble.png'
-        case 'php':
-          return './techno/php.png'
-        case 'postgresql':
-          return './techno/postgresql.webp'
-        case 'rabbitmq':
-          return './techno/rabbitmq.png'
-        case 'react':
-          return './techno/react.svg'
-        case 'redis':
-          return './techno/redis.png'
-        case 'firebase':
-          return './techno/firebase.png'
-        case 'google-cloud':
-          return './techno/google-cloud.png'
-        case 'aws':
-          return './techno/aws.png'
-        case 'vr':
-          return './techno/vr.png'
-        case 'unity':
-          return './techno/unity.webp'
-        case 'typescript':
-          return './techno/typescript.svg'
-        case 'nestjs':
-          return './techno/nestjs.png'
-        case 'fp-ts':
-          return './techno/fp-ts.png'
-        case 'graphql':
-          return './techno/graphql.png'
-        case 'kafka':
-          return './techno/kafka.png'
+        case "nodejs":
+          return "./techno/nodejs.png";
+        case "vuejs":
+          return "./techno/vuejs.webp";
+        case "kube":
+          return "./techno/kube.png";
+        case "docker":
+          return "./techno/docker.jpg";
+        case "angularjs":
+          return "./techno/angularjs.webp";
+        case "csharp":
+          return "./techno/csharp.svg";
+        case "electron":
+          return "./techno/electron.png";
+        case "ionic":
+          return "./techno/ionic.png";
+        case "mongodb":
+          return "./techno/mongodb.png";
+        case "more":
+          return "./techno/more.webp";
+        case "nuxt":
+          return "./techno/nuxt.png";
+        case "etl":
+          return "./techno/etl.jpg";
+        case "bubble":
+          return "./techno/bubble.png";
+        case "php":
+          return "./techno/php.png";
+        case "postgresql":
+          return "./techno/postgresql.webp";
+        case "rabbitmq":
+          return "./techno/rabbitmq.png";
+        case "react":
+          return "./techno/react.svg";
+        case "redis":
+          return "./techno/redis.png";
+        case "firebase":
+          return "./techno/firebase.png";
+        case "google-cloud":
+          return "./techno/google-cloud.png";
+        case "aws":
+          return "./techno/aws.png";
+        case "vr":
+          return "./techno/vr.png";
+        case "unity":
+          return "./techno/unity.webp";
+        case "typescript":
+          return "./techno/typescript.svg";
+        case "nestjs":
+          return "./techno/nestjs.png";
+        case "fp-ts":
+          return "./techno/fp-ts.png";
+        case "graphql":
+          return "./techno/graphql.png";
+        case "kafka":
+          return "./techno/kafka.png";
         default:
-          console.log('===', name)
-          return ''
+          console.log("===", name);
+          return "";
       }
     },
   },
-}
+};
 </script>
