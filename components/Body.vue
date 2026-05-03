@@ -3,21 +3,23 @@
     <v-col id="belly" class="pa-0 mx-4">
       <v-row class="pa-2">
         <v-col class="pr-0">
-          <Experiences />
+          <div v-reveal><Experiences /></div>
           <!-- <PersonalExploration /> -->
         </v-col>
         <v-col class="pr-0">
-          <MainProgrammingTools />
-          <Hobbies />
+          <div v-reveal><MainProgrammingTools /></div>
+          <div v-reveal="80"><Hobbies /></div>
           <v-img
+            v-reveal
             :src="'./undraw_maker_launch_crhe.svg'"
             contain
             :width="250"
             class="mx-auto"
           />
-          <Formations />
-          <Projects />
+          <div v-reveal><Formations /></div>
+          <div v-reveal><Projects /></div>
           <v-img
+            v-reveal
             :src="'./undraw_delivery_address_03n0.png'"
             contain
             :width="200"
