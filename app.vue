@@ -69,23 +69,30 @@ body, div.v-application {
   }
   .v-application__wrap { display: block !important; }
 
+  /* Only the CV root and its descendants render in the PDF */
+  body * { visibility: hidden !important; }
+  #cv-root, #cv-root * { visibility: visible !important; }
+  #cv-root {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+  }
+
   .no-print,
   .pdf-fab,
   .dino-runway { display: none !important; }
 
-  .v-sheet { box-shadow: none !important; }
   div#header { background-color: #1a2d3b !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   div#introduction { background-color: #c5a28c !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-
-  .v-sheet[width], .v-sheet {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
 
   .reveal-init { opacity: 1 !important; transform: none !important; }
 
   section, .v-row { break-inside: avoid; page-break-inside: avoid; }
 
-  #introduction:last-of-type { display: none !important; }
+  #cv-root #introduction:last-of-type { display: none !important; }
 }
 </style>

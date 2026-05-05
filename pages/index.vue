@@ -1,9 +1,10 @@
 <template>
   <v-sheet
+    id="cv-root"
     width="850"
     elevation="5"
     color="#E5E3E6"
-    class="pt-2"
+    class="pt-2 mx-auto"
     style="overflow: hidden"
   >
     <Header />
