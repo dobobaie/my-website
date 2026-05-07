@@ -54,11 +54,11 @@
 }
 
 @keyframes dino-jump {
-  0%, 55%, 100% { transform: translateY(0); }
-  68%           { transform: translateY(-58px); }
-  82%           { transform: translateY(0); }
-  85%           { transform: translateY(-3px); }
-  90%           { transform: translateY(0); }
+  0%, 73%, 100% { transform: translateY(0); }
+  82%           { transform: translateY(-72px); }
+  91%           { transform: translateY(0); }
+  93%           { transform: translateY(-3px); }
+  95%           { transform: translateY(0); }
 }
 
 @keyframes dino-bob {
@@ -70,7 +70,7 @@
   position: absolute;
   bottom: 18px;
   left: var(--runway-width);
-  width: 32px;
+  width: 78px;
   height: auto;
   animation: cactus-run var(--runway-cycle) linear infinite;
   filter: drop-shadow(0 2px 0 rgba(0,0,0,0.15));

@@ -42,7 +42,7 @@ export default {
 div#introduction {
   background-color: #c5a28c;
   position: relative;
-  overflow: hidden;
+  overflow: inherit;
 }
 div.title {
   font-size: 1rem !important;
