@@ -1,20 +1,20 @@
 <template>
-  <v-row id="body" style="padding-bottom: 244px">
+  <v-row id="body" class="body-row">
     <v-col id="belly" class="pa-0 mx-4">
-      <v-row class="pa-2">
-        <v-col class="pr-0">
+      <v-row class="pa-3">
+        <v-col class="pr-2">
           <div v-reveal><Experiences /></div>
           <!-- <PersonalExploration /> -->
         </v-col>
-        <v-col class="pr-0">
+        <v-col class="pl-2">
           <div v-reveal><MainProgrammingTools /></div>
           <div v-reveal="80"><Hobbies /></div>
           <v-img
             v-reveal
             :src="'./undraw_maker_launch_crhe.svg'"
             contain
-            :width="250"
-            class="mx-auto"
+            :width="240"
+            class="mx-auto my-3"
           />
           <div v-reveal><Formations /></div>
           <div v-reveal><Projects /></div>
@@ -22,8 +22,8 @@
             v-reveal
             :src="'./undraw_delivery_address_03n0.png'"
             contain
-            :width="200"
-            class="mx-auto"
+            :width="180"
+            class="mx-auto my-3"
           />
         </v-col>
       </v-row>
@@ -57,6 +57,10 @@ export default {
 </script>
 
 <style>
+div#body.body-row {
+  padding-bottom: 24px;
+  margin: 0;
+}
 div#body {
   background: url('./decore.png');
   background-size: contain;
@@ -69,42 +73,59 @@ div#belly {
 }
 
 div.title {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #1a2d3b;
+  margin: 6px 0 4px;
 }
 div.date {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  color: #6f6f6f;
+  letter-spacing: 0.01em;
 }
 div.subtitle {
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 0.92rem;
+  font-weight: 700;
   color: #3e6abf;
+  margin-top: 2px;
 }
 div.subtitle span {
   font-size: 0.9rem;
+  color: #1a2d3b;
 }
 div.text {
-  font-size: 0.9rem;
-  color: #858282 !important;
+  font-size: 0.88rem;
+  color: #6b6b6b !important;
+  line-height: 1.45;
+  margin-top: 2px;
+  text-align: justify;
 }
 
+ul {
+  margin-left: 20px;
+  margin-top: 4px;
+}
 ul li {
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #3a3a3a;
 }
 
 span.indentation {
   display: inline-block;
-  height: 20px;
-  width: 15px;
+  height: 22px;
+  width: 14px;
   border-left: 5px solid #c5a28c;
   border-right: 5px solid #c5a28c;
   margin-right: 10px;
-  font-style: italic;
+  vertical-align: middle;
   transform: skew(-20deg);
 }
 section {
   margin-left: 5px;
+  margin-bottom: 10px;
 }
 </style>

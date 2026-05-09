@@ -18,7 +18,13 @@
         <DinoRunway />
       </v-col>
     </v-row>
-    <v-row id="header" style="height: 150px;"></v-row>
+    <v-row id="footer-band">
+      <v-col class="pa-4 text-center">
+        <div class="footer-text">
+          Crafted with ❤️ — Eddy Mhalli · {{ year }}
+        </div>
+      </v-col>
+    </v-row>
   </v-sheet>
 </template>
 
@@ -35,6 +41,11 @@ export default {
     Content,
     DinoRunway,
   },
+  computed: {
+    year() {
+      return new Date().getFullYear()
+    },
+  },
 }
 </script>
 
@@ -46,10 +57,11 @@ div#introduction {
 }
 div.title {
   font-size: 1rem !important;
-  font-weight: bold;
+  font-weight: 700;
   color: #1a2d3b;
+  letter-spacing: 0.02em;
   border: 1px dashed #1a2d3b;
-  padding: 0 10px;
+  padding: 4px 14px;
   margin: -25px auto 0;
   width: auto;
   max-width: max-content;
@@ -67,10 +79,16 @@ div.subtitle {
 span.h-5 {
   height: 5px;
 }
-div#header {
+div#footer-band {
   background: url('./decore.png') top;
   background-size: contain;
   background-color: #1a2d3b;
   color: #fff;
+  margin: 0;
+}
+.footer-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: #cdd5dc;
 }
 </style>

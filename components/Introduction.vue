@@ -27,10 +27,11 @@ div#introduction {
 }
 div.title {
   font-size: 1rem !important;
-  font-weight: bold;
+  font-weight: 700;
   color: #1a2d3b;
+  letter-spacing: 0.02em;
   border: 1px dashed #1a2d3b;
-  padding: 0 10px;
+  padding: 4px 14px;
   margin: -25px auto;
   width: auto;
   max-width: max-content;
@@ -39,10 +40,18 @@ div.title {
   background-color: #e5e3e6;
 }
 div.subtitle {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #535353;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: #2c2c2c;
   text-align: justify !important;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px !important;
+}
+div.subtitle :deep(b) {
+  color: #1a2d3b;
+  font-weight: 700;
 }
 span.h-5 {
   height: 5px;

@@ -11,22 +11,24 @@
 <style scoped>
 .dino-runway {
   position: relative;
-  height: 110px;
+  height: 140px;
   margin-top: 18px;
   overflow: hidden;
   --runway-cycle: 2.6s;
   --runway-width: 820px;
+  --ground-h: 14px;
+  --feet-y: var(--ground-h);
 }
 
 .ground {
   position: absolute;
   inset: auto 0 0 0;
-  height: 22px;
+  height: var(--ground-h);
   background: url('/google/ground.png') repeat-x;
-  background-size: 240px 22px;
-  background-position-y: bottom;
-  animation: ground-scroll 0.55s linear infinite;
-  opacity: 0.95;
+  background-size: auto 100%;
+  background-position-y: center;
+  animation: ground-scroll 0.6s linear infinite;
+  opacity: 0.92;
 }
 
 @keyframes ground-scroll {
@@ -36,10 +38,10 @@
 
 .dino-jumper {
   position: absolute;
-  bottom: 18px;
+  bottom: var(--feet-y);
   left: 64px;
   width: 70px;
-  height: 75px;
+  height: 61px;
   animation: dino-jump var(--runway-cycle) cubic-bezier(.22,.61,.36,1) infinite;
 }
 
@@ -49,31 +51,32 @@
   height: 100%;
   object-fit: contain;
   transform-origin: bottom center;
-  animation: dino-bob 0.16s steps(2, end) infinite;
-  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.15));
+  animation: dino-bob 0.32s steps(2, end) infinite;
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.18));
 }
 
 @keyframes dino-jump {
   0%, 73%, 100% { transform: translateY(0); }
-  82%           { transform: translateY(-72px); }
+  82%           { transform: translateY(-62px); }
   91%           { transform: translateY(0); }
   93%           { transform: translateY(-3px); }
   95%           { transform: translateY(0); }
 }
 
+/* Subtle running tilt — only when feet are on the ground */
 @keyframes dino-bob {
-  0%   { transform: translateY(0)     scale(1, 1); }
-  100% { transform: translateY(-1.5px) scale(1.02, 0.97); }
+  0%   { transform: translateY(0)   rotate(-0.5deg); }
+  100% { transform: translateY(-1px) rotate(0.5deg); }
 }
 
 .cactus {
   position: absolute;
-  bottom: 18px;
+  bottom: var(--feet-y);
   left: var(--runway-width);
-  width: 78px;
+  width: 38px;
   height: auto;
   animation: cactus-run var(--runway-cycle) linear infinite;
-  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.15));
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.18));
 }
 
 @keyframes cactus-run {

@@ -4,12 +4,12 @@ export const useMainStore = defineStore("main", {
   state: () => ({
     name: "Eddy Mhalli",
     picture: "./photo.webp",
-    headline: "💻 Digital Fridge Leader 🌍 Typescript universe",
+    headline: "💻 Digital Fridge Leader · 🌍 TypeScript universe",
     summary: `
-      <b>Digital Fridge Leader</b>....? You know this famous machine used, almost, by the whole world. Where fruits, vegetables and other perishable foods can be store and used, cooked and consumed.
-      You also know the comfort to go to the restaurant, let these talented cooks preparing some delicious dishes for you. 
-      My role is exactly the same, to know what products to use, to know the associations, to investigate the reliability and to orchestrate the mixtures.
-      Having a strong taste for my job, my role is to select the right products, to prepare the combination and cook these products for you. Because <b>I am a Digital Fridge Leader</b>.`,
+      <b>Digital Fridge Leader</b>… ? You know that famous machine used, almost, by the whole world — where fruits, vegetables and other perishable foods can be stored and later used, cooked and consumed.
+      You also know the comfort of going to a restaurant and letting talented cooks prepare delicious dishes for you.
+      My role is exactly the same: to know which products to use, to understand the right associations, to investigate the reliability and to orchestrate the mixtures.
+      With a strong taste for my craft, I select the right ingredients, prepare the combinations and cook them up for you. Because <b>I am a Digital Fridge Leader</b>.`,
     languages: [
       {
         code: "fr",
@@ -52,12 +52,13 @@ export const useMainStore = defineStore("main", {
         shortName: "French",
       },
       {
-        icon: "mdi-account",
-        shortName: "🎂 30 yo",
-      },
-      {
         icon: "mdi-map-marker",
         shortName: "Annecy / Genève",
+        link: "https://maps.google.com/?q=Annecy",
+      },
+      {
+        icon: "mdi-briefcase-outline",
+        shortName: "Open to opportunities",
       },
     ],
     experiences: [
@@ -130,9 +131,9 @@ export const useMainStore = defineStore("main", {
         end_date: "07/2024",
         locality: "Hô-Chi-Minh, Vietnam",
         short_description:
-          "Developping, consulting, supervasing and leading few projects around the world. Ex realization: platform e-learning, products catalogue, food/stuffs delivery process, tools & micro-services.",
+          "Developing, consulting, supervising and leading several projects around the world. Examples: e-learning platform, product catalogues, food &amp; goods delivery flows, tools and micro-services.",
         description:
-          "<p>Creation and project support: TokenVu, FlavorBox, Marketoi, Laprerentrée, Yummmy, etc...</p><p>As Fullstack Freelancer, my Job was to create few projects from scratch, to help and support existing projects, during all the project development. Plus help and shape the development team in the compagnies.</p>",
+          "<p>Creation and project support: TokenVu, FlavorBox, Marketoi, Laprerentrée, Yummmy, etc.</p><p>As a Fullstack freelancer, my job was to create projects from scratch, to help and support existing ones throughout development, and to help shape the development teams in the companies I worked with.</p>",
         pins: [
           "nodejs",
           "vuejs",
@@ -165,7 +166,7 @@ export const useMainStore = defineStore("main", {
         end_date: "09/2023",
         locality: "Paris, France",
         short_description:
-          "Swan is a B2B neobank. My first team was End Customer team by leading Ultimate Beneficiary Owner, leading Capital Deposit and finally leading Closing Account. My second team was User team, my role was to refacto few projects by using Clean Archi/Code + Hexagonal pattern, then leading Server Consent and then joining German KYC. More and more, just ask me :)",
+          "Swan is a B2B neobank. In the End-Customer team I led Ultimate Beneficial Owner, Capital Deposit and Closing Account. Then in the User team I refactored several projects with Clean Architecture and the Hexagonal pattern, led Server Consent and joined the German KYC squad. Plenty more — just ask me :)",
         description: "",
         pins: [
           "typescript",
@@ -193,9 +194,9 @@ export const useMainStore = defineStore("main", {
         start_date: "03/2020",
         end_date: "01/2021",
         locality: "Paris, France",
-        short_description: `Projects's process setting up, team leader, technical referent, projects supervisor, developping and projects architecture improvement + others cool projects.`,
+        short_description: `Project process setup, team leader, technical referent, project supervisor, developing and improving project architecture — plus other cool side projects.`,
         description:
-          "<p>Creation, restructuring, micro-service maintenances and CLI applications.</p><p> My work: architecture implementation, creation of various services/CLI and cleaning/optimization code debt.</ p>",
+          "<p>Creation, restructuring, micro-service maintenance and CLI applications.</p><p>My work: architecture implementation, creation of various services and CLIs, and cleaning/optimizing code debt.</p>",
         pins: [
           "nodejs",
           "vuejs",
@@ -231,9 +232,9 @@ export const useMainStore = defineStore("main", {
         end_date: "01/2018",
         locality: null,
         short_description:
-          "Team leader & main developer. Creation of multiple app with socket system, reality virtual, using Unity as well, few backoffices, desktop and mobiles app, etc. Winner of Medical Innovation Incubator by Viva Tech 2017.",
+          "Team leader & main developer. Creation of multiple apps with a socket system and virtual reality (Unity), several back-offices and desktop / mobile apps. Winner of Medical Innovation Incubator at Viva Tech 2017.",
         description:
-          "<p>Fearless is software that uses virtual reality to help people with physichic disorders such as phobias, addictions, stress and blockages, through interactive 3D scenes in which patient can immerse and surpass his virtual limits to better manage them in real life.</p><p>My job at Fearless is to verify the vision of our project and to establish and update our schedules and budgets. Apart development, I also meet specialists and communicate with them and I remain attentive to each proposal that would improve the lives of its people.</p>",
+          "<p>Fearless is software that uses virtual reality to help people with psychological disorders such as phobias, addictions, stress and blockages, through interactive 3D scenes in which the patient can immerse themselves and surpass their virtual limits to better manage them in real life.</p><p>My job at Fearless was to keep our project vision aligned and to maintain our schedule and budget. Beyond development, I also met with specialists, communicated with them, and stayed attentive to every proposal that could improve the lives of the people we serve.</p>",
         pins: [
           "nodejs",
           "angularjs",
@@ -270,9 +271,9 @@ export const useMainStore = defineStore("main", {
         end_date: "01/2019",
         locality: "Paris, France",
         short_description:
-          "Creation multiple micro-services, in charge of developing few app for delays/optimization/organization tours. Development of a new code base and project architectural.",
+          "Created several micro-services, in charge of developing apps for delivery scheduling, route optimization and tour organization. Set up a new code base and project architecture.",
         description:
-          "<p>Creation, restructuring, micro-service maintenances and CLI applications.</p><p> My work: architecture implementation, creation of various services/CLI and cleaning/optimization code debt.</ p>",
+          "<p>Creation, restructuring, micro-service maintenance and CLI applications.</p><p>My work: architecture implementation, creation of various services and CLIs, and cleaning/optimizing code debt.</p>",
         pins: [
           "nodejs",
           "react",
@@ -305,7 +306,7 @@ export const useMainStore = defineStore("main", {
         end_date: "to 08/2016",
         locality: "Paris, France",
         short_description:
-          "Matters, Bel Air, SEITOSEI, RS2I, Job & Musik, ... much more.<br/>First experience, first projects, first clients, thousand github projects, a few freelance projects, and others.<br/>Ask me and let's discuss about it :)",
+          "Matters, Bel Air, SEITOSEI, RS2I, Job &amp; Musik, … and many more.<br/>First experience, first projects, first clients, a thousand GitHub repos, a handful of freelance gigs, and a lot of late nights.<br/>Ask me and let's chat about it :)",
         description: "",
         pins: [],
         skills: [
@@ -476,11 +477,6 @@ export const useMainStore = defineStore("main", {
       },
     ],
     personalExploration: [
-      {
-        name: "Ask me about Chop-Chop, Nagory, HopHup, Firefly, etc. =)",
-        short_description: "",
-        pins: [],
-      },
       {
         name: "Ask me about Chop-Chop, Nagory, HopHup, Firefly, etc. =)",
         short_description: "",

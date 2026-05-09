@@ -84,7 +84,8 @@ body, div.v-application {
 
   .no-print,
   .pdf-fab,
-  .dino-runway { display: none !important; }
+  .dino-runway,
+  #footer-band { display: none !important; }
 
   div#header { background-color: #1a2d3b !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   div#introduction { background-color: #c5a28c !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }

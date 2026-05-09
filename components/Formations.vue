@@ -4,14 +4,20 @@
     <section
       v-for="(formation, index) in profile.formations"
       :key="'formation_' + index"
-      class="py-2"
+      class="py-2 form-item"
     >
       <div class="subtitle">
-        { {{ formation.name }} } - <span>{{ formation.status }}</span>
+        { {{ formation.name }} }
+        <span class="dash"> — </span>
+        <span class="role">{{ formation.status }}</span>
       </div>
       <div class="date">
-        {{ formation.start_date }} - {{ formation.end_date }}
-        <span v-if="formation.locality"> - {{ formation.locality }}</span>
+        <v-icon size="14">mdi-calendar</v-icon>
+        {{ formation.start_date }} → {{ formation.end_date }}
+        <template v-if="formation.locality">
+          &nbsp;·&nbsp;<v-icon size="14">mdi-map-marker</v-icon>
+          {{ formation.locality }}
+        </template>
       </div>
       <ul>
         <li
@@ -27,10 +33,17 @@
 
 <script>
 import { useMainStore } from '~/store/profile';
-
 export default {
-  setup() {
-    return { profile: useMainStore() }
-  }
+  setup() { return { profile: useMainStore() } }
 }
 </script>
+
+<style scoped>
+.form-item {
+  border-left: 3px solid #c5a28c;
+  padding-left: 12px;
+  margin-bottom: 6px !important;
+}
+.dash { color: #c5a28c; }
+.role { color: #1a2d3b; font-weight: 600; }
+</style>
