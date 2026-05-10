@@ -29,8 +29,8 @@ export default {
 :deep() div.v-responsive__content {
   width: auto !important;
 }
-button.v-btn {
-  justify-content: left;
+.v-btn {
+  justify-content: flex-start !important;
   height: 30px;
 }
 </style>
