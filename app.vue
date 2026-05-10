@@ -59,6 +59,23 @@ body, div.v-application {
   #header .v-avatar { animation: none; }
 }
 
+/* --- PDF export (html2pdf.js) ---
+   Toggled on <body> while DownloadPdf rasterises #cv-root. Hides the
+   floating button so it doesn't appear in the capture, freezes the dino
+   runway animation so it captures a stable frame, and drops the bottom
+   "call me" band + dino because they're decorative-only and waste space
+   in a downloadable CV. */
+body.pdf-exporting .pdf-fab,
+body.pdf-exporting #cv-root #introduction:last-of-type,
+body.pdf-exporting .dino-runway,
+body.pdf-exporting #footer-band {
+  display: none !important;
+}
+body.pdf-exporting .reveal-init {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* --- print: render the page as a clean PDF --- */
 @media print {
   @page { size: A4; margin: 10mm; }

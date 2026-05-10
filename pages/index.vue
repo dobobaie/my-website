@@ -1,7 +1,7 @@
 <template>
   <v-sheet
     id="cv-root"
-    width="850"
+    width="980"
     elevation="5"
     color="#E5E3E6"
     class="pt-2 mx-auto"

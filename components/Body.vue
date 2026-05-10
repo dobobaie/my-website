@@ -1,29 +1,48 @@
 <template>
   <v-row id="body" class="body-row">
     <v-col id="belly" class="pa-0 mx-4">
-      <v-row class="pa-3">
-        <v-col class="pr-2">
+      <!-- Upper band: Experiences gets the wider lane (it's 8 long entries
+           and was the main reason the right column ran out before the left).
+           The narrower right lane carries the compact sidebar content
+           (skills, hobbies, decorative image) so both columns end at
+           roughly the same vertical position. -->
+      <v-row class="pa-3 pb-0">
+        <v-col cols="8" class="pr-3">
           <div v-reveal><Experiences /></div>
-          <!-- <PersonalExploration /> -->
         </v-col>
-        <v-col class="pl-2">
+        <v-col cols="4" class="pl-3">
           <div v-reveal><MainProgrammingTools /></div>
           <div v-reveal="80"><Hobbies /></div>
           <v-img
             v-reveal
             :src="'./undraw_maker_launch_crhe.svg'"
             contain
-            :width="240"
+            :width="200"
             class="mx-auto my-3"
           />
+        </v-col>
+      </v-row>
+
+      <!-- Lower band: Formations and Projects sit side by side at equal
+           weight — both are short-and-medium length so a 50/50 split keeps
+           them visually paired and uses the full sheet width. -->
+      <v-row class="pa-3 pt-0">
+        <v-col cols="6" class="pr-3">
           <div v-reveal><Formations /></div>
+        </v-col>
+        <v-col cols="6" class="pl-3">
           <div v-reveal><Projects /></div>
+        </v-col>
+      </v-row>
+
+      <v-row class="pa-3 pt-0">
+        <v-col class="text-center">
           <v-img
             v-reveal
             :src="'./undraw_delivery_address_03n0.png'"
             contain
-            :width="180"
-            class="mx-auto my-3"
+            :width="200"
+            class="mx-auto"
           />
         </v-col>
       </v-row>
