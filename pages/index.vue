@@ -14,11 +14,7 @@
     <Content />
     <v-row id="introduction">
       <v-col class="pb-2">
-        <div class="title">
-          <v-chip class="ma-2 h-5 px-2" color="#3B6787" label />
-          What about calling me now? ;)
-          <v-chip class="ma-2 h-5 px-2" color="#3B6787" label />
-        </div>
+        <div class="title">What about calling me now? ;)</div>
         <DinoRunway />
       </v-col>
     </v-row>
@@ -54,10 +50,15 @@ export default {
 </script>
 
 <style scoped>
+/* The introduction band wraps the CTA title + dino runway. The title uses
+   margin-top: -25px so it straddles the body/runway boundary like the
+   headline at the top of the page. Critically, this row must NOT clip
+   overflow — `overflow: inherit` would inherit `hidden` from cv-root and
+   chop the top half of the title off (the original "half visible" bug). */
 div#introduction {
   background-color: #c5a28c;
   position: relative;
-  overflow: inherit;
+  overflow: visible;
 }
 div.title {
   font-size: 1rem !important;
@@ -66,15 +67,10 @@ div.title {
   letter-spacing: 0.02em;
   border: 1px dashed #1a2d3b;
   padding: 4px 14px;
-  /* Sits fully inside the runway (not straddling the boundary): the
-     title's #e5e3e6 background blends with the body above, so a half-
-     out placement reads as half-visible. Pull only ~10px so the chip
-     decoration peeks above the runway top edge but the box stays
-     legible end-to-end. */
-  margin: -10px auto 0;
+  margin: -25px auto 0;
   width: auto;
   max-width: max-content;
-  background: url('./decore.png') left;
+  background: url('/decore.png') left;
   background-size: 100%;
   background-color: #e5e3e6;
   position: relative;
@@ -89,7 +85,7 @@ span.h-5 {
   height: 5px;
 }
 div#footer-band {
-  background: url('./decore.png') top;
+  background: url('/decore.png') top;
   background-size: contain;
   background-color: #1a2d3b;
   color: #fff;

@@ -35,7 +35,7 @@ div.title {
   margin: -25px auto;
   width: auto;
   max-width: max-content;
-  background: url('./decore.png') left;
+  background: url('/decore.png') left;
   background-size: 100%;
   background-color: #e5e3e6;
 }

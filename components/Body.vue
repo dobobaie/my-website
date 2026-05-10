@@ -62,7 +62,7 @@ div#body.body-row {
   margin: 0;
 }
 div#body {
-  background: url('./decore.png');
+  background: url('/decore.png');
   background-size: contain;
   background-color: #e5e3e6;
 }
