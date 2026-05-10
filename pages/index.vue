@@ -14,7 +14,11 @@
     <Content />
     <v-row id="introduction">
       <v-col class="pb-2">
-        <div class="title">What about calling me now? ;)</div>
+        <div class="title">
+          <v-chip class="ma-2 h-5 px-2" color="#3B6787" label />
+          What about calling me now? ;)
+          <v-chip class="ma-2 h-5 px-2" color="#3B6787" label />
+        </div>
         <DinoRunway />
       </v-col>
     </v-row>
@@ -62,14 +66,19 @@ div.title {
   letter-spacing: 0.02em;
   border: 1px dashed #1a2d3b;
   padding: 4px 14px;
-  margin: -25px auto 0;
+  /* Sits fully inside the runway (not straddling the boundary): the
+     title's #e5e3e6 background blends with the body above, so a half-
+     out placement reads as half-visible. Pull only ~10px so the chip
+     decoration peeks above the runway top edge but the box stays
+     legible end-to-end. */
+  margin: -10px auto 0;
   width: auto;
   max-width: max-content;
   background: url('./decore.png') left;
   background-size: 100%;
   background-color: #e5e3e6;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 div.subtitle {
   font-size: 0.8rem;

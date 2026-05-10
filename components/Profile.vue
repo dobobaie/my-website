@@ -27,6 +27,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  padding-bottom: 18px !important;
 }
 </style>
 
