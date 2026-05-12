@@ -66,7 +66,7 @@ body, div.v-application {
    "call me" band + dino because they're decorative-only and waste space
    in a downloadable CV. */
 body.pdf-exporting .pdf-fab,
-body.pdf-exporting #cv-root #introduction:last-of-type,
+body.pdf-exporting .cta-band,
 body.pdf-exporting .dino-runway,
 body.pdf-exporting #footer-band {
   display: none !important;
@@ -101,6 +101,7 @@ body.pdf-exporting .reveal-init {
 
   .no-print,
   .pdf-fab,
+  .cta-band,
   .dino-runway,
   #footer-band { display: none !important; }
 
@@ -110,7 +111,5 @@ body.pdf-exporting .reveal-init {
   .reveal-init { opacity: 1 !important; transform: none !important; }
 
   section, .v-row { break-inside: avoid; page-break-inside: avoid; }
-
-  #cv-root #introduction:last-of-type { display: none !important; }
 }
 </style>

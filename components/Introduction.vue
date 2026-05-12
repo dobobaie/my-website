@@ -1,6 +1,6 @@
 <template>
   <v-row id="introduction">
-    <v-col class="pb-2">
+    <v-col class="pb-4">
       <div class="title">
         <v-chip class="ma-2 h-5 px-2" color="#3B6787" label />
         {{ profile.headline }}

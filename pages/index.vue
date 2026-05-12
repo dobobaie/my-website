@@ -12,7 +12,7 @@
       <Introduction />
     </div>
     <Content />
-    <v-row id="introduction">
+    <v-row id="introduction" class="cta-band">
       <v-col class="pb-2">
         <div class="title">What about calling me now? ;)</div>
         <DinoRunway />

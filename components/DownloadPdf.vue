@@ -91,7 +91,7 @@ async function onClick() {
               '.pdf-fab',
               '.dino-runway',
               '#footer-band',
-              '#cv-root #introduction:last-of-type',
+              '.cta-band',
             ]
             for (const sel of removeSelectors) {
               clonedDoc.querySelectorAll(sel).forEach((n) => n.remove())

@@ -1,7 +1,7 @@
 <template>
   <v-row id="body" class="body-row">
     <v-col id="belly" class="pa-0 mx-3">
-      <v-row class="pa-2">
+      <v-row class="pa-2 pt-5">
         <v-col class="pa-1 pr-2">
           <div v-reveal><Experiences /></div>
           <!-- <PersonalExploration /> -->
