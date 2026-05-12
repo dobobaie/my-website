@@ -45,9 +45,9 @@ div.subtitle {
   line-height: 1.55;
   color: #2c2c2c;
   text-align: justify !important;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 24px !important;
+  max-width: none;
+  margin: 0;
+  padding: 0 12px !important;
 }
 div.subtitle :deep(b) {
   color: #1a2d3b;

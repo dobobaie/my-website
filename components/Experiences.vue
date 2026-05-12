@@ -53,9 +53,9 @@ ul li { font-weight: initial !important; }
 
 .exp-item {
   position: relative;
-  padding: 8px 10px 8px 16px;
+  padding: 6px 8px 6px 10px;
   border-left: 3px solid #c5a28c;
-  margin-bottom: 14px !important;
+  margin-bottom: 10px !important;
   border-radius: 0 6px 6px 0;
   transition: background-color 220ms ease, border-color 220ms ease;
 }
